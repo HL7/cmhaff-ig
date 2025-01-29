@@ -1,0 +1,185 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.cmhaffr2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "mobile"
+    }
+  ],
+  "url": "http://hl7.org/fhir/uv/cmhaffr2/ImplementationGuide/hl7.fhir.uv.cmhaffr2",
+  "version": "2.0.1",
+  "name": "CMHAFFR2",
+  "title": "Consumer Mobile Health Application Functional Framework, Release 2",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Mobile Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/mobile"
+        }
+      ]
+    }
+  ],
+  "description": "This is CMHAFF R2.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.cmhaffr2",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "grouping": [
+      {
+        "id": "PDS",
+        "name": "Regulatory Considerations",
+        "description": "The Regulatory Considerations Section contains Conformance Criteria..."
+      },
+      {
+        "id": "PIM",
+        "name": "Product Implementation",
+        "description": "Apps are frequently marketed and downloaded through platform-specific “app stores.” Before an app can be housed within an\napp store, it must meet requirements set by the app store host. The app store is one primary source of product information for\nconsumers to decide whether they want to install the app. In some realms, apps may also be obtained through an app registry."
+      },
+      {
+        "id": "APU",
+        "name": "App Use",
+        "description": "This section addresses functionalities and considerations to be addressed while the user is operating the app."
+      },
+      {
+        "id": "AST",
+        "name": "App Service Termination",
+        "description": "Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app."
+      },
+      {
+        "id": "PUD",
+        "name": "Permitted Uses of Data Post Account Closure",
+        "description": "This category is about what is done with consumers’ data if they close their account (terminate use of the app)."
+      },
+      {
+        "id": "CNA",
+        "name": "Conditions and Agreements",
+        "description": "This section of cMHAFF deals with nonfunctional, and usually nontechnical, aspects of mobile health apps. While not traditionally in scope for\nHIT standards oriented at large or small enterprise organizations, it is a very important and distinctive characteristic of apps targeted at consumers."
+      }
+    ],
+    "resource": [
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-PDS"
+        },
+        "isExample": false,
+        "groupingId": "PDS"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-PIM"
+        },
+        "isExample": false,
+        "groupingId": "PIM"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-APU"
+        },
+        "isExample": false,
+        "groupingId": "APU"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-AST"
+        },
+        "isExample": false,
+        "groupingId": "AST"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-PUD"
+        },
+        "isExample": false,
+        "groupingId": "PUD"
+      },
+      {
+        "reference": {
+          "reference": "Requirements/CMHAFF-CNA"
+        },
+        "isExample": false,
+        "groupingId": "CNA"
+      }
+    
+    ],
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "definitions.html",
+          "generation": "markdown",
+          "title": "Definitions (Glossary)"
+        },
+        {
+          "name": "pilots.html",
+          "generation": "markdown",
+          "title": "CMHAFF Pilots"
+        },
+        {
+          "name": "refdocuments.html",
+          "generation": "markdown",
+          "title": "Reference Documents"
+        },
+        {
+          "name": "downloads.html",
+          "generation": "markdown",
+          "title": "Useful Downloads"
+        },
+        {
+          "name": "changes.html",
+          "generation": "markdown",
+          "title": "IG Change History"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "CI build"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2025"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}
