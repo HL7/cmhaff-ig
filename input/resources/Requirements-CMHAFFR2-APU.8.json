@@ -1,0 +1,151 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_8_Notifications_and_Alerts",
+  "title": "APU.8 Notifications and Alerts (Header)",
+  "status": "active",
+  "description": "This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable\nstandards for data format, vocabulary, and transport, to increase interoperability and ease of connection.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-98",
+      "label": "APU.8#98",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Opt-in consent is required by the account holder before receiving notifications and alerts from an app."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-99",
+      "label": "APU.8#99",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "To consent to receiving a notification or alert from an app, the account holder is informed of both the content and channel (SMS, push notification, email, etc.) of the notification or alert."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-100",
+      "label": "APU.8#100",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "An account holder can change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-101",
+      "label": "APU.8#101",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-102",
+      "label": "APU.8#102",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App alerts notify user of conditions such as â€œabnormalâ€ or â€œexceptionalâ€ or â€œout of rangeâ€] Document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-103",
+      "label": "APU.8#103",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[Permitted by the account holder and agreed to by recipients] notifications and alerts may be sent to the account holder and/or to another person or entity."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-104",
+      "label": "APU.8#104",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user, e.g., low battery alerts."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-105",
+      "label": "APU.8#105",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-135",
+      "label": "APU.8#135",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action."
+    }
+  ]
+}

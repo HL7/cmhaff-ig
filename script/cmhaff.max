@@ -1,0 +1,3060 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model xmlns="http://www.umcg.nl/MAX">
+  <objects xmlns="">
+    <object>
+      <id>CMHAFF3</id>
+      <name>Product Development &amp; Support</name>
+      <alias>PDS</alias>
+      <notes>$OV$Prior to marketing a mobile app, the developer has a responsibility to ensure it meets Realm-specific rules and regulations.
+Although cMHAFF does not have guidelines for all aspects of the software product life cycle, cMHAFF still recommends
+that the product development life cycle, for new apps and for upgrades to apps, ensure that requirements for functionality,
+reliability, performance, scalability, safety, compatibility, portability, and maintainability have been addressed, as well as any
+requirements that relate to aspects that include these items previously described above:
+• Product Information for consumers (e.g., App Store descriptions, product disclosures)
+• Security
+• Privacy
+• Permission to use device features
+• Data Access
+• Data Sharing
+• Terms of Use, Conditions
+• Product Development, including risk management, user-centered design, compliance with applicable regulations,
+functions (product description), reliability, performance, scalability, safety, compatibility, and portability.
+The security and privacy of information used by the app needs to be considered throughout the development
+phases of the app. Functionality must support the intended use of the app for the target users and stakeholders.
+Thorough and iterative risk assessment and requirement analysis, testing, evidence collection, documentation, and
+configuration management ensures quality to satisfy the needs of the application’s various stakeholders 8 .
+Assessing the usability of the app helps ensure the app’s viability and adoption; testing must be population-
+relevant and demonstrate reasonable product usability (accessibility) by people with visual, auditory and motor
+disabilities within the intended target audience. Establishing a system of customer support enables product
+defects and usability issues to be surfaced in a systematic way and helps problems related to use of the app to be
+effectively resolved and the developer to continually deliver the intended use of the app.$EX$$AC$</notes>
+      <stereotype>Section</stereotype>
+      <type>Package</type>
+      <parentId>CMHAFF</parentId>
+      <tag name="ID" value="1"/>
+    </object>
+    <object>
+      <id>CMHAFF4</id>
+      <name>PDS.1 Regulatory Considerations</name>
+      <alias>PDS.1</alias>
+      <notes>$ST$This section is about the compliance of apps to applicable regulations for the domains (realms, locales,
+environments) in which they are intended to be used. CMHAFF is designed as a framework that can be
+further constrained (profiled) for these domains and does not require conformance to any specific
+locale’s regulations.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF3</parentId>
+      <tag name="Row" value="4"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF5</id>
+      <name>PDS.1#01</name>
+      <notes>The app SHALL be analyzed to determine if regulatory approval (following Realm-specific regulatory rules) is needed before the app is used by the general public.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF4</parentId>
+      <tag name="Row" value="5"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="C - Changed&#xA;D - Deleted&#xA;N - New&#xA;NC - No Change&#xA;DEP - Deprecated"/>
+    </object>
+    <object>
+      <id>CMHAFF6</id>
+      <name>PDS.1#02</name>
+      <notes>IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL not be presented for general public use until regulatory approval is obtained.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF4</parentId>
+      <tag name="Row" value="6"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="Y"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF7</id>
+      <name>PDS.1#03</name>
+      <notes>The App SHOULD have measures to safeguard minors in accordance with applicable regulations.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF4</parentId>
+      <tag name="Row" value="7"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="C"/>
+    </object>
+    <object>
+      <id>CMHAFF8</id>
+      <name>PDS.2 Product Risk Assessment and Mitigation</name>
+      <alias>PDS.2</alias>
+      <notes>$ST$This category deals with process steps for risk assessment and mitigation for those
+who are developing a new app, or an upgrade to an app, prior to its being deployed to
+Consumers.$DE$Degrees of risk should be assessed and mitigated according to the intended use
+of the app. In general, risk management should manage security, privacy, safety, and other
+types of risks such as potential app failure scenarios, events that could lead to undesirable
+outcomes, probability and severity of risk, and mitigations or resolutions. One size does not fit
+all. For example, if apps handle sensitive personal information or give health interpretation or
+advice, higher degrees of risk are involved than for apps that do not collect personal information or do not interpret or advise. If some information identified during this step should be disclosed
+to consumers, that is stated in the “Informing Consumers/Users” section$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF3</parentId>
+      <tag name="Row" value="8"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF9</id>
+      <name>PDS.2#01</name>
+      <notes>The App SHALL conform to a product risk assessment and mitigation plan as outlined by the developer. This plan should explicitly determine what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app. The developer will need to maintain, review, and update organizational Risk Register to include risks associated with mobile application.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="9"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="C"/>
+    </object>
+    <object>
+      <id>CMHAFF10</id>
+      <name>PDS.2#02</name>
+      <notes>In development of the App, the developer SHALL follow secure coding and practices using an established risk assessment framework.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="10"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF11</id>
+      <name>PDS.2#03</name>
+      <notes>IF personally Identifiable Information is collected THEN in development the App SHALL be guided by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="11"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="Y"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="C"/>
+    </object>
+    <object>
+      <id>CMHAFF12</id>
+      <name>PDS.2#04</name>
+      <notes>IF the App transmits data to an EHR THEN the App SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="12"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="Y"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF13</id>
+      <name>PDS.2#05</name>
+      <notes>Prior to product launch, the App SHOULD be approved in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="13"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF14</id>
+      <name>PDS.2#06</name>
+      <notes>The App SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="14"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF15</id>
+      <name>PDS.2#07</name>
+      <notes>IF the App relies on external supporting infrastructure, (e.g., cloud-based servers) to operate, THEN the App SHOULD document measures to ensure the availability of that infrastructure.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="15"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="Y"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF16</id>
+      <name>PDS.2#08</name>
+      <notes>The App MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF8</parentId>
+      <tag name="Row" value="16"/>
+      <tag name="Optionality" value="MAY"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="NC"/>
+    </object>
+    <object>
+      <id>CMHAFF17</id>
+      <name>PDS.3 Usability and Accessibility Assessment</name>
+      <alias>PDS.3</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF3</parentId>
+      <tag name="Row" value="17"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF18</id>
+      <name>PDS.3#01</name>
+      <notes>The App SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience). For example, user types may include those with motor disabilities, visual impairment, auditory disabilities, etc. [1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="18"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="C"/>
+    </object>
+    <object>
+      <id>CMHAFF19</id>
+      <name>PDS.3#02</name>
+      <notes>[Intended users include those with motor disabilities] Assess product for usability by people with motor disabilities.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="19"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="D"/>
+    </object>
+    <object>
+      <id>CMHAFF20</id>
+      <name>PDS.3#03</name>
+      <notes>[Intended users include those with visual disabilities] Assess product for usability by visually-impaired and/or color-blind people using a standard mobile screen reader.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="20"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="D"/>
+    </object>
+    <object>
+      <id>CMHAFF21</id>
+      <name>PDS.3#04</name>
+      <notes>[Intended users include those with auditory disabilities] Assess product for usability by people with auditory disabilities.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="21"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="D"/>
+    </object>
+    <object>
+      <id>CMHAFF22</id>
+      <name>PDS.3#05</name>
+      <notes>Assess product for usability by a sample of intended users. If geared towards a certain age segment or to people with a specific chronic health condition, or to persons with disabilities other than those specified above, usability testing subjects are drawn from these populations.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="22"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator" value="We're here"/>
+    </object>
+    <object>
+      <id>CMHAFF23</id>
+      <name>PDS.3#06</name>
+      <notes>Create a written usability assessment plan, including known problems with product usability and mitigation plan. NOTE: for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to â€œSHALLâ€ with plan specifically addressing usability issues for people with visual and motor disabilities.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="23"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF24</id>
+      <name>PDS.3#07</name>
+      <notes>Follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="24"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF25</id>
+      <name>PDS.3#08</name>
+      <notes>Avoid excessive data use by the app, minimizing it as much as possible warning users when high data usage occurs (e.g., downloads and updates).[2]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="25"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF26</id>
+      <name>PDS.3#09</name>
+      <notes>Describe the use cases (business scenarios) and intended users for the appâ€™s main functions.[3]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="26"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF27</id>
+      <name>PDS.3#10</name>
+      <notes>Permit flexibility (adaptation) to the userâ€™s specific abilities, needs, or requirements.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="27"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF28</id>
+      <name>PDS.3#11</name>
+      <notes>Provide information about accessibility characteristics in the app description and in contextual assistance sections of the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF17</parentId>
+      <tag name="Row" value="28"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF29</id>
+      <name>PDS.4 Customer Technical Support</name>
+      <alias>PDS.4</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF3</parentId>
+      <tag name="Row" value="29"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF30</id>
+      <name>PDS.4#01</name>
+      <notes>Information as to how to access customer support, and channels of support (e.g., voice, email, text, Twitter) is clearly stated within the appâ€™s Terms of Use and as a feature accessible from within the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="30"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF31</id>
+      <name>PDS.4#02</name>
+      <notes>Customer support may be accessed prior to establishing a user account (e.g., User can contact customer support with questions about the appâ€™s Privacy Policy or Terms of Use before making a decision to actively use the app).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="31"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF32</id>
+      <name>PDS.4#03</name>
+      <notes>Customer support is provided in the language(s) in which the app is published.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="32"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF33</id>
+      <name>PDS.4#04</name>
+      <notes>Within the appâ€™s Terms of Use, or in documentation available from within the app, any open source code library or code under copyright used to develop the app is given attribution.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="33"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF34</id>
+      <name>PDS.4#05</name>
+      <notes>[Support request involves accessing, disclosing, or changing customer data] The identity of the customer, and the customerâ€™s data access rights, must be verified before any disclosure or changing of customer data.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="34"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF35</id>
+      <name>PDS.4#06</name>
+      <notes>Customer support queries will receive responses which directly address a stated problem or issue within two business days. A simple acknowledgement that a query has been received, without additional action, is insufficient.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="35"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF36</id>
+      <name>PDS.4#07</name>
+      <notes>Provide app consumers with aggregated satisfaction ratings relevant to customer support terms and conditions as appropriate.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="36"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF37</id>
+      <name>PDS.4#08</name>
+      <notes>Provide a FAQ resource where users can find answers to common questions.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF29</parentId>
+      <tag name="Row" value="37"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF38</id>
+      <name>Product Implementation</name>
+      <alias>PIM</alias>
+      <notes>$OV$Apps are frequently marketed and downloaded through platform-specific “app stores.” Before an app can be housed within an app store, it must meet requirements set by the app store host. The app store is one primary source of product information for consumers to decide whether they want to install the app. In some realms, apps may also be obtained through an app registry.$EX$$AC$</notes>
+      <stereotype>Section</stereotype>
+      <type>Package</type>
+      <parentId>CMHAFF</parentId>
+      <tag name="ID" value="2"/>
+    </object>
+    <object>
+      <id>CMHAFF39</id>
+      <name>PIM.1 Product Information</name>
+      <alias>PIM.1</alias>
+      <notes>$ST$This category is about providing information about the product to consumers and also other parties (e.g., governments, consumer or provider
+organizations) who have interest in potential purchase, use, endorsement, or recommendation of apps. The experience of installing an app begins at an
+app store and completes on a user device. See also the Conditions and Agreements section of this specification for guidance regarding Conditions and
+Agreements that usually appear as part of the app store experience. cMHAFF does not specify exactly how or where product information is conveyed, e.g., app store, web site, online help.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF38</parentId>
+      <tag name="Row" value="39"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF40</id>
+      <name>PIM.1.1 General Information</name>
+      <alias>PIM.1.1</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Function</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF39</parentId>
+      <tag name="Row" value="40"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF41</id>
+      <name>PIM.1.1#01</name>
+      <notes>The description of an app includes the main functionality, the intended use, the intended (target) audience, and potential use of the userâ€™s personal data by the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="41"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF42</id>
+      <name>PIM.1.1#02</name>
+      <notes>Screen shots of the app accurately depict the screens of the current version of the product.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="42"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF43</id>
+      <name>PIM.1.1#03</name>
+      <notes>Product information is provided before the app is used by the consumer, to help consumers decide whether the app is suitable.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="43"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF44</id>
+      <name>PIM.1.1#04</name>
+      <notes>The app description clearly states the human languages the app supports.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="44"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF45</id>
+      <name>PIM.1.1#05</name>
+      <notes>Provide information about the app publisher (persons/organizations) and provide mechanisms to communicate with the publishers.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="45"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF46</id>
+      <name>PIM.1.1#06</name>
+      <notes>Provide disclosure about sources of funding and possible conflicts of interest for the app (e.g., app use could incent user to buy products or services from app publisher).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF40</parentId>
+      <tag name="Row" value="46"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF47</id>
+      <name>PIM.1.2 Payment</name>
+      <alias>PIM.1.2</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF39</parentId>
+      <tag name="Row" value="47"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF48</id>
+      <name>PIM.1.2#01</name>
+      <notes>The payment amount for the app, if any, must be clearly noted according to app store rules.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF47</parentId>
+      <tag name="Row" value="48"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF49</id>
+      <name>PIM.1.2#02</name>
+      <notes>Apps which have required or optional payments after download must clearly state this in their app store description, along with the amount of payment required and the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app). The impact of not making payments must also be stated (e.g., limited functionality).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF47</parentId>
+      <tag name="Row" value="49"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF50</id>
+      <name>PIM.1.3 Evidence and Credentials</name>
+      <alias>PIM.1.3</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF39</parentId>
+      <tag name="Row" value="50"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF51</id>
+      <name>PIM.1.3#39</name>
+      <notes>[App provides health recommendations] Disclose the scientific degree of evidence and the types and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed articles, professionals and organizations with their credentials) that guided the app content.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="51"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF52</id>
+      <name>PIM.1.3#40</name>
+      <notes>[there is human[1] and/or automated interpretation of health-related content] The credentials of qualified health professionals are disclosed, and/or the algorithms and testing plans and reports are documented.[2]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="52"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF53</id>
+      <name>PIM.1.3#41</name>
+      <notes>The app descriptions should identify the health professionals and credentials of those who worked on the app and/or at least the professional organization that made, reviewed, endorsed, or sponsored the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="53"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF54</id>
+      <name>PIM.1.3#42</name>
+      <notes>Show the date of the last update to the app and describe the changes from the previous release (e.g., revisions due to new scientific evidence).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="54"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF55</id>
+      <name>PIM.1.3#43</name>
+      <notes>The app description may also include data related to app reliability and validity tests or population research results.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="55"/>
+      <tag name="Optionality" value="MAY"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF56</id>
+      <name>PIM.1.3#44</name>
+      <notes>Declare the degree of admission of liability (publisherâ€™s acceptance or disclaimer of responsibility) regarding the selection and use of the appâ€™s content.[3]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF50</parentId>
+      <tag name="Row" value="56"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF58</id>
+      <name>PIM.1.4 Limitations and Warnings</name>
+      <alias>PIM.1.4</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF39</parentId>
+      <tag name="Row" value="58"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF59</id>
+      <name>PIM.1.4#45</name>
+      <notes>[App provides health recommendations (e.g., general guidelines)] Disclose the potential risks to patient safety and their mitigations.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF58</parentId>
+      <tag name="Row" value="59"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF60</id>
+      <name>PIM.1.4#46</name>
+      <notes>[App offers health advice (e.g., specific and personal health decision support)] State that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF58</parentId>
+      <tag name="Row" value="60"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF61</id>
+      <name>PIM.1.4#47</name>
+      <notes>Document contraindications, potential risks and limitations of use. For example, environmental or patient conditions under which apps or connected devices may be unreliable (e.g., tattoos that impact optical sensors; avoid usage when pregnant; avoid usage outside a temperature range).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF58</parentId>
+      <tag name="Row" value="61"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF62</id>
+      <name>PIM.1.4#48</name>
+      <notes>Warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF58</parentId>
+      <tag name="Row" value="62"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF63</id>
+      <name>PIM.1.4#49</name>
+      <notes>[App has collected personal health information] guarantee continuity of data use across different versions of the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF58</parentId>
+      <tag name="Row" value="63"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF64</id>
+      <name>PIM.1.5 Technical Details</name>
+      <alias>PIM.1.5</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF39</parentId>
+      <tag name="Row" value="64"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF65</id>
+      <name>PIM.1.5#50</name>
+      <notes>[User can enter personal health information into the app] Clearly disclose whether or not data validity checking is done, and document or reference the evidence for such validity checking.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF64</parentId>
+      <tag name="Row" value="65"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF66</id>
+      <name>PIM.1.5#51</name>
+      <notes>[App collects or receives quantitative data] The precision (accuracy, granularity) of measurements (e.g., physical activity, physiological data from connected devices) is documented and justified as appropriate for the intended use of the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF64</parentId>
+      <tag name="Row" value="66"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF67</id>
+      <name>PIM.1.5#52</name>
+      <notes>[Personal health information is hosted] Backup and recovery procedures are documented and compliant with applicable regulatory requirements.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF64</parentId>
+      <tag name="Row" value="67"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF68</id>
+      <name>PIM.1.5#53</name>
+      <notes>[Personal health data are imported or exported] Functions for data import or export are documented, including the ability to convert to standard formats.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF64</parentId>
+      <tag name="Row" value="68"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF69</id>
+      <name>PIM.2 Launch App and Establish User Account</name>
+      <alias>PIM.2</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF38</parentId>
+      <tag name="Row" value="69"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF70</id>
+      <name>PIM.2#54</name>
+      <notes>A user can review the appâ€™s Terms of Use before personal data about the user is collected and used.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF69</parentId>
+      <tag name="Row" value="70"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF71</id>
+      <name>PIM.2#55</name>
+      <notes>[The app creates user accounts] User acceptance of the appâ€™s Terms of Use is logged before a user account is authorized (See section 3.4.10 for information about audit log record creation).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF69</parentId>
+      <tag name="Row" value="71"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF72</id>
+      <name>PIM.2#56</name>
+      <notes>[User is allowed to use pre-existing account credentials from an Identity Provider (IDP) to access the app] Before a user chooses to use pre-existing account credentials to access the app: (a) The user is informed about what attribute information will be used by the app associated with the pre-existing credentials; (b) The user is informed about what data is communicated back to the IDP at the time of account creation and at each subsequent user authentication.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF69</parentId>
+      <tag name="Row" value="72"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF73</id>
+      <name>PIM.2#57</name>
+      <notes>For purposes of establishing an account, the minimum necessary amount of a userâ€™s personally identifiable information (PII) is collected, e.g., the information is necessary to authenticate the user, provide customer support, or affect the app logic.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF69</parentId>
+      <tag name="Row" value="73"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF74</id>
+      <name>App Use</name>
+      <alias>APU</alias>
+      <notes>$OV$This section addresses functionalities and considerations to be addressed while the user is operating
+the app.$EX$$AC$</notes>
+      <stereotype>Section</stereotype>
+      <type>Package</type>
+      <parentId>CMHAFF</parentId>
+      <tag name="ID" value="3"/>
+    </object>
+    <object>
+      <id>CMHAFF75</id>
+      <name>APU.1 Authentication</name>
+      <alias>APU.1</alias>
+      <notes>$ST$This category is about the system protecting against unauthorized access (e.g., by persons other than the consumer).$DE$The functionality of an app, its sponsorship, and linkages to external data sources all affect the security, privacy and data controls which are established to ensure safe and effective use. In this section, conformance criteria point to issues which can be addressed through a range of options, and as such implementers should consider not only the conformance criteria but the discussion regarding applicability to the exemplary use cases.$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="75"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF76</id>
+      <name>APU.1#58</name>
+      <notes>The identity of an app user is authenticated prior to any access of PHI or PII.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="76"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF77</id>
+      <name>APU.1#59</name>
+      <notes>The app user is authorized to access a feature of the app before that feature or any associated PHI or PII is displayed. Authorization may be internal to the app or derived from an external source.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="77"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF78</id>
+      <name>APU.1#60</name>
+      <notes>At the request of an app user, the app terminates such that access to PHI or PII requires a new, successful authentication attempt.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="78"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF79</id>
+      <name>APU.1#61</name>
+      <notes>[Other external HIT system (e.g., EHR) is a system actor] Verify a subjectâ€™s association with their real-world identity, establishing that a subject is who they claim to be (identity proofing).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="79"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF80</id>
+      <name>APU.1#62</name>
+      <notes>The EHR authorizes an app userâ€™s access to app features when these features are supported by data provided by or written to the EHR.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="80"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF81</id>
+      <name>APU.1#63</name>
+      <notes>[PII or PHI are displayed] The app terminates the app or makes PHI or PII invisible after a period of time of user inactivity as described in the appâ€™s Terms of Use. This feature is sometimes called â€œinactivity timeoutâ€ â€œSession timeoutâ€ or â€œautomatic logoff.â€ The determination to include this feature within an app is made as part of the overall risk analysis regarding the sensitivity of data provided by or through the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="81"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF82</id>
+      <name>APU.1#64</name>
+      <notes>[Passwords are stored on the device] passwords are encrypted and never displayed as plaintext.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="82"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF83</id>
+      <name>APU.1#65</name>
+      <notes>[Access to account exposes Protected Health Information (PHI) or PII] The user is given an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords. Before selection of this option, the mechanism for authentication is clearly described and/or demonstrated to the user. This capability may apply to an app itself, and also to the pairing of the app with a device.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF75</parentId>
+      <tag name="Row" value="83"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF84</id>
+      <name>APU.2 User Authorizations</name>
+      <alias>APU.2</alias>
+      <notes>$ST$This category is about personal data collection and use, including access to device features, being understood and explicitly
+authorized (consented to) by the users of the app.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="84"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF85</id>
+      <name>APU.2#66</name>
+      <notes>Smartphone functionality and data sources may only be used when essential to perform specific functions of the app. This includes, but is not limited to, the use of: location services, camera, microphone, accelerometer and other sensors, contact lists, calendars.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="85"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF86</id>
+      <name>APU.2#67</name>
+      <notes>Before using select smartphone functions and data sources for the first time, app users are asked for permission to use these services and data sources. Permissions for each function, data source and user tracking activity controlled by the app can be individually specified by the user.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="86"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF87</id>
+      <name>APU.2#68</name>
+      <notes>Before exporting data from the smartphone, or from any device integrated with the smartphone, the app user is asked for permission to transmit the data with an explanation of what data is being transmitted, and to which recipients for what purposes (e.g., to servers of the app supplier, for backups, for big data analysis). Permission is requested before the first potential transmission of data. Permission is re-requested the first time any additional data elements are sent to an external data source when permission had previously been extended for a smaller set of data. Permission is not requested at every transmission, if the scope of exported data remains unchanged.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="87"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF88</id>
+      <name>APU.2#69</name>
+      <notes>[App requests permission to use data generated by the app after it is de-identified] Account holder is informed of who would have access to the de-identified data and for what purpose.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="88"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF89</id>
+      <name>APU.2#70</name>
+      <notes>[App requests permission to use data generated by the app after it is de-identified] Account holder is informed of the possibility that de-identified data can potentially be re-identified and steps the app sponsor takes to prevent re-identification.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="89"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF90</id>
+      <name>APU.2#71</name>
+      <notes>[User gives permission for data generated by the app to be de-identified and used] Data de-identification, at minimum, follows realm-specific rules (e.g., HIPAA safe-harbor in USA).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="90"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF91</id>
+      <name>APU.2#72</name>
+      <notes>[In-app payments exist]. In-app payments are not triggered in such a way that can expose healthcare-related information to payment organizations.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="91"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF92</id>
+      <name>APU.2#73</name>
+      <notes>[App uses in-app advertising]. Potential use of PHI or PII to personalize advertisements from the app shall be disclosed to the user, who shall be given the opportunity to consent or decline.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="92"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF93</id>
+      <name>APU.2#74</name>
+      <notes>An app user can choose to permit some, but not all, requested data to be exported from a smartphone or associated device. The user is informed as to how the choice to limit data affects the functionality of the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="93"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF94</id>
+      <name>APU.2#75</name>
+      <notes>[App user denies a permission requested by the app] The app user is informed of the consequence of not extending the permission and is given a second chance to extend a permission.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="94"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF95</id>
+      <name>APU.2#76</name>
+      <notes>[Data is shared with social networks] Data sharing can only commence after obtaining and recording explicit user consent.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF84</parentId>
+      <tag name="Row" value="95"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF96</id>
+      <name>APU.3 Pairing or Syncing User Accounts with Devices and Data Repositories</name>
+      <alias>APU.3</alias>
+      <notes>$ST$This category is about consumer verification of all devices to which they wish to pair or sync data.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="96"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF97</id>
+      <name>APU.3#77</name>
+      <notes>User has authenticated identity to an app and has an active session before pairing an external device to an app account.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="97"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF98</id>
+      <name>APU.3#78</name>
+      <notes>Before a device is paired with an app to collect information about a specific individual, the app displays a screen which asks the user to confirm that the device will collect information about a specific, named person. The person may be the account holder or a proxy subject of the account holder.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="98"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF99</id>
+      <name>APU.3#79</name>
+      <notes>The person who pairs a device with an individual in context of use of a specific app can un-pair the device and individual through an app utility function.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="99"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF100</id>
+      <name>APU.3#80</name>
+      <notes>Before a device is paired with an app to collect information about a specific individual, the app states what data will be collected by the device and how the device data is used. This statement may include a link to an informational page which provides details about data collection and use.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="100"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF101</id>
+      <name>APU.3#81</name>
+      <notes>[Data for more than one person can be collected by the app/device pair] The app asks the account holder to confirm the person for whom data will be collected by the device before data is collected and transmitted.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="101"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF102</id>
+      <name>APU.3#82</name>
+      <notes>[Developer includes a syncing option within APP (e.g., same app data synchronized across smartphone and tablet devices)] User is provided with option to consent with syncing process.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF96</parentId>
+      <tag name="Row" value="102"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF103</id>
+      <name>APU.4 Security for Data at Rest and in Transport</name>
+      <alias>APU.4</alias>
+      <notes>$ST$This category is about providing assurance that the consumer’s stored data is secure, regardless of whether it is stored on the consumer’s
+devices or elsewhere (e.g., in cloud-based servers for an app). It also provides assurance that consumer data is secure when it is moved between the
+consumer’s device(s) and other locations.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="103"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF104</id>
+      <name>APU.4#83</name>
+      <notes>PHI and PII stored on a smartphone is stored as encrypted values.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF103</parentId>
+      <tag name="Row" value="104"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF105</id>
+      <name>APU.4#84</name>
+      <notes>PHI and PII stored by the mobile app on any external server is stored as encrypted values.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF103</parentId>
+      <tag name="Row" value="105"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF106</id>
+      <name>APU.4#85</name>
+      <notes>Unless PHI and PII has been transmitted to a data set maintained by a Health Plan or Health Provider, the account holder can delete information collected through the app, including data generated by a device associated with the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF103</parentId>
+      <tag name="Row" value="106"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF107</id>
+      <name>APU.4#86</name>
+      <notes>Improve and/or upgrade encryption cipher and suites to match evolving best practices.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF103</parentId>
+      <tag name="Row" value="107"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF108</id>
+      <name>APU.4#87</name>
+      <notes>PHI and PII transmitted between an app and an external data source, including data generated through a device associated with the app, are transmitted as encrypted values.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF103</parentId>
+      <tag name="Row" value="108"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF109</id>
+      <name>APU.5 Data Authenticity, Provenance, and Associated Metadata</name>
+      <alias>APU.5</alias>
+      <notes>$ST$This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other
+locations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="109"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF110</id>
+      <name>APU.5#89</name>
+      <notes>Apps conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF109</parentId>
+      <tag name="Row" value="110"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF111</id>
+      <name>APU.5#90</name>
+      <notes>[App itself originates data &lt;see ISO 21089 definition of â€œoriginateâ€&gt;] Customer has review option which includes the option to irreversibly destroy, reject or discard data.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF109</parentId>
+      <tag name="Row" value="111"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF112</id>
+      <name>APU.5#91</name>
+      <notes>[App itself only receives data as a â€œpass throughâ€ and cannot store data] Customer has a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF109</parentId>
+      <tag name="Row" value="112"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF113</id>
+      <name>APU.5#92</name>
+      <notes>[App itself receives data and stores it] Customer has a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance. User may comment that data are erroneous, but does not have the option to delete the original data.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF109</parentId>
+      <tag name="Row" value="113"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF114</id>
+      <name>APU.7 Data Exchange and Interoperability</name>
+      <alias>APU.7</alias>
+      <notes>$ST$This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable
+standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="114"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF115</id>
+      <name>APU.7#93</name>
+      <notes>[App exchanges discrete clinical data] Use standard terminologies (e.g., SNOMED CT, LOINCâ€¦).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF114</parentId>
+      <tag name="Row" value="115"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF116</id>
+      <name>APU.7#94</name>
+      <notes>[App exchanges discrete clinical data] Use standard format/content, e.g., HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, Detailed Clinical Models (HL7 CIMI), etc.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF114</parentId>
+      <tag name="Row" value="116"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF117</id>
+      <name>APU.7#95</name>
+      <notes>[App exchanges discrete clinical data with devices] Use standard format/content, e.g., IEEE 11073.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF114</parentId>
+      <tag name="Row" value="117"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF118</id>
+      <name>APU.7#96</name>
+      <notes>[App exchanges unstructured data] Use standard or commonly accepted formats, e.g., HL7 CDA, PDF.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF114</parentId>
+      <tag name="Row" value="118"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF119</id>
+      <name>APU.7#97</name>
+      <notes>[App collects personal health information] allow data to be imported or exported from the app.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF114</parentId>
+      <tag name="Row" value="119"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF120</id>
+      <name>APU.8 Notifications and Alerts</name>
+      <alias>APU.8</alias>
+      <notes>$ST$This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable
+standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="120"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF121</id>
+      <name>APU.8#98</name>
+      <notes>Opt-in consent is required by the account holder before receiving notifications and alerts from an app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="121"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF122</id>
+      <name>APU.8#99</name>
+      <notes>To consent to receiving a notification or alert from an app, the account holder is informed of both the content and channel (SMS, push notification, email, etc.) of the notification or alert.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="122"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF123</id>
+      <name>APU.8#100</name>
+      <notes>An account holder can change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="123"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF125</id>
+      <name>APU.8#101</name>
+      <notes>Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="125"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF126</id>
+      <name>APU.8#102</name>
+      <notes>[App alerts notify user of conditions such as â€œabnormalâ€ or â€œexceptionalâ€ or â€œout of rangeâ€] Document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="126"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF127</id>
+      <name>APU.8#103</name>
+      <notes>[Permitted by the account holder and agreed to by recipients] notifications and alerts may be sent to the account holder and/or to another person or entity.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="127"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF128</id>
+      <name>APU.8#104</name>
+      <notes>Provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user, e.g., low battery alerts.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="128"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF129</id>
+      <name>APU.8#105</name>
+      <notes>Notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="129"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF124</id>
+      <name>APU.8#135</name>
+      <notes>Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF120</parentId>
+      <tag name="Row" value="124"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF130</id>
+      <name>APU.9 Product Upgrades</name>
+      <alias>APU.9</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="130"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF131</id>
+      <name>APU.9#106</name>
+      <notes>The app respects operating system level permissions concerning automatic product updates.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF130</parentId>
+      <tag name="Row" value="131"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF132</id>
+      <name>APU.9#107</name>
+      <notes>[An updated version of the app includes updated terms of use] Updated Terms of Use are presented to the account holder for acceptance before an updated version of an app may be used. Significant changes to terms and conditions are highlighted, and a link to the full set of updated Terms of Use is available.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF130</parentId>
+      <tag name="Row" value="132"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF133</id>
+      <name>APU.9#108</name>
+      <notes>[Automatic app updates are not enabled] The app prompts the user to the availability of a new version of the app when a new version is available.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF130</parentId>
+      <tag name="Row" value="133"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF134</id>
+      <name>APU.9#109</name>
+      <notes>[Account holder elects to not install a new version of an app] The consequences of not installing the new version of the app, including information about support limitations for the older version of the app, are presented to the account holder.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF130</parentId>
+      <tag name="Row" value="134"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF135</id>
+      <name>APU.9#110</name>
+      <notes>[New version of app increases what information is exposed by alerts] The user must consent to the information being exposed, and the changes to the exposed information must be clearly highlighted when they make that consent.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF130</parentId>
+      <tag name="Row" value="135"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF136</id>
+      <name>APU.10 Audit</name>
+      <alias>APU.10</alias>
+      <notes>$ST$This category is about auditing, which is a mechanism for user and system accountability. Important events, such as logins and access to
+particular functions and data, are recorded and can be used to detect instances of non-compliant behavior and to facilitate detection of improper
+creation, access, modification, and deletion of personal health information. Any information technology including consumer health apps should follow
+best practices in managing an audit trail. The audit trail should maintain a record of users who have accessed what data, from where, and when. Audit
+logs should also record any attempts to access the system from an unauthorized terminal; expired usernames or passwords that try to access the
+system, unusual numbers of authentication attempts, and violations of an organizations security policy.$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF74</parentId>
+      <tag name="Row" value="136"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF137</id>
+      <name>APU.10#111</name>
+      <notes>[User authentication is required to access app] User authentication attempts, both successful and unsuccessful, generate an audit record.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF136</parentId>
+      <tag name="Row" value="137"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF138</id>
+      <name>APU.10#112</name>
+      <notes>User permissions to access, or the revocation of access, regarding smartphone/tablet device capabilities for use by the app (e.g., use of camera, location services) generate an audit record.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF136</parentId>
+      <tag name="Row" value="138"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF139</id>
+      <name>APU.10#113</name>
+      <notes>[App uses external devices or data sources for data collection] Pairing a device or data repository external to the app, which supplies data used by the app, generates an audit record.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF136</parentId>
+      <tag name="Row" value="139"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF140</id>
+      <name>APU.10#114</name>
+      <notes>[App allows for the export of data to a data repository external to the app] Any export of data from the app generates an audit record.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF136</parentId>
+      <tag name="Row" value="140"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF141</id>
+      <name>App Service Termination</name>
+      <alias>AST</alias>
+      <notes>$OV$Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app.Disuse may happen when a health condition improves, a new health habit is established, when motivation to use the app wanes, or when
+the user determines a different app better meets their needs. Procedures for how data continues to be retained and used after account closure must be
+clear and understandable and give the app user options for relocation of their data to a new data repository.$EX$$AC$</notes>
+      <stereotype>Section</stereotype>
+      <type>Package</type>
+      <parentId>CMHAFF</parentId>
+      <tag name="ID" value="4"/>
+    </object>
+    <object>
+      <id>CMHAFF142</id>
+      <name>AST.1 App and Data Removal</name>
+      <alias>AST.1</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF141</parentId>
+      <tag name="Row" value="142"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF143</id>
+      <name>AST.1#115</name>
+      <notes>An app Account Holder can remove an app from a mobile device at any time.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="143"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF144</id>
+      <name>AST.1#116</name>
+      <notes>An app Account Holder is informed of the consequences of removing the app (e.g., loss of locally-stored data) from a smartphone and given an opportunity to confirm the removal of the app before the app is removed.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="144"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF145</id>
+      <name>AST.1#117</name>
+      <notes>An app Account Holder can close an associated account or data store associated with the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="145"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF146</id>
+      <name>AST.1#118</name>
+      <notes>An app Account Holder is informed of the consequences of deleting the account and is given an opportunity to confirm closing the account before it is closed.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="146"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF147</id>
+      <name>AST.1#119</name>
+      <notes>The user shall be informed that data that was part of the account may have been transmitted to other systems, outside of the account itself, and may persist. For example, suppose the user collects device data in an app, and transmits that data to an EHR which stores it as PGHD. In this case, the user shall be informed that deleting the account may not delete the data that is now in the EHR.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="147"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF148</id>
+      <name>AST.1#120</name>
+      <notes>Before closing an app account, the account holder can download data generated by the account holder or a proxy subject of the account holder to a data set under the full control of the account holder (data portability).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="148"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF149</id>
+      <name>AST.1#121</name>
+      <notes>[The device permits remote or external access to device data] Any PHI or PII stored on a device can be wiped remotely by the account holder without deleting the account which is related to the wiped data.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="149"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF150</id>
+      <name>AST.1#122</name>
+      <notes>Clear criteria are set and communicated to the user regarding the deletion of data, including automatic deletion if the user has not used the app for a specified period.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF142</parentId>
+      <tag name="Row" value="150"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF151</id>
+      <name>AST.2 Permitted Uses of Data Post Account Closure</name>
+      <alias>AST.2</alias>
+      <notes>$ST$This category is about what is done with consumers’ data if they close their account (terminate use of the app).$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF141</parentId>
+      <tag name="Row" value="151"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF152</id>
+      <name>AST.2#123</name>
+      <notes>Data associated with a closed app account is not released to any new persons or entities. This includes data which has been de-identified.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF151</parentId>
+      <tag name="Row" value="152"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF153</id>
+      <name>AST.2#124</name>
+      <notes>Offer the consumer the option to decide what to do with their data (keep, delete, etc.).</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF151</parentId>
+      <tag name="Row" value="153"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF154</id>
+      <name>Conditions and Agreements</name>
+      <alias>CNA</alias>
+      <notes>$OV$This section of cMHAFF deals with nonfunctional, and usually nontechnical, aspects of mobile health apps. While not traditionally in scope for
+HIT standards oriented at large or small enterprise organizations, it is a very important and distinctive characteristic of apps targeted at consumers.Since one goal of cMHAFF is consumer protection, including their privacy and security, guidance in the area of “Conditions and Agreements” (CnA) is offered. CnA is not a formal or legal term, but an umbrella under which can be grouped various expressions of conditions that consumers to which are asked to agree before they start using a mobile health app. These may be called “Terms and Conditions,” “Terms of Use,” “Terms of Service,” “End User License Agreement (EULA),” and similar concepts. Typically, CnA are displayed and consumers are asked to click buttons to agree to terms, when they interact with “App Stores” (a generic term including wherever a consumer downloads a mobile health app). In addition to what the consumer agrees to, CnA may also commit the app supplier to certain behaviors or restrictions. While cMHAFF does not prescribe what these CnA must include, it provides guidance as to items that are important to disclose. In that respect, there is some precedent in the ONC 2015 Edition Certification, which contains disclosure and transparency requirements for EHR developers, e.g., about pricing and services that are not included in the base software.$EX$$AC$</notes>
+      <stereotype>Section</stereotype>
+      <type>Package</type>
+      <parentId>CMHAFF</parentId>
+      <tag name="ID" value="5"/>
+    </object>
+    <object>
+      <id>CMHAFF155</id>
+      <name>CNA.1 Specifications for Conditions and Agreements</name>
+      <alias>CNA.1</alias>
+      <notes>$ST$$DE$$EX$</notes>
+      <stereotype>Header</stereotype>
+      <type>Feature</type>
+      <parentId>CMHAFF154</parentId>
+      <tag name="Row" value="155"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF156</id>
+      <name>CNA.1#125</name>
+      <notes>Before download, a user can easily access the appâ€™s Terms of Use. This may be accomplished through a link in the app description in the relevant app store.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="156"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF157</id>
+      <name>CNA.1#126</name>
+      <notes>Before download, a use can easily access the appâ€™s Privacy Policy. This may be accomplished through a link in the app description in the app store.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="157"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF158</id>
+      <name>CNA.1#127</name>
+      <notes>[Rewards are given for app participation] Clearly disclose all conditions and time limitations governing rewards. These include but are not limited to: how activity is tracked; how promptly rewards are fulfilled; whether rewards can expire or be withdrawn; whether and how rewards can be transferred to another person; whether rewards can be accumulated into larger rewards; etc.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="158"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF159</id>
+      <name>CNA.1#128</name>
+      <notes>The consumer should indicate that they acknowledge and understand the app functionality.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="159"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF160</id>
+      <name>CNA.1#129</name>
+      <notes>[App includes in-app payments] The app description shall disclose what is included as base functionality without payment, and what functionality would require additional payment.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="160"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF161</id>
+      <name>CNA.1#130</name>
+      <notes>[App permits in-app payments] The benefits for paying for a service or feature are clearly stated in a manner which allows an account holder to make an informed decision about making or declining an in-app payment.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="161"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF162</id>
+      <name>CNA.1#131</name>
+      <notes>[App access is by subscription] The requirements for cancelling a subscription are clearly stated in the CnA.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="162"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF163</id>
+      <name>CNA.1#132</name>
+      <notes>[App requires an additional charge to upgrade] The upgrade charges, the amount of advance warning for upgrades, and the length of support for the old version (if not upgraded) are clearly stated in the CnA.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="163"/>
+      <tag name="Optionality" value="SHALL"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF164</id>
+      <name>CNA.1#133</name>
+      <notes>Disclose the use of advertising mechanisms, distinguish advertisements from app content, and provide ways to deactivate or skip advertisements.[1]</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="164"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF165</id>
+      <name>CNA.1#134</name>
+      <notes>Provide a means for a user to access the appâ€™s Privacy Policy at any time during the usage of the app.</notes>
+      <stereotype>Criteria</stereotype>
+      <type>Requirement</type>
+      <parentId>CMHAFF155</parentId>
+      <tag name="Row" value="165"/>
+      <tag name="Optionality" value="SHOULD"/>
+      <tag name="Conditional" value="N"/>
+      <tag name="Dependent" value="N"/>
+      <tag name="Reference.ChangeIndicator"/>
+    </object>
+    <object>
+      <id>CMHAFF</id>
+      <name>CMHAFF</name>
+      <alias/>
+      <stereotype>HL7-FM</stereotype>
+      <type>Package</type>
+      <tag name="PrioritiesDescription" value=""/>
+      <tag name="Type" value="Domain"/>
+      <tag name="Rationale" value="&lt;memo>"/>
+      <tag name="Version" value="1.0"/>
+      <tag name="Scope" value="&lt;memo>"/>
+      <tag name="LanguageTag" value=""/>
+      <tag name="PrioritiesDefinition" value="&lt;memo>"/>
+      <tag name="ConformanceClause" value="&lt;memo>"/>
+    </object>
+  </objects>
+  <relationships xmlns="">
+    <relationship>
+      <sourceId>CMHAFF4</sourceId>
+      <destId>CMHAFF3</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF5</sourceId>
+      <destId>CMHAFF4</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF6</sourceId>
+      <destId>CMHAFF4</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF7</sourceId>
+      <destId>CMHAFF4</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF8</sourceId>
+      <destId>CMHAFF3</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF9</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF10</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF11</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF12</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF13</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF14</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF15</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF16</sourceId>
+      <destId>CMHAFF8</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF17</sourceId>
+      <destId>CMHAFF3</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF18</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF19</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF20</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF21</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF22</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF23</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF24</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF25</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF26</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF27</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF28</sourceId>
+      <destId>CMHAFF17</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF29</sourceId>
+      <destId>CMHAFF3</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF30</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF31</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF32</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF33</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF34</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF35</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF36</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF37</sourceId>
+      <destId>CMHAFF29</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF39</sourceId>
+      <destId>CMHAFF38</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF40</sourceId>
+      <destId>CMHAFF39</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF41</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF42</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF43</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF44</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF45</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF46</sourceId>
+      <destId>CMHAFF40</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF47</sourceId>
+      <destId>CMHAFF39</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF48</sourceId>
+      <destId>CMHAFF47</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF49</sourceId>
+      <destId>CMHAFF47</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF50</sourceId>
+      <destId>CMHAFF39</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF51</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF52</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF53</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF54</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF55</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF56</sourceId>
+      <destId>CMHAFF50</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF58</sourceId>
+      <destId>CMHAFF39</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF59</sourceId>
+      <destId>CMHAFF58</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF60</sourceId>
+      <destId>CMHAFF58</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF61</sourceId>
+      <destId>CMHAFF58</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF62</sourceId>
+      <destId>CMHAFF58</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF63</sourceId>
+      <destId>CMHAFF58</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF64</sourceId>
+      <destId>CMHAFF39</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF65</sourceId>
+      <destId>CMHAFF64</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF66</sourceId>
+      <destId>CMHAFF64</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF67</sourceId>
+      <destId>CMHAFF64</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF68</sourceId>
+      <destId>CMHAFF64</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF69</sourceId>
+      <destId>CMHAFF38</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF70</sourceId>
+      <destId>CMHAFF69</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF71</sourceId>
+      <destId>CMHAFF69</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF72</sourceId>
+      <destId>CMHAFF69</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF73</sourceId>
+      <destId>CMHAFF69</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF75</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF76</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF77</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF78</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF79</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF80</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF81</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF82</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF83</sourceId>
+      <destId>CMHAFF75</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF84</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF85</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF86</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF87</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF88</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF89</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF90</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF91</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF92</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF93</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF94</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF95</sourceId>
+      <destId>CMHAFF84</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF96</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF97</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF98</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF99</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF100</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF101</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF102</sourceId>
+      <destId>CMHAFF96</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF103</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF104</sourceId>
+      <destId>CMHAFF103</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF105</sourceId>
+      <destId>CMHAFF103</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF106</sourceId>
+      <destId>CMHAFF103</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF107</sourceId>
+      <destId>CMHAFF103</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF108</sourceId>
+      <destId>CMHAFF103</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF109</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF110</sourceId>
+      <destId>CMHAFF109</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF111</sourceId>
+      <destId>CMHAFF109</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF112</sourceId>
+      <destId>CMHAFF109</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF113</sourceId>
+      <destId>CMHAFF109</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF114</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF115</sourceId>
+      <destId>CMHAFF114</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF116</sourceId>
+      <destId>CMHAFF114</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF117</sourceId>
+      <destId>CMHAFF114</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF118</sourceId>
+      <destId>CMHAFF114</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF119</sourceId>
+      <destId>CMHAFF114</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF120</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF121</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF122</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF123</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF124</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF125</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF126</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF127</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF128</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF129</sourceId>
+      <destId>CMHAFF120</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF130</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF131</sourceId>
+      <destId>CMHAFF130</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF132</sourceId>
+      <destId>CMHAFF130</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF133</sourceId>
+      <destId>CMHAFF130</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF134</sourceId>
+      <destId>CMHAFF130</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF135</sourceId>
+      <destId>CMHAFF130</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF136</sourceId>
+      <destId>CMHAFF74</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF137</sourceId>
+      <destId>CMHAFF136</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF138</sourceId>
+      <destId>CMHAFF136</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF139</sourceId>
+      <destId>CMHAFF136</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF140</sourceId>
+      <destId>CMHAFF136</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF142</sourceId>
+      <destId>CMHAFF141</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF143</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF144</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF145</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF146</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF147</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF148</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF149</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF150</sourceId>
+      <destId>CMHAFF142</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF151</sourceId>
+      <destId>CMHAFF141</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF152</sourceId>
+      <destId>CMHAFF151</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF153</sourceId>
+      <destId>CMHAFF151</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF155</sourceId>
+      <destId>CMHAFF154</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF156</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF157</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF158</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF159</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF160</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF161</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF162</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF163</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF164</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+    <relationship>
+      <sourceId>CMHAFF165</sourceId>
+      <destId>CMHAFF155</destId>
+      <notes/>
+      <type>Aggregation</type>
+    </relationship>
+  </relationships>
+</model>

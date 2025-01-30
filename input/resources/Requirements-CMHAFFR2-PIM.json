@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "Product_Implementation",
+  "title": "Product Implementation",
+  "status": "active",
+  "description": "Apps are frequently marketed and downloaded through platform-specific “app stores.” Before an app can be housed within an app store, it must meet requirements set by the app store host. The app store is one primary source of product information for consumers to decide whether they want to install the app. In some realms, apps may also be obtained through an app registry."
+}

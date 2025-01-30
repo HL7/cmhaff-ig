@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.9",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_9_Product_Upgrades",
+  "title": "APU.9 Product Upgrades (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.9-106",
+      "label": "APU.9#106",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The app respects operating system level permissions concerning automatic product updates."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.9-107",
+      "label": "APU.9#107",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[An updated version of the app includes updated terms of use] Updated Terms of Use are presented to the account holder for acceptance before an updated version of an app may be used. Significant changes to terms and conditions are highlighted, and a link to the full set of updated Terms of Use is available."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.9-108",
+      "label": "APU.9#108",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Automatic app updates are not enabled] The app prompts the user to the availability of a new version of the app when a new version is available."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.9-109",
+      "label": "APU.9#109",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Account holder elects to not install a new version of an app] The consequences of not installing the new version of the app, including information about support limitations for the older version of the app, are presented to the account holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.9-110",
+      "label": "APU.9#110",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[New version of app increases what information is exposed by alerts] The user must consent to the information being exposed, and the changes to the exposed information must be clearly highlighted when they make that consent."
+    }
+  ]
+}

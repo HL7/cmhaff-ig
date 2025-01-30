@@ -50,82 +50,242 @@
   ],
   "definition": {
     "grouping": [
-      {
-        "id": "PDS",
-        "name": "Regulatory Considerations",
-        "description": "The Regulatory Considerations Section contains Conformance Criteria..."
-      },
-      {
-        "id": "PIM",
-        "name": "Product Implementation",
-        "description": "Apps are frequently marketed and downloaded through platform-specific “app stores.” Before an app can be housed within an\napp store, it must meet requirements set by the app store host. The app store is one primary source of product information for\nconsumers to decide whether they want to install the app. In some realms, apps may also be obtained through an app registry."
-      },
-      {
-        "id": "APU",
-        "name": "App Use",
-        "description": "This section addresses functionalities and considerations to be addressed while the user is operating the app."
-      },
-      {
-        "id": "AST",
-        "name": "App Service Termination",
-        "description": "Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app."
-      },
-      {
-        "id": "PUD",
-        "name": "Permitted Uses of Data Post Account Closure",
-        "description": "This category is about what is done with consumers’ data if they close their account (terminate use of the app)."
-      },
-      {
-        "id": "CNA",
-        "name": "Conditions and Agreements",
-        "description": "This section of cMHAFF deals with nonfunctional, and usually nontechnical, aspects of mobile health apps. While not traditionally in scope for\nHIT standards oriented at large or small enterprise organizations, it is a very important and distinctive characteristic of apps targeted at consumers."
-      }
-    ],
+  {
+    "id": "PDS",
+    "name": "Product Development & Support Section",
+    "description": "Prior to marketing a mobile app, the developer has a responsibility to ensure it meets Realm-specific rules and regulations.\nAlthough cMHAFF does not have guidelines for all aspects of the software product life cycle, cMHAFF still recommends\nthat the product development life cycle, for new apps and for upgrades to apps, ensure that requirements for functionality,\nreliability, performance, scalability, safety, compatibility, portability, and maintainability have been addressed, as well as any\nrequirements that relate to aspects that include these items previously described above:\n• Product Information for consumers (e.g., App Store descriptions, product disclosures)\n• Security\n• Privacy\n• Permission to use device features\n• Data Access\n• Data Sharing\n• Terms of Use, Conditions\n• Product Development, including risk management, user-centered design, compliance with applicable regulations,\nfunctions (product description), reliability, performance, scalability, safety, compatibility, and portability.\nThe security and privacy of information used by the app needs to be considered throughout the development\nphases of the app. Functionality must support the intended use of the app for the target users and stakeholders.\nThorough and iterative risk assessment and requirement analysis, testing, evidence collection, documentation, and\nconfiguration management ensures quality to satisfy the needs of the application’s various stakeholders 8 .\nAssessing the usability of the app helps ensure the app’s viability and adoption; testing must be population-\nrelevant and demonstrate reasonable product usability (accessibility) by people with visual, auditory and motor\ndisabilities within the intended target audience. Establishing a system of customer support enables product\ndefects and usability issues to be surfaced in a systematic way and helps problems related to use of the app to be\neffectively resolved and the developer to continually deliver the intended use of the app."
+  },
+  {
+    "id": "PIM",
+    "name": "Product Implementation Section",
+    "description": "Apps are frequently marketed and downloaded through platform-specific “app stores.” Before an app can be housed within an app store, it must meet requirements set by the app store host. The app store is one primary source of product information for consumers to decide whether they want to install the app. In some realms, apps may also be obtained through an app registry."
+  },
+  {
+    "id": "APU",
+    "name": "App Use Section",
+    "description": "This section addresses functionalities and considerations to be addressed while the user is operating\nthe app."
+  },
+  {
+    "id": "AST",
+    "name": "App Service Termination Section",
+    "description": "Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app.Disuse may happen when a health condition improves, a new health habit is established, when motivation to use the app wanes, or when\nthe user determines a different app better meets their needs. Procedures for how data continues to be retained and used after account closure must be\nclear and understandable and give the app user options for relocation of their data to a new data repository."
+  },
+  {
+    "id": "CNA",
+    "name": "Conditions and Agreements Section",
+    "description": "This section of cMHAFF deals with nonfunctional, and usually nontechnical, aspects of mobile health apps. While not traditionally in scope for\nHIT standards oriented at large or small enterprise organizations, it is a very important and distinctive characteristic of apps targeted at consumers.Since one goal of cMHAFF is consumer protection, including their privacy and security, guidance in the area of “Conditions and Agreements” (CnA) is offered. CnA is not a formal or legal term, but an umbrella under which can be grouped various expressions of conditions that consumers to which are asked to agree before they start using a mobile health app. These may be called “Terms and Conditions,” “Terms of Use,” “Terms of Service,” “End User License Agreement (EULA),” and similar concepts. Typically, CnA are displayed and consumers are asked to click buttons to agree to terms, when they interact with “App Stores” (a generic term including wherever a consumer downloads a mobile health app). In addition to what the consumer agrees to, CnA may also commit the app supplier to certain behaviors or restrictions. While cMHAFF does not prescribe what these CnA must include, it provides guidance as to items that are important to disclose. In that respect, there is some precedent in the ONC 2015 Edition Certification, which contains disclosure and transparency requirements for EHR developers, e.g., about pricing and services that are not included in the base software."
+  },
+  {
+    "id": "OTH",
+    "name": "Other",
+    "description": ""
+  }
+],
     "resource": [
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-PDS"
-        },
-        "isExample": false,
-        "groupingId": "PDS"
-      },
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-PIM"
-        },
-        "isExample": false,
-        "groupingId": "PIM"
-      },
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-APU"
-        },
-        "isExample": false,
-        "groupingId": "APU"
-      },
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-AST"
-        },
-        "isExample": false,
-        "groupingId": "AST"
-      },
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-PUD"
-        },
-        "isExample": false,
-        "groupingId": "PUD"
-      },
-      {
-        "reference": {
-          "reference": "Requirements/CMHAFF-CNA"
-        },
-        "isExample": false,
-        "groupingId": "CNA"
-      }
-    
-    ],
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PDS"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PDS.1"
+    },
+    "isExample": false,
+    "groupingId": "PDS"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PDS.2"
+    },
+    "isExample": false,
+    "groupingId": "PDS"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PDS.3"
+    },
+    "isExample": false,
+    "groupingId": "PDS"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PDS.4"
+    },
+    "isExample": false,
+    "groupingId": "PDS"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1.1"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1.2"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1.3"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1.4"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.1.5"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-PIM.2"
+    },
+    "isExample": false,
+    "groupingId": "PIM"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.1"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.2"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.3"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.4"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.5"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.7"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.8"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.9"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-APU.10"
+    },
+    "isExample": false,
+    "groupingId": "APU"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-AST"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-AST.1"
+    },
+    "isExample": false,
+    "groupingId": "AST"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-AST.2"
+    },
+    "isExample": false,
+    "groupingId": "AST"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-CNA"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2-CNA.1"
+    },
+    "isExample": false,
+    "groupingId": "CNA"
+  },
+  {
+    "reference": {
+      "reference": "Requirements/CMHAFFR2"
+    },
+    "isExample": false,
+    "groupingId": "OTH"
+  }
+],    
     "page": {
       "name": "index.html",
       "generation": "markdown",

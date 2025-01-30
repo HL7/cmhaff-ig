@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-CNA",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "Conditions_and_Agreements",
+  "title": "Conditions and Agreements",
+  "status": "active",
+  "description": "This section of cMHAFF deals with nonfunctional, and usually nontechnical, aspects of mobile health apps. While not traditionally in scope for\nHIT standards oriented at large or small enterprise organizations, it is a very important and distinctive characteristic of apps targeted at consumers.Since one goal of cMHAFF is consumer protection, including their privacy and security, guidance in the area of “Conditions and Agreements” (CnA) is offered. CnA is not a formal or legal term, but an umbrella under which can be grouped various expressions of conditions that consumers to which are asked to agree before they start using a mobile health app. These may be called “Terms and Conditions,” “Terms of Use,” “Terms of Service,” “End User License Agreement (EULA),” and similar concepts. Typically, CnA are displayed and consumers are asked to click buttons to agree to terms, when they interact with “App Stores” (a generic term including wherever a consumer downloads a mobile health app). In addition to what the consumer agrees to, CnA may also commit the app supplier to certain behaviors or restrictions. While cMHAFF does not prescribe what these CnA must include, it provides guidance as to items that are important to disclose. In that respect, there is some precedent in the ONC 2015 Edition Certification, which contains disclosure and transparency requirements for EHR developers, e.g., about pricing and services that are not included in the base software."
+}

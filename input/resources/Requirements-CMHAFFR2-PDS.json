@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PDS",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "Product_Development___Support",
+  "title": "Product Development & Support",
+  "status": "active",
+  "description": "Prior to marketing a mobile app, the developer has a responsibility to ensure it meets Realm-specific rules and regulations.\nAlthough cMHAFF does not have guidelines for all aspects of the software product life cycle, cMHAFF still recommends\nthat the product development life cycle, for new apps and for upgrades to apps, ensure that requirements for functionality,\nreliability, performance, scalability, safety, compatibility, portability, and maintainability have been addressed, as well as any\nrequirements that relate to aspects that include these items previously described above:\n• Product Information for consumers (e.g., App Store descriptions, product disclosures)\n• Security\n• Privacy\n• Permission to use device features\n• Data Access\n• Data Sharing\n• Terms of Use, Conditions\n• Product Development, including risk management, user-centered design, compliance with applicable regulations,\nfunctions (product description), reliability, performance, scalability, safety, compatibility, and portability.\nThe security and privacy of information used by the app needs to be considered throughout the development\nphases of the app. Functionality must support the intended use of the app for the target users and stakeholders.\nThorough and iterative risk assessment and requirement analysis, testing, evidence collection, documentation, and\nconfiguration management ensures quality to satisfy the needs of the application’s various stakeholders 8 .\nAssessing the usability of the app helps ensure the app’s viability and adoption; testing must be population-\nrelevant and demonstrate reasonable product usability (accessibility) by people with visual, auditory and motor\ndisabilities within the intended target audience. Establishing a system of customer support enables product\ndefects and usability issues to be surfaced in a systematic way and helps problems related to use of the app to be\neffectively resolved and the developer to continually deliver the intended use of the app."
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_5_Data_Authenticity__Provenance__and_Associated_Metadata",
+  "title": "APU.5 Data Authenticity, Provenance, and Associated Metadata (Header)",
+  "status": "active",
+  "description": "This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other\nlocations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-89",
+      "label": "APU.5#89",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Apps conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-90",
+      "label": "APU.5#90",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App itself originates data <see ISO 21089 definition of â€œoriginateâ€>] Customer has review option which includes the option to irreversibly destroy, reject or discard data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-91",
+      "label": "APU.5#91",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App itself only receives data as a â€œpass throughâ€ and cannot store data] Customer has a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-92",
+      "label": "APU.5#92",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App itself receives data and stores it] Customer has a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance. User may comment that data are erroneous, but does not have the option to delete the original data."
+    }
+  ]
+}

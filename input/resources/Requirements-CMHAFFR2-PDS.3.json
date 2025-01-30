@@ -1,0 +1,181 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PDS.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PDS_3_Usability_and_Accessibility_Assessment",
+  "title": "PDS.3 Usability and Accessibility Assessment (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-01",
+      "label": "PDS.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The App SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience). For example, user types may include those with motor disabilities, visual impairment, auditory disabilities, etc. [1]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-02",
+      "label": "PDS.3#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Intended users include those with motor disabilities] Assess product for usability by people with motor disabilities.[1]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-03",
+      "label": "PDS.3#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Intended users include those with visual disabilities] Assess product for usability by visually-impaired and/or color-blind people using a standard mobile screen reader."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-04",
+      "label": "PDS.3#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Intended users include those with auditory disabilities] Assess product for usability by people with auditory disabilities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-05",
+      "label": "PDS.3#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Assess product for usability by a sample of intended users. If geared towards a certain age segment or to people with a specific chronic health condition, or to persons with disabilities other than those specified above, usability testing subjects are drawn from these populations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-06",
+      "label": "PDS.3#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Create a written usability assessment plan, including known problems with product usability and mitigation plan. NOTE: for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to â€œSHALLâ€ with plan specifically addressing usability issues for people with visual and motor disabilities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-07",
+      "label": "PDS.3#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-08",
+      "label": "PDS.3#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Avoid excessive data use by the app, minimizing it as much as possible warning users when high data usage occurs (e.g., downloads and updates).[2]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-09",
+      "label": "PDS.3#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Describe the use cases (business scenarios) and intended users for the appâ€™s main functions.[3]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-10",
+      "label": "PDS.3#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Permit flexibility (adaptation) to the userâ€™s specific abilities, needs, or requirements."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.3-11",
+      "label": "PDS.3#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Provide information about accessibility characteristics in the app description and in contextual assistance sections of the app."
+    }
+  ]
+}

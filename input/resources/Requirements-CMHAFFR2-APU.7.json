@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_7_Data_Exchange_and_Interoperability",
+  "title": "APU.7 Data Exchange and Interoperability (Header)",
+  "status": "active",
+  "description": "This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable\nstandards for data format, vocabulary, and transport, to increase interoperability and ease of connection.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.7-93",
+      "label": "APU.7#93",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App exchanges discrete clinical data] Use standard terminologies (e.g., SNOMED CT, LOINCâ€¦)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.7-94",
+      "label": "APU.7#94",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App exchanges discrete clinical data] Use standard format/content, e.g., HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, Detailed Clinical Models (HL7 CIMI), etc."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.7-95",
+      "label": "APU.7#95",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App exchanges discrete clinical data with devices] Use standard format/content, e.g., IEEE 11073."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.7-96",
+      "label": "APU.7#96",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App exchanges unstructured data] Use standard or commonly accepted formats, e.g., HL7 CDA, PDF."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.7-97",
+      "label": "APU.7#97",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App collects personal health information] allow data to be imported or exported from the app.[1]"
+    }
+  ]
+}

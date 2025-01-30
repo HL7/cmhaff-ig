@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_1_Authentication",
+  "title": "APU.1 Authentication (Header)",
+  "status": "active",
+  "description": "This category is about the system protecting against unauthorized access (e.g., by persons other than the consumer).",
+  "purpose": "The functionality of an app, its sponsorship, and linkages to external data sources all affect the security, privacy and data controls which are established to ensure safe and effective use. In this section, conformance criteria point to issues which can be addressed through a range of options, and as such implementers should consider not only the conformance criteria but the discussion regarding applicability to the exemplary use cases.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-58",
+      "label": "APU.1#58",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The identity of an app user is authenticated prior to any access of PHI or PII."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-59",
+      "label": "APU.1#59",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The app user is authorized to access a feature of the app before that feature or any associated PHI or PII is displayed. Authorization may be internal to the app or derived from an external source."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-60",
+      "label": "APU.1#60",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "At the request of an app user, the app terminates such that access to PHI or PII requires a new, successful authentication attempt."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-61",
+      "label": "APU.1#61",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Other external HIT system (e.g., EHR) is a system actor] Verify a subjectâ€™s association with their real-world identity, establishing that a subject is who they claim to be (identity proofing)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-62",
+      "label": "APU.1#62",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The EHR authorizes an app userâ€™s access to app features when these features are supported by data provided by or written to the EHR."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-63",
+      "label": "APU.1#63",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[PII or PHI are displayed] The app terminates the app or makes PHI or PII invisible after a period of time of user inactivity as described in the appâ€™s Terms of Use. This feature is sometimes called â€œinactivity timeoutâ€ â€œSession timeoutâ€ or â€œautomatic logoff.â€ The determination to include this feature within an app is made as part of the overall risk analysis regarding the sensitivity of data provided by or through the app."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-64",
+      "label": "APU.1#64",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Passwords are stored on the device] passwords are encrypted and never displayed as plaintext."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-65",
+      "label": "APU.1#65",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Access to account exposes Protected Health Information (PHI) or PII] The user is given an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords. Before selection of this option, the mechanism for authentication is clearly described and/or demonstrated to the user. This capability may apply to an app itself, and also to the pairing of the app with a device."
+    }
+  ]
+}

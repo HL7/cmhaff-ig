@@ -1,0 +1,110 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.cmhaffr2",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "mobile"
+    }
+  ],
+  "url": "$CANONICAL$/ImplementationGuide/hl7.fhir.uv.cmhaffr2",
+  "version": "2.0.1",
+  "name": "CMHAFFR2",
+  "title": "Consumer Mobile Health Application Functional Framework, Release 2",
+  "status": "active",
+  "experimental": false,
+  "publisher": "HL7 International / Mobile Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/mobile"
+        }
+      ]
+    }
+  ],
+  "description": "This is CMHAFF R2.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.cmhaffr2",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "grouping": $GROUPINGS$,
+    "resource": $RESOURCES$,    
+    "page": {
+      "name": "index.html",
+      "generation": "markdown",
+      "title": "Home Page",
+      "page": [
+        {
+          "name": "definitions.html",
+          "generation": "markdown",
+          "title": "Definitions (Glossary)"
+        },
+        {
+          "name": "pilots.html",
+          "generation": "markdown",
+          "title": "CMHAFF Pilots"
+        },
+        {
+          "name": "refdocuments.html",
+          "generation": "markdown",
+          "title": "Reference Documents"
+        },
+        {
+          "name": "downloads.html",
+          "generation": "markdown",
+          "title": "Useful Downloads"
+        },
+        {
+          "name": "changes.html",
+          "generation": "markdown",
+          "title": "IG Change History"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "releaselabel"
+        },
+        "value": "CI build"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "copyrightyear"
+        },
+        "value": "2025"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "shownav"
+        },
+        "value": "true"
+      }
+    ]
+  }
+}

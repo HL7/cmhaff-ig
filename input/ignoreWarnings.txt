@@ -1,0 +1,9 @@
+
+# Don't think we need OIDs
+% could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+
+# We know
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+The definition for the element 'Requirements.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Requirements.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Requirements.statement.conformance' binds to the value set 'http://hl7.org/fhir/ValueSet/conformance-expectation|5.0.0' which is experimental, but this structure is not labeled as experimental

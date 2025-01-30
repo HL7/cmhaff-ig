@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.1.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "PIM_1_1_General_Information",
+  "title": "PIM.1.1 General Information (Function)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-01",
+      "label": "PIM.1.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The description of an app includes the main functionality, the intended use, the intended (target) audience, and potential use of the userâ€™s personal data by the app."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-02",
+      "label": "PIM.1.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Screen shots of the app accurately depict the screens of the current version of the product."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-03",
+      "label": "PIM.1.1#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Product information is provided before the app is used by the consumer, to help consumers decide whether the app is suitable."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-04",
+      "label": "PIM.1.1#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The app description clearly states the human languages the app supports."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-05",
+      "label": "PIM.1.1#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Provide information about the app publisher (persons/organizations) and provide mechanisms to communicate with the publishers."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.1-06",
+      "label": "PIM.1.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Provide disclosure about sources of funding and possible conflicts of interest for the app (e.g., app use could incent user to buy products or services from app publisher)."
+    }
+  ]
+}

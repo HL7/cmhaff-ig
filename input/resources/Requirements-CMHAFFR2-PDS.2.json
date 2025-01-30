@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PDS.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PDS_2_Product_Risk_Assessment_and_Mitigation",
+  "title": "PDS.2 Product Risk Assessment and Mitigation (Header)",
+  "status": "active",
+  "description": "This category deals with process steps for risk assessment and mitigation for those\nwho are developing a new app, or an upgrade to an app, prior to its being deployed to\nConsumers.",
+  "purpose": "Degrees of risk should be assessed and mitigated according to the intended use\nof the app. In general, risk management should manage security, privacy, safety, and other\ntypes of risks such as potential app failure scenarios, events that could lead to undesirable\noutcomes, probability and severity of risk, and mitigations or resolutions. One size does not fit\nall. For example, if apps handle sensitive personal information or give health interpretation or\nadvice, higher degrees of risk are involved than for apps that do not collect personal information or do not interpret or advise. If some information identified during this step should be disclosed\nto consumers, that is stated in the “Informing Consumers/Users” section",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-01",
+      "label": "PDS.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The App SHALL conform to a product risk assessment and mitigation plan as outlined by the developer. This plan should explicitly determine what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app. The developer will need to maintain, review, and update organizational Risk Register to include risks associated with mobile application."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-02",
+      "label": "PDS.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "In development of the App, the developer SHALL follow secure coding and practices using an established risk assessment framework."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-03",
+      "label": "PDS.2#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF personally Identifiable Information is collected THEN in development the App SHALL be guided by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-04",
+      "label": "PDS.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the App transmits data to an EHR THEN the App SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-05",
+      "label": "PDS.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Prior to product launch, the App SHOULD be approved in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-06",
+      "label": "PDS.2#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The App SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-07",
+      "label": "PDS.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the App relies on external supporting infrastructure, (e.g., cloud-based servers) to operate, THEN the App SHOULD document measures to ensure the availability of that infrastructure."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-08",
+      "label": "PDS.2#08",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The App MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools)."
+    }
+  ]
+}

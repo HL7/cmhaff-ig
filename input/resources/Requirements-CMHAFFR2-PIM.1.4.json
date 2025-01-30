@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.1.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PIM_1_4_Limitations_and_Warnings",
+  "title": "PIM.1.4 Limitations and Warnings (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-45",
+      "label": "PIM.1.4#45",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App provides health recommendations (e.g., general guidelines)] Disclose the potential risks to patient safety and their mitigations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-46",
+      "label": "PIM.1.4#46",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App offers health advice (e.g., specific and personal health decision support)] State that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-47",
+      "label": "PIM.1.4#47",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Document contraindications, potential risks and limitations of use. For example, environmental or patient conditions under which apps or connected devices may be unreliable (e.g., tattoos that impact optical sensors; avoid usage when pregnant; avoid usage outside a temperature range)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-48",
+      "label": "PIM.1.4#48",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-49",
+      "label": "PIM.1.4#49",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "[App has collected personal health information] guarantee continuity of data use across different versions of the app."
+    }
+  ]
+}

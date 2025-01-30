@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.1.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PIM_1_3_Evidence_and_Credentials",
+  "title": "PIM.1.3 Evidence and Credentials (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-39",
+      "label": "PIM.1.3#39",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App provides health recommendations] Disclose the scientific degree of evidence and the types and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed articles, professionals and organizations with their credentials) that guided the app content."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-40",
+      "label": "PIM.1.3#40",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[there is human[1] and/or automated interpretation of health-related content] The credentials of qualified health professionals are disclosed, and/or the algorithms and testing plans and reports are documented.[2]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-41",
+      "label": "PIM.1.3#41",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The app descriptions should identify the health professionals and credentials of those who worked on the app and/or at least the professional organization that made, reviewed, endorsed, or sponsored the app."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-42",
+      "label": "PIM.1.3#42",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Show the date of the last update to the app and describe the changes from the previous release (e.g., revisions due to new scientific evidence)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-43",
+      "label": "PIM.1.3#43",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": false,
+      "requirement": "The app description may also include data related to app reliability and validity tests or population research results."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-44",
+      "label": "PIM.1.3#44",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Declare the degree of admission of liability (publisherâ€™s acceptance or disclaimer of responsibility) regarding the selection and use of the appâ€™s content.[3]"
+    }
+  ]
+}

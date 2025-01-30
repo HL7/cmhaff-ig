@@ -1,0 +1,106 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_3_Pairing_or_Syncing_User_Accounts_with_Devices_and_Data_Repositories",
+  "title": "APU.3 Pairing or Syncing User Accounts with Devices and Data Repositories (Header)",
+  "status": "active",
+  "description": "This category is about consumer verification of all devices to which they wish to pair or sync data.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-77",
+      "label": "APU.3#77",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "User has authenticated identity to an app and has an active session before pairing an external device to an app account."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-78",
+      "label": "APU.3#78",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Before a device is paired with an app to collect information about a specific individual, the app displays a screen which asks the user to confirm that the device will collect information about a specific, named person. The person may be the account holder or a proxy subject of the account holder."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-79",
+      "label": "APU.3#79",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The person who pairs a device with an individual in context of use of a specific app can un-pair the device and individual through an app utility function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-80",
+      "label": "APU.3#80",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Before a device is paired with an app to collect information about a specific individual, the app states what data will be collected by the device and how the device data is used. This statement may include a link to an informational page which provides details about data collection and use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-81",
+      "label": "APU.3#81",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Data for more than one person can be collected by the app/device pair] The app asks the account holder to confirm the person for whom data will be collected by the device before data is collected and transmitted."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-82",
+      "label": "APU.3#82",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Developer includes a syncing option within APP (e.g., same app data synchronized across smartphone and tablet devices)] User is provided with option to consent with syncing process.[1]"
+    }
+  ]
+}

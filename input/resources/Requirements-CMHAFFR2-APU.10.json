@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.10",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "APU_10_Audit",
+  "title": "APU.10 Audit (Header)",
+  "status": "active",
+  "description": "This category is about auditing, which is a mechanism for user and system accountability. Important events, such as logins and access to\nparticular functions and data, are recorded and can be used to detect instances of non-compliant behavior and to facilitate detection of improper\ncreation, access, modification, and deletion of personal health information. Any information technology including consumer health apps should follow\nbest practices in managing an audit trail. The audit trail should maintain a record of users who have accessed what data, from where, and when. Audit\nlogs should also record any attempts to access the system from an unauthorized terminal; expired usernames or passwords that try to access the\nsystem, unusual numbers of authentication attempts, and violations of an organizations security policy.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.10-111",
+      "label": "APU.10#111",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[User authentication is required to access app] User authentication attempts, both successful and unsuccessful, generate an audit record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.10-112",
+      "label": "APU.10#112",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "User permissions to access, or the revocation of access, regarding smartphone/tablet device capabilities for use by the app (e.g., use of camera, location services) generate an audit record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.10-113",
+      "label": "APU.10#113",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App uses external devices or data sources for data collection] Pairing a device or data repository external to the app, which supplies data used by the app, generates an audit record."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.10-114",
+      "label": "APU.10#114",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App allows for the export of data to a data repository external to the app] Any export of data from the app generates an audit record."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.1.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PIM_1_2_Payment",
+  "title": "PIM.1.2 Payment (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.2-01",
+      "label": "PIM.1.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The payment amount for the app, if any, must be clearly noted according to app store rules."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.2-02",
+      "label": "PIM.1.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Apps which have required or optional payments after download must clearly state this in their app store description, along with the amount of payment required and the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app). The impact of not making payments must also be stated (e.g., limited functionality)."
+    }
+  ]
+}

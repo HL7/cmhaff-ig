@@ -1,0 +1,61 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PDS.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PDS_1_Regulatory_Considerations",
+  "title": "PDS.1 Regulatory Considerations (Header)",
+  "status": "active",
+  "description": "This section is about the compliance of apps to applicable regulations for the domains (realms, locales,\nenvironments) in which they are intended to be used. CMHAFF is designed as a framework that can be\nfurther constrained (profiled) for these domains and does not require conformance to any specific\nlocale’s regulations.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-01",
+      "label": "PDS.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "The app SHALL be analyzed to determine if regulatory approval (following Realm-specific regulatory rules) is needed before the app is used by the general public."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-02",
+      "label": "PDS.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL not be presented for general public use until regulatory approval is obtained."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-03",
+      "label": "PDS.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The App SHOULD have measures to safeguard minors in accordance with applicable regulations."
+    }
+  ]
+}

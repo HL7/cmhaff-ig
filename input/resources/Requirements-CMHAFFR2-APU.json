@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "App_Use",
+  "title": "App Use",
+  "status": "active",
+  "description": "This section addresses functionalities and considerations to be addressed while the user is operating\nthe app."
+}

@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PIM_2_Launch_App_and_Establish_User_Account",
+  "title": "PIM.2 Launch App and Establish User Account (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-54",
+      "label": "PIM.2#54",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "A user can review the appâ€™s Terms of Use before personal data about the user is collected and used."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-55",
+      "label": "PIM.2#55",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[The app creates user accounts] User acceptance of the appâ€™s Terms of Use is logged before a user account is authorized (See section 3.4.10 for information about audit log record creation)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-56",
+      "label": "PIM.2#56",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[User is allowed to use pre-existing account credentials from an Identity Provider (IDP) to access the app] Before a user chooses to use pre-existing account credentials to access the app: (a) The user is informed about what attribute information will be used by the app associated with the pre-existing credentials; (b) The user is informed about what data is communicated back to the IDP at the time of account creation and at each subsequent user authentication."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-57",
+      "label": "PIM.2#57",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "For purposes of establishing an account, the minimum necessary amount of a userâ€™s personally identifiable information (PII) is collected, e.g., the information is necessary to authenticate the user, provide customer support, or affect the app logic."
+    }
+  ]
+}

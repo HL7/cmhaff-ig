@@ -1,0 +1,14 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-PIM.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "PIM_1_Product_Information",
+  "title": "PIM.1 Product Information (Header)",
+  "status": "active",
+  "description": "This category is about providing information about the product to consumers and also other parties (e.g., governments, consumer or provider\norganizations) who have interest in potential purchase, use, endorsement, or recommendation of apps. The experience of installing an app begins at an\napp store and completes on a user device. See also the Conditions and Agreements section of this specification for guidance regarding Conditions and\nAgreements that usually appear as part of the app store experience. cMHAFF does not specify exactly how or where product information is conveyed, e.g., app store, web site, online help.",
+  "purpose": ""
+}

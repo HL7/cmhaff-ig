@@ -1,0 +1,46 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AST.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "AST_2_Permitted_Uses_of_Data_Post_Account_Closure",
+  "title": "AST.2 Permitted Uses of Data Post Account Closure (Header)",
+  "status": "active",
+  "description": "This category is about what is done with consumers’ data if they close their account (terminate use of the app).",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.2-123",
+      "label": "AST.2#123",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Data associated with a closed app account is not released to any new persons or entities. This includes data which has been de-identified."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.2-124",
+      "label": "AST.2#124",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Offer the consumer the option to decide what to do with their data (keep, delete, etc.)."
+    }
+  ]
+}

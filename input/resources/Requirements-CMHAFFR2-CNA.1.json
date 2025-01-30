@@ -1,0 +1,166 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-CNA.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMHeader"
+    ]
+  },
+  "name": "CNA_1_Specifications_for_Conditions_and_Agreements",
+  "title": "CNA.1 Specifications for Conditions and Agreements (Header)",
+  "status": "active",
+  "description": "",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-125",
+      "label": "CNA.1#125",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Before download, a user can easily access the appâ€™s Terms of Use. This may be accomplished through a link in the app description in the relevant app store."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-126",
+      "label": "CNA.1#126",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "Before download, a use can easily access the appâ€™s Privacy Policy. This may be accomplished through a link in the app description in the app store."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-127",
+      "label": "CNA.1#127",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[Rewards are given for app participation] Clearly disclose all conditions and time limitations governing rewards. These include but are not limited to: how activity is tracked; how promptly rewards are fulfilled; whether rewards can expire or be withdrawn; whether and how rewards can be transferred to another person; whether rewards can be accumulated into larger rewards; etc."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-128",
+      "label": "CNA.1#128",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The consumer should indicate that they acknowledge and understand the app functionality."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-129",
+      "label": "CNA.1#129",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App includes in-app payments] The app description shall disclose what is included as base functionality without payment, and what functionality would require additional payment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-130",
+      "label": "CNA.1#130",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App permits in-app payments] The benefits for paying for a service or feature are clearly stated in a manner which allows an account holder to make an informed decision about making or declining an in-app payment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-131",
+      "label": "CNA.1#131",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App access is by subscription] The requirements for cancelling a subscription are clearly stated in the CnA."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-132",
+      "label": "CNA.1#132",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": false,
+      "requirement": "[App requires an additional charge to upgrade] The upgrade charges, the amount of advance warning for upgrades, and the length of support for the old version (if not upgraded) are clearly stated in the CnA."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-133",
+      "label": "CNA.1#133",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Disclose the use of advertising mechanisms, distinguish advertisements from app content, and provide ways to deactivate or skip advertisements.[1]"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-134",
+      "label": "CNA.1#134",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "Provide a means for a user to access the appâ€™s Privacy Policy at any time during the usage of the app."
+    }
+  ]
+}
