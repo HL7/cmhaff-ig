@@ -1,9 +1,10 @@
 <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">Home</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="introduction.html">Introduction &amp; Overview</a></li>
+  <li><a href="howtouse.html">How to Use this Guide</a></li>
+  <li><a href="examples.html">Exemplary Use Cases</a></li>
   <li><a href="definitions.html">Definitions (Glossary)</a></li>
-  <li><a href="pilots.html">CMHAFF Pilots</a></li>
-  <li><a href="refdocuments.html">Reference Documents</a></li>
+  <li><a href="appendices.html">Appendices &amp; Reference Documentation</a></li>
   <li><a href="artifacts.html">Criteria</a></li>
-  <li><a href="downloads.html">Downloads</a></li>
 </ul>      

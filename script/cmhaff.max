@@ -10,14 +10,14 @@ Although cMHAFF does not have guidelines for all aspects of the software product
 that the product development life cycle, for new apps and for upgrades to apps, ensure that requirements for functionality,
 reliability, performance, scalability, safety, compatibility, portability, and maintainability have been addressed, as well as any
 requirements that relate to aspects that include these items previously described above:
-• Product Information for consumers (e.g., App Store descriptions, product disclosures)
-• Security
-• Privacy
-• Permission to use device features
-• Data Access
-• Data Sharing
-• Terms of Use, Conditions
-• Product Development, including risk management, user-centered design, compliance with applicable regulations,
+* Product Information for consumers (e.g., App Store descriptions, product disclosures)
+* Security
+* Privacy
+* Permission to use device features
+* Data Access
+* Data Sharing
+* Terms of Use, Conditions
+* Product Development, including risk management, user-centered design, compliance with applicable regulations,
 functions (product description), reliability, performance, scalability, safety, compatibility, and portability.
 The security and privacy of information used by the app needs to be considered throughout the development
 phases of the app. Functionality must support the intended use of the app for the target users and stakeholders.

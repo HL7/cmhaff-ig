@@ -57,24 +57,29 @@
       "title": "Home Page",
       "page": [
         {
+          "name": "introduction.html",
+          "generation": "markdown",
+          "title": "Introduction & Overview"
+        },
+        {
+          "name": "howtouse.html",
+          "generation": "markdown",
+          "title": "How to Use this Guide"
+        },
+        {
+          "name": "examples.html",
+          "generation": "markdown",
+          "title": "Exemplary Use Cases"
+        },
+        {
           "name": "definitions.html",
           "generation": "markdown",
           "title": "Definitions (Glossary)"
         },
         {
-          "name": "pilots.html",
+          "name": "appendices.html",
           "generation": "markdown",
-          "title": "CMHAFF Pilots"
-        },
-        {
-          "name": "refdocuments.html",
-          "generation": "markdown",
-          "title": "Reference Documents"
-        },
-        {
-          "name": "downloads.html",
-          "generation": "markdown",
-          "title": "Useful Downloads"
+          "title": "Appendices & Reference Documentation"
         },
         {
           "name": "changes.html",
