@@ -1,4 +1,4 @@
-https://confluence.hl7.org/display/MH/cMHAFF+EHR-S+FM+FHIR-ized+IG
+[HL7 Confluence: cMHAFF - Rendered via Common HL7 Toolset (EHR FHIR IG)](https://confluence.hl7.org/pages/viewpage.action?pageId=104575776)
 
 ### Convert script
 
