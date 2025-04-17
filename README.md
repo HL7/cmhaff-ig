@@ -18,12 +18,3 @@ Convert current computable version of the FM (MAX file) to FHIR IG artifacts.
 @> ./_updatePublisher.sh
 @> ./_genonce.sh
 ```
-
-### TODO
-
-* depend on base ehr profiles; now copied from ehrsfm-ig in this IG and changed to canonical of this IG
-    * we need these profiles because there are validation rules in there!
-* check all criteria with latest CMHAFF publication
-* copy all narrative content into the markdown files (maybe separate files for large chapters) and create png for all images
-* there is a lot of narrative added e.g. "Implementation Guidance" chapters or "Related Regulations and Standards"
-  where should that "sit" at section/header/function level?
