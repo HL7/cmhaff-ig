@@ -1,0 +1,3 @@
+#### Related Regulations and Standards
+
+**[Federal Trade Commission: How to Make Disclosures in Digital Advertising, March 2013](https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-staff-revises-onlineadvertising-disclosure-guidelines/130312dotcomdisclosures.pdf)** (USA). Explains how to make disclosures clear and conspicuous to avoid deception and takes into account the expanding use of smartphones.

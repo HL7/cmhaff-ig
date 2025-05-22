@@ -1,0 +1,4 @@
+Philosophically, the Mobile Health workgroup favors using terms that are commonly accepted in the consumer mobile space, in preference
+to terms that are used only in the EHR space, because of the target user for these devices, who are consumers rather than clinicians. However, where terms are used differently in EHR vs consumer spaces, we take note of that, and acknowledge the various uses. This does not purport to be an exhaustive set of mobile health definitions, but terms are included only to provide clarity within cMHAFF. See **[British Standards Institution Publicly Available Specification (PAS) 277:2015 Health and wellness apps. Quality criteria across the life cycle. Code of practice](https://shop.bsigroup.com/products/health-and-wellness-apps-quality-criteria-across-the-life-cycle-code-of-practice)** which has a good set of Terms and Definitions (section 3). Definitions below that are taken from PAS277 are labeled (PAS).
+
+!! insert table !!
