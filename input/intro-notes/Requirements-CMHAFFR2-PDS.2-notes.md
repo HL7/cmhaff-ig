@@ -5,20 +5,16 @@ are the same across environments, so some standards and regulations are cited, e
 alphabetically below) were sources of some cMHAFF criteria for risk assessment. Other useful references on risk assessment are listed in the
 Appendix. While some are realm-specific, they have much material that is applicable beyond their countries. Realms are listed in parentheses, if not explicit in the title.
 
-**Andalusian Complete list of recommendations on design, use and assessment of health apps:**
-http://www.calidadappsalud.com/en/listado-completo-recomendaciones-app-salud/
+**[Andalusian Complete list of recommendations on design, use and assessment of health apps:](http://www.calidadappsalud.com/en/listado-completo-recomendaciones-app-salud/)**
 - **British Standards Institution Publicly Available Specification (PAS) 277:2015 Health and wellness apps – Quality criteria across
 the life cycle – Code of practice:** Recommendations andguidance throughout the app’s product development life cycle
-- **French Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth).** https://www.hassante.fr/portail/upload/docs/application/pdf/2017-
-03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mh ealth.pdf
-- **National Institute of Standards and Technology NISTIR 8144 Assessing Threats to MobileDevices & Infrastructure**, *The
-Mobile Threat Catalogue* (USA) https://nccoe.nist.gov/sites/default/files/library/mtc-nistir-8144-draft.pdf (context and background
+- **[French Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth)](https://www.hassante.fr/portail/upload/docs/application/pdf/2017-03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mhealth.pdf)**
+- **[National Institute of Standards and Technology NISTIR 8144 Assessing Threats to MobileDevices & Infrastructure, *The Mobile Threat Catalogue* (USA)](https://nccoe.nist.gov/sites/default/files/library/mtc-nistir-8144-draft.pdf)** (context and background
 information)
 https://pages.nist.gov/mobile-threat-catalogue/application.html#vulnerable-applications (actual catalog of threats, specifically the “Vulnerable Application” category, which is the part ofthe threat catalog closest to cMHAFF)
-- **Open Web Application Security Project (OWASP) Top 10 Mobile Security Risks:**
-https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10 This is focused on appdevelopers, so most of it is pertinent to
+- **[Open Web Application Security Project (OWASP) Top 10 Mobile Security Risks:](https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10)** This is focused on appdevelopers, so most of it is pertinent to
 cMHAFF, and for each risk, there are suggested mitigations.
-- **OWASP Secure Coding Practices Quick Reference Guide:** https://owasp.org/www-project-secure-coding-practices-quickreference-guide/ - This provides resources for developers that can assist in implementing secure coding practices. It is recommended that developers adopt secure coding practices so that applications are developed with an emphasis on security vs having to apply security measures to protect the application.
+- **[OWASP Secure Coding Practices Quick Reference Guide:](https://owasp.org/www-project-secure-coding-practices-quickreference-guide/)**- This provides resources for developers that can assist in implementing secure coding practices. It is recommended that developers adopt secure coding practices so that applications are developed with an emphasis on security vs having to apply security measures to protect the application.
 
 #### Implementation Guidance
 
