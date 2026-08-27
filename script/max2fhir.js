@@ -5,7 +5,7 @@ const xml = new xml2js.Parser();
 //
 // If you change the CANONICAL remember to manually change the CANONICAL in the input/profiles files!
 //
-const CANONICAL = "http://hl7.org/fhir/uv/cmhaffr2";
+const CANONICAL = "http://hl7.org/ehrs/uv/cmhaffr2";
 
 var maxroot;
 xml.parseString(fs.readFileSync('cmhaff.max'), function (err, data) {

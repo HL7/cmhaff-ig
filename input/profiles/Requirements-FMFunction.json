@@ -1,8 +1,8 @@
 {
     "resourceType": "StructureDefinition",
     "id": "FMFunction",
-    "url": "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMFunction",
-    "status": "draft",
+    "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction",
+    "status": "active",
     "name": "FMFunction",
     "title": "FMFunction",
     "description": "This StructureDefinition represents the base EHR-S FM Function type",
@@ -88,6 +88,12 @@
                         "severity": "error",
                         "human": "Criterion must have a textual description.",
                         "expression": "requirement.hasValue()"
+                    },
+                    {
+                        "key": "GENGRAM",
+                        "severity": "warning",
+                        "human": "Criterion does not match general grammar structure.",
+                        "expression": "requirement.toString().matches('^(?:IF .+ THEN )?[Tt]he system (?:SHALL|SHOULD|MAY|SHOULD NOT)(?: provide the ability to)? (?:analyze|annotate|archive|attest|audit|authenticate|authorize|auto-populate|backup|capture|control access|decide|decrypt|de-identify|delete|determine|edit|encrypt|enter|exchange|extract|harmonize|hide|import|inactivate|integrate|link|log|maintain|manage|manage-data-visibility|mask|present|pseudonymize|purge|receive|recover|re-identify|remove|remove access|render|restore|save|secure|send|store|sustain|synchronize|tag|track|transmit|unhide|unmask|untag|update).+$')"
                     }
                 ]
             }

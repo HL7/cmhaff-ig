@@ -1,6 +1,6 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "hl7.fhir.uv.cmhaffr2",
+  "id": "hl7.ehrs.uv.cmhaffr2",
   "extension": [
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -15,7 +15,7 @@
       "valueCode": "mobile"
     }
   ],
-  "url": "$CANONICAL$/ImplementationGuide/hl7.fhir.uv.cmhaffr2",
+  "url": "$CANONICAL$/ImplementationGuide/hl7.ehrs.uv.cmhaffr2",
   "version": "2.0.1",
   "name": "CMHAFFR2",
   "title": "Consumer Mobile Health Application Functional Framework, Release 2",
@@ -44,7 +44,7 @@
       ]
     }
   ],
-  "packageId": "hl7.fhir.uv.cmhaffr2",
+  "packageId": "hl7.ehrs.uv.cmhaffr2",
   "fhirVersion": [
     "5.0.0"
   ],

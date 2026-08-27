@@ -3,7 +3,7 @@
   "id": "CMHAFFR2-PDS",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/uv/cmhaffr2/StructureDefinition/FMSection"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMSection"
     ]
   },
   "name": "Product_Development___Support",

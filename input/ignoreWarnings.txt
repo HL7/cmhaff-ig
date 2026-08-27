@@ -1,9 +1,25 @@
 
 # Don't think we need OIDs
 % could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
+% must have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 
-# We know
+# No Examples is right; will go away when ehrs-base-ig is ready
+The Implementation Guide contains no examples for this extension
+
+# Inserted by the publisher
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|5.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+Reference to experimental CodeSystem http://hl7.org/fhir/guide-parameter-code|5.0.0
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 The definition for the element 'Requirements.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Requirements.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Requirements.statement.conformance' binds to the value set 'http://hl7.org/fhir/ValueSet/conformance-expectation|5.0.0' which is experimental, but this structure is not labeled as experimental
+% which is experimental, but this structure is not labeled as experimental
+
+# Maybe someday
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
+# Acceptable "...must end in a period."
+%FMFLC10%
+%FMFLC12%
+%FMHC007%
+%FMHC005%
