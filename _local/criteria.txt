@@ -1,0 +1,163 @@
+The app SHALL be analyzed to determine if regulatory approval (following Realm-specific regulatory rules) is needed before the app is used by the general public.
+IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL NOT be presented for general public use until regulatory approval is obtained.
+The app SHOULD have measures to safeguard minors in accordance with applicable regulations.
+
+The app SHALL conform to a product risk assessment and mitigation plan as outlined by the developer, which explicitly determines what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app, with an organizational Risk Register maintained, reviewed, and updated to include risks associated with the mobile application.
+The app SHALL be developed following secure coding and practices using an established risk assessment framework.
+IF personally identifiable information is collected THEN the app SHALL be guided in development by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials).
+IF the app transmits data to an EHR THEN the app SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types.
+The app SHOULD be approved prior to product launch in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team.
+The app SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices.
+IF the app relies on external supporting infrastructure (e.g., cloud-based servers) to operate THEN the app SHOULD document measures to ensure the availability of that infrastructure.
+The app MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools).
+
+The app SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience), such as user types including those with motor disabilities, visual impairment, auditory disabilities, etc. [1]
+IF intended users include those with motor disabilities THEN the app SHALL be assessed for usability by people with motor disabilities.[1]
+IF intended users include those with visual disabilities THEN the app SHALL be assessed for usability by visually-impaired and/or color-blind people using a standard mobile screen reader.
+IF intended users include those with auditory disabilities THEN the app SHALL be assessed for usability by people with auditory disabilities.
+The app SHALL be assessed for usability by a sample of intended users, drawing usability testing subjects from relevant populations if geared towards a certain age segment, people with a specific chronic health condition, or persons with disabilities other than those specified.
+The app SHALL have a written usability assessment plan, including known problems with product usability and mitigation plan (where for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to SHALL with the plan specifically addressing usability issues for people with visual and motor disabilities).
+The app SHALL follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS).
+The app SHALL avoid excessive data use, minimizing it as much as possible and warning users when high data usage occurs (e.g., downloads and updates).[2]
+The app SHALL describe the use cases (business scenarios) and intended users for the app's main functions.[3]
+The app SHALL permit flexibility (adaptation) to the user's specific abilities, needs, or requirements.
+The app SHALL provide information about accessibility characteristics in the app description and in contextual assistance sections of the app.
+
+The app SHALL clearly state information as to how to access customer support and channels of support (e.g., voice, email, text, Twitter) within the app's Terms of Use and as a feature accessible from within the app.
+The app MAY permit customer support to be accessed prior to establishing a user account (e.g., User can contact customer support with questions about the app's Privacy Policy or Terms of Use before making a decision to actively use the app).
+The app SHALL provide customer support in the language(s) in which the app is published.
+The app SHALL give attribution within the app's Terms of Use or in documentation available from within the app to any open source code library or code under copyright used to develop the app.
+IF a support request involves accessing, disclosing, or changing customer data THEN the app SHALL verify the identity of the customer and the customer's data access rights before any disclosure or changing of customer data.
+The app SHALL provide responses to customer support queries that directly address a stated problem or issue within two business days, where a simple acknowledgement that a query has been received without additional action is insufficient.
+The app SHOULD provide app consumers with aggregated satisfaction ratings relevant to customer support terms and conditions as appropriate.
+The app SHOULD provide a FAQ resource where users can find answers to common questions.[1]
+
+
+
+The app SHALL include in its description the main functionality, the intended use, the intended (target) audience, and potential use of the user's personal data by the app.
+The app SHALL provide screen shots that accurately depict the screens of the current version of the product.
+The app SHALL provide product information before the app is used by the consumer to help consumers decide whether the app is suitable.
+The app SHALL clearly state in the app description the human languages the app supports.
+The app SHALL provide information about the app publisher (persons/organizations) and provide mechanisms to communicate with the publishers.
+The app SHALL provide disclosure about sources of funding and possible conflicts of interest for the app (e.g., app use could incent user to buy products or services from app publisher).
+
+The app SHALL clearly note the payment amount for the app, if any, according to app store rules.
+IF the app requires or offers optional payments after download THEN the app SHALL clearly state this in its app store description along with the amount of payment required, the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app), and the impact of not making payments (e.g., limited functionality).
+
+IF the app provides health recommendations THEN the app SHALL disclose the scientific degree of evidence and the types and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed articles, professionals and organizations with their credentials) that guided the app content.
+IF there is human[1] and/or automated interpretation of health-related content THEN the app SHALL disclose the credentials of qualified health professionals and/or document the algorithms and testing plans and reports.[2]
+The app SHOULD identify in the app description the health professionals and credentials of those who worked on the app and/or at least the professional organization that made, reviewed, endorsed, or sponsored the app.
+The app SHALL show the date of the last update to the app and describe the changes from the previous release (e.g., revisions due to new scientific evidence).
+The app MAY include data related to app reliability and validity tests or population research results in the app description.
+The app SHALL declare the degree of admission of liability (publisher's acceptance or disclaimer of responsibility) regarding the selection and use of the app's content.[3]
+
+
+
+IF the app provides health recommendations (e.g., general guidelines) THEN the app SHALL disclose the potential risks to patient safety and their mitigations.
+IF the app offers health advice (e.g., specific and personal health decision support) THEN the app SHALL state that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional.
+The app SHALL document contraindications, potential risks, and limitations of use (e.g., environmental or patient conditions under which apps or connected devices may be unreliable, such as tattoos that impact optical sensors, avoiding usage when pregnant, or avoiding usage outside a temperature range).
+The app SHALL warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data.
+IF the app has collected personal health information THEN the app SHALL guarantee continuity of data use across different versions of the app.
+
+
+IF the user can enter personal health information into the app THEN the app SHALL clearly disclose whether or not data validity checking is done, and document or reference the evidence for such validity checking.
+IF the app collects or receives quantitative data THEN the app SHALL document and justify the precision (accuracy, granularity) of measurements (e.g., physical activity, physiological data from connected devices) as appropriate for the intended use of the app.
+IF personal health information is hosted THEN the app SHALL document backup and recovery procedures that comply with applicable regulatory requirements.
+IF personal health data are imported or exported THEN the app SHALL document functions for data import or export, including the ability to convert to standard formats.
+
+The app SHALL permit a user to review the app's Terms of Use before personal data about the user is collected and used.
+IF the app creates user accounts THEN the app SHALL log user acceptance of the app's Terms of Use before a user account is authorized (See section 3.4.10 for information about audit log record creation).
+IF a user is allowed to use pre-existing account credentials from an Identity Provider (IDP) to access the app THEN the app SHALL inform the user before they choose to use pre-existing account credentials about: (a) what attribute information will be used by the app associated with the pre-existing credentials; and (b) what data is communicated back to the IDP at the time of account creation and at each subsequent user authentication.
+The app SHALL collect the minimum necessary amount of a user's personally identifiable information (PII) for purposes of establishing an account (e.g., information necessary to authenticate the user, provide customer support, or affect the app logic).
+
+
+The app SHALL authenticate the identity of an app user prior to any access of PHI or PII.
+The app SHALL authorize the app user to access a feature of the app before that feature or any associated PHI or PII is displayed, where authorization may be internal to the app or derived from an external source.
+The app SHALL terminate at the request of an app user such that access to PHI or PII requires a new, successful authentication attempt.
+IF another external HIT system (e.g., EHR) is a system actor THEN the app SHALL verify a subject's association with their real-world identity, establishing that a subject is who they claim to be (identity proofing).
+IF app features are supported by data provided by or written to an EHR THEN the app SHALL ensure the EHR authorizes an app user's access to those app features.
+IF PII or PHI are displayed THEN the app SHALL terminate the app or make PHI or PII invisible after a period of time of user inactivity as described in the app's Terms of Use (e.g., inactivity timeout, session timeout, or automatic logoff, determined as part of overall risk analysis regarding data sensitivity).
+IF passwords are stored on the device THEN the app SHALL encrypt passwords and SHALL NOT display passwords as plaintext.
+IF access to an account exposes Protected Health Information (PHI) or PII THEN the app SHALL give the user an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords, clearly describing and/or demonstrating the authentication mechanism to the user before selection.
+
+The app SHALL NOT use smartphone functionality and data sources unless essential to perform specific functions of the app (including, but not limited to, location services, camera, microphone, accelerometer and other sensors, contact lists, calendars).
+The app SHALL ask app users for permission before using select smartphone functions and data sources for the first time, and SHALL allow permissions for each function, data source, and user tracking activity controlled by the app to be individually specified by the user.
+The app SHALL ask the app user for permission to transmit data before exporting data from the smartphone or from any integrated device, explaining what data is being transmitted and to which recipients for what purposes, requesting permission before the first potential transmission, and re-requesting permission when additional data elements are sent, but not requesting at every transmission if the scope of exported data remains unchanged.
+IF the app requests permission to use data generated by the app after it is de-identified THEN the app SHALL inform the account holder of who would have access to the de-identified data and for what purpose.
+IF the app requests permission to use data generated by the app after it is de-identified THEN the app SHALL inform the account holder of the possibility that de-identified data can potentially be re-identified and steps the app sponsor takes to prevent re-identification.
+IF the user gives permission for data generated by the app to be de-identified and used THEN the app SHALL ensure data de-identification follows, at minimum, realm-specific rules (e.g., HIPAA safe-harbor in USA).
+IF in-app payments exist THEN the app SHALL NOT trigger in-app payments in such a way that can expose healthcare-related information to payment organizations.
+IF the app uses in-app advertising THEN the app SHALL disclose to the user potential use of PHI or PII to personalize advertisements and SHALL give the user the opportunity to consent or decline.
+The app SHALL permit an app user to choose to permit some, but not all, requested data to be exported from a smartphone or associated device, and SHALL inform the user how the choice to limit data affects the functionality of the app.
+IF an app user denies a permission requested by the app THEN the app SHALL inform the app user of the consequence of not extending the permission and SHALL give a second chance to extend the permission.
+IF data is shared with social networks THEN the app SHALL NOT commence data sharing until after obtaining and recording explicit user consent.[1]
+
+The app SHALL require the user to have authenticated identity to the app and have an active session before pairing an external device to an app account.
+The app SHALL display a screen asking the user to confirm that the device will collect information about a specific, named person (account holder or proxy subject) before a device is paired with the app to collect information about that individual.
+The app SHALL provide a utility function permitting the person who pairs a device with an individual to un-pair the device and individual.
+The app SHALL state what data will be collected by the device and how the device data is used before a device is paired with the app to collect information about a specific individual, optionally including a link to an informational page.
+IF data for more than one person can be collected by the app/device pair THEN the app SHALL ask the account holder to confirm the person for whom data will be collected by the device before data is collected and transmitted.
+IF a syncing option is included within the app (e.g., same app data synchronized across smartphone and tablet devices) THEN the app SHALL provide the user with an option to consent to the syncing process.[1]
+
+The app SHALL store PHI and PII on a smartphone as encrypted values.
+The app SHALL store PHI and PII on any external server as encrypted values.
+The app SHALL permit the account holder to delete information collected through the app, including data generated by an associated device, unless PHI and PII has been transmitted to a data set maintained by a Health Plan or Health Provider.
+The app SHALL improve and/or upgrade encryption cipher and suites to match evolving best practices.
+The app SHALL transmit PHI and PII between the app and an external data source, including data generated through a device associated with the app, as encrypted values.
+
+The app SHALL conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata.
+IF the app itself originates data (see ISO 21089 definition of "originate") THEN the app SHALL provide the customer a review option which includes the option to irreversibly destroy, reject, or discard data.
+IF the app itself only receives data as a "pass through" and cannot store data THEN the app SHALL provide the customer a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through.
+IF the app itself receives data and stores it THEN the app SHALL provide the customer a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance, and SHALL NOT allow deleting the original data.
+
+IF the app exchanges discrete clinical data THEN the app SHALL use standard terminologies (e.g., SNOMED CT, LOINC).
+IF the app exchanges discrete clinical data THEN the app SHALL use standard format/content (e.g., HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, Detailed Clinical Models / HL7 CIMI, etc.).
+IF the app exchanges discrete clinical data with devices THEN the app SHALL use standard format/content (e.g., IEEE 11073).
+IF the app exchanges unstructured data THEN the app SHALL use standard or commonly accepted formats (e.g., HL7 CDA, PDF).
+IF the app collects personal health information THEN the app SHALL allow data to be imported or exported from the app.[1]
+
+The app SHALL require opt-in consent by the account holder before receiving notifications and alerts from the app.
+The app SHALL inform the account holder of both the content and channel (SMS, push notification, email, etc.) of the notification or alert before obtaining consent to receive notifications or alerts.
+The app SHALL permit an account holder to change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded.
+The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action.
+The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action.
+IF app alerts notify the user of conditions such as "abnormal" or "exceptional" or "out of range" THEN the app SHALL document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based.
+IF permitted by the account holder and agreed to by recipients THEN the app MAY send notifications and alerts to the account holder and/or to another person or entity.
+The app SHOULD provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user (e.g., low battery alerts).
+The app SHOULD notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation).
+
+The app SHALL respect operating system level permissions concerning automatic product updates.
+IF an updated version of the app includes updated terms of use THEN the app SHALL present updated Terms of Use to the account holder for acceptance before an updated version of the app may be used, highlighting significant changes to terms and conditions and providing a link to the full set of updated Terms of Use.
+IF automatic app updates are not enabled THEN the app SHALL prompt the user to the availability of a new version of the app when a new version is available.
+IF the account holder elects to not install a new version of an app THEN the app SHALL present to the account holder the consequences of not installing the new version of the app, including information about support limitations for the older version of the app.
+IF a new version of the app increases what information is exposed by alerts THEN the app SHALL require user consent to the information being exposed and SHALL clearly highlight the changes to the exposed information when consent is requested.
+
+IF user authentication is required to access the app THEN the app SHALL generate an audit record for user authentication attempts, both successful and unsuccessful.
+The app SHALL generate an audit record for user permissions to access, or the revocation of access, regarding smartphone/tablet device capabilities for use by the app (e.g., use of camera, location services).
+IF the app uses external devices or data sources for data collection THEN the app SHALL generate an audit record when pairing a device or data repository external to the app that supplies data used by the app.
+IF the app allows for the export of data to a data repository external to the app THEN the app SHALL generate an audit record for any export of data from the app.
+
+
+The app SHALL permit an app Account Holder to remove the app from a mobile device at any time.
+The app SHALL inform an app Account Holder of the consequences of removing the app (e.g., loss of locally-stored data) from a smartphone and SHALL give an opportunity to confirm removal before the app is removed.
+The app SHALL permit an app Account Holder to close an associated account or data store associated with the app.
+The app SHALL inform an app Account Holder of the consequences of deleting the account and SHALL give an opportunity to confirm closing the account before it is closed.
+The app SHALL inform the user that data that was part of the account may have been transmitted to other systems outside of the account itself and may persist (e.g., if the user collects device data in an app and transmits that data to an EHR which stores it as PGHD, deleting the account may not delete data in the EHR).
+The app SHALL permit the account holder to download data generated by the account holder or a proxy subject of the account holder to a data set under full control of the account holder (data portability) before closing an app account.
+IF the device permits remote or external access to device data THEN the app SHALL allow any PHI or PII stored on a device to be wiped remotely by the account holder without deleting the account related to the wiped data.
+The app SHALL set and communicate clear criteria to the user regarding the deletion of data, including automatic deletion if the user has not used the app for a specified period.
+
+The app SHALL NOT release data associated with a closed app account to any new persons or entities, including data which has been de-identified.
+The app SHALL offer the consumer the option to decide what to do with their data (keep, delete, etc.).
+
+
+The app SHALL make the app's Terms of Use easily accessible to a user before download (e.g., through a link in the app description in the relevant app store).
+The app SHALL make the app's Privacy Policy easily accessible to a user before download (e.g., through a link in the app description in the app store).
+IF rewards are given for app participation THEN the app SHALL clearly disclose all conditions and time limitations governing rewards (including, but not limited to, how activity is tracked, how promptly rewards are fulfilled, whether rewards can expire or be withdrawn, whether and how rewards can be transferred to another person, whether rewards can be accumulated into larger rewards, etc.).
+The app SHOULD require the consumer to indicate that they acknowledge and understand the app functionality.
+IF the app includes in-app payments THEN the app SHALL disclose in the app description what is included as base functionality without payment and what functionality would require additional payment.
+IF the app permits in-app payments THEN the app SHALL clearly state the benefits for paying for a service or feature in a manner that allows an account holder to make an informed decision about making or declining an in-app payment.
+IF app access is by subscription THEN the app SHALL clearly state the requirements for cancelling a subscription in the CnA.
+IF the app requires an additional charge to upgrade THEN the app SHALL clearly state the upgrade charges, the amount of advance warning for upgrades, and the length of support for the old version (if not upgraded) in the CnA.
+The app SHALL disclose the use of advertising mechanisms, distinguish advertisements from app content, and provide ways to deactivate or skip advertisements.[1]
+The app SHALL provide a means for a user to access the app's Privacy Policy at any time during the usage of the app.

@@ -24,8 +24,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[User can enter personal health information into the app] Clearly disclose whether or not data validity checking is done, and document or reference the evidence for such validity checking."
+      "conditionality": true,
+      "requirement": "IF the user can enter personal health information into the app THEN the app SHALL clearly disclose whether or not data validity checking is done, and document or reference the evidence for such validity checking."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App collects or receives quantitative data] The precision (accuracy, granularity) of measurements (e.g., physical activity, physiological data from connected devices) is documented and justified as appropriate for the intended use of the app."
+      "conditionality": true,
+      "requirement": "IF the app collects or receives quantitative data THEN the app SHALL document and justify the precision (accuracy, granularity) of measurements (e.g., physical activity, physiological data from connected devices) as appropriate for the intended use of the app."
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Personal health information is hosted] Backup and recovery procedures are documented and compliant with applicable regulatory requirements."
+      "conditionality": true,
+      "requirement": "IF personal health information is hosted THEN the app SHALL document backup and recovery procedures that comply with applicable regulatory requirements."
     },
     {
       "extension": [
@@ -69,8 +69,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Personal health data are imported or exported] Functions for data import or export are documented, including the ability to convert to standard formats."
+      "conditionality": true,
+      "requirement": "IF personal health data are imported or exported THEN the app SHALL document functions for data import or export, including the ability to convert to standard formats."
     }
   ]
 }

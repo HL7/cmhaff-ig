@@ -24,8 +24,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[User authentication is required to access app] User authentication attempts, both successful and unsuccessful, generate an audit record."
+      "conditionality": true,
+      "requirement": "IF user authentication is required to access the app THEN the app SHALL generate an audit record for user authentication attempts, both successful and unsuccessful."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "User permissions to access, or the revocation of access, regarding smartphone/tablet device capabilities for use by the app (e.g., use of camera, location services) generate an audit record."
+      "requirement": "The app SHALL generate an audit record for user permissions to access, or the revocation of access, regarding smartphone/tablet device capabilities for use by the app (e.g., use of camera, location services)."
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App uses external devices or data sources for data collection] Pairing a device or data repository external to the app, which supplies data used by the app, generates an audit record."
+      "conditionality": true,
+      "requirement": "IF the app uses external devices or data sources for data collection THEN the app SHALL generate an audit record when pairing a device or data repository external to the app that supplies data used by the app."
     },
     {
       "extension": [
@@ -69,8 +69,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App allows for the export of data to a data repository external to the app] Any export of data from the app generates an audit record."
+      "conditionality": true,
+      "requirement": "IF the app allows for the export of data to a data repository external to the app THEN the app SHALL generate an audit record for any export of data from the app."
     }
   ]
 }

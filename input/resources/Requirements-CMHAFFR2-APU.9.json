@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app respects operating system level permissions concerning automatic product updates."
+      "requirement": "The app SHALL respect operating system level permissions concerning automatic product updates."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[An updated version of the app includes updated terms of use] Updated Terms of Use are presented to the account holder for acceptance before an updated version of an app may be used. Significant changes to terms and conditions are highlighted, and a link to the full set of updated Terms of Use is available."
+      "conditionality": true,
+      "requirement": "IF an updated version of the app includes updated terms of use THEN the app SHALL present updated Terms of Use to the account holder for acceptance before an updated version of the app may be used, highlighting significant changes to terms and conditions and providing a link to the full set of updated Terms of Use."
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Automatic app updates are not enabled] The app prompts the user to the availability of a new version of the app when a new version is available."
+      "conditionality": true,
+      "requirement": "IF automatic app updates are not enabled THEN the app SHALL prompt the user to the availability of a new version of the app when a new version is available."
     },
     {
       "extension": [
@@ -69,8 +69,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Account holder elects to not install a new version of an app] The consequences of not installing the new version of the app, including information about support limitations for the older version of the app, are presented to the account holder."
+      "conditionality": true,
+      "requirement": "IF the account holder elects to not install a new version of an app THEN the app SHALL present to the account holder the consequences of not installing the new version of the app, including information about support limitations for the older version of the app."
     },
     {
       "extension": [
@@ -84,8 +84,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[New version of app increases what information is exposed by alerts] The user must consent to the information being exposed, and the changes to the exposed information must be clearly highlighted when they make that consent."
+      "conditionality": true,
+      "requirement": "IF a new version of the app increases what information is exposed by alerts THEN the app SHALL require user consent to the information being exposed and SHALL clearly highlight the changes to the exposed information when consent is requested."
     }
   ]
 }

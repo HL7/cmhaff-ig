@@ -1,0 +1,18 @@
+{
+    "package-id": "hl7.ehrs.uv.cmhaffr2",
+    "version": "2.0.1-ballot",
+    "path": "http://hl7.org/ehrs/uv/cmhaffr2/2.0.1-202701-ballot",
+    "mode": "working",
+    "status": "ballot",
+    "sequence": "Informative",
+    "title": "Consumer Mobile Health Application Functional Framework, Release 2",
+    "ci-build": "https://build.fhir.org/ig/HL7/cmhaffr2-ig",
+    "category": "EHR-S Family",
+    "introduction": "This is the Consumer Mobile Health Application Functional Framework, Release 2.",
+    "desc": "This is the initial release of the migrated content",
+    "descmd": "This is the initial release of the migrated content",
+    "first": "true",
+    "registry-description": "This is the Consumer Mobile Health Application Functional Framework, Release 2.",
+    "registry-country": "uv",
+    "registry-authority": "HL7"
+}

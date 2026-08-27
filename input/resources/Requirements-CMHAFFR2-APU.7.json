@@ -24,8 +24,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App exchanges discrete clinical data] Use standard terminologies (e.g., SNOMED CT, LOINCâ€¦)."
+      "conditionality": true,
+      "requirement": "IF the app exchanges discrete clinical data THEN the app SHALL use standard terminologies (e.g., SNOMED CT, LOINC)."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App exchanges discrete clinical data] Use standard format/content, e.g., HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, Detailed Clinical Models (HL7 CIMI), etc."
+      "conditionality": true,
+      "requirement": "IF the app exchanges discrete clinical data THEN the app SHALL use standard format/content (e.g., HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, Detailed Clinical Models / HL7 CIMI, etc.)."
     },
     {
       "extension": [
@@ -52,10 +52,10 @@
       "key": "CMHAFFR2-APU.7-95",
       "label": "APU.7#95",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App exchanges discrete clinical data with devices] Use standard format/content, e.g., IEEE 11073."
+      "conditionality": true,
+      "requirement": "IF the app exchanges discrete clinical data with devices THEN the app SHALL use standard format/content (e.g., IEEE 11073)."
     },
     {
       "extension": [
@@ -67,10 +67,10 @@
       "key": "CMHAFFR2-APU.7-96",
       "label": "APU.7#96",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App exchanges unstructured data] Use standard or commonly accepted formats, e.g., HL7 CDA, PDF."
+      "conditionality": true,
+      "requirement": "IF the app exchanges unstructured data THEN the app SHALL use standard or commonly accepted formats (e.g., HL7 CDA, PDF)."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-APU.7-97",
       "label": "APU.7#97",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App collects personal health information] allow data to be imported or exported from the app.[1]"
+      "conditionality": true,
+      "requirement": "IF the app collects personal health information THEN the app SHALL allow data to be imported or exported from the app.[1]"
     }
   ]
 }

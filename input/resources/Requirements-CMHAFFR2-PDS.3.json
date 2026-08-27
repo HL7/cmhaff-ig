@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The App SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience). For example, user types may include those with motor disabilities, visual impairment, auditory disabilities, etc. [1]"
+      "requirement": "The app SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience), such as user types including those with motor disabilities, visual impairment, auditory disabilities, etc. [1]"
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Intended users include those with motor disabilities] Assess product for usability by people with motor disabilities.[1]"
+      "conditionality": true,
+      "requirement": "IF intended users include those with motor disabilities THEN the app SHALL be assessed for usability by people with motor disabilities.[1]"
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Intended users include those with visual disabilities] Assess product for usability by visually-impaired and/or color-blind people using a standard mobile screen reader."
+      "conditionality": true,
+      "requirement": "IF intended users include those with visual disabilities THEN the app SHALL be assessed for usability by visually-impaired and/or color-blind people using a standard mobile screen reader."
     },
     {
       "extension": [
@@ -69,8 +69,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Intended users include those with auditory disabilities] Assess product for usability by people with auditory disabilities."
+      "conditionality": true,
+      "requirement": "IF intended users include those with auditory disabilities THEN the app SHALL be assessed for usability by people with auditory disabilities."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-PDS.3-05",
       "label": "PDS.3#05",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Assess product for usability by a sample of intended users. If geared towards a certain age segment or to people with a specific chronic health condition, or to persons with disabilities other than those specified above, usability testing subjects are drawn from these populations."
+      "requirement": "The app SHALL be assessed for usability by a sample of intended users, drawing usability testing subjects from relevant populations if geared towards a certain age segment, people with a specific chronic health condition, or persons with disabilities other than those specified."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-PDS.3-06",
       "label": "PDS.3#06",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Create a written usability assessment plan, including known problems with product usability and mitigation plan. NOTE: for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to â€œSHALLâ€ with plan specifically addressing usability issues for people with visual and motor disabilities."
+      "requirement": "The app SHALL have a written usability assessment plan, including known problems with product usability and mitigation plan (where for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to SHALL with the plan specifically addressing usability issues for people with visual and motor disabilities)."
     },
     {
       "extension": [
@@ -112,10 +112,10 @@
       "key": "CMHAFFR2-PDS.3-07",
       "label": "PDS.3#07",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS)."
+      "requirement": "The app SHALL follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS)."
     },
     {
       "extension": [
@@ -127,10 +127,10 @@
       "key": "CMHAFFR2-PDS.3-08",
       "label": "PDS.3#08",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Avoid excessive data use by the app, minimizing it as much as possible warning users when high data usage occurs (e.g., downloads and updates).[2]"
+      "requirement": "The app SHALL avoid excessive data use, minimizing it as much as possible and warning users when high data usage occurs (e.g., downloads and updates).[2]"
     },
     {
       "extension": [
@@ -142,10 +142,10 @@
       "key": "CMHAFFR2-PDS.3-09",
       "label": "PDS.3#09",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Describe the use cases (business scenarios) and intended users for the appâ€™s main functions.[3]"
+      "requirement": "The app SHALL describe the use cases (business scenarios) and intended users for the app's main functions.[3]"
     },
     {
       "extension": [
@@ -157,10 +157,10 @@
       "key": "CMHAFFR2-PDS.3-10",
       "label": "PDS.3#10",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Permit flexibility (adaptation) to the userâ€™s specific abilities, needs, or requirements."
+      "requirement": "The app SHALL permit flexibility (adaptation) to the user's specific abilities, needs, or requirements."
     },
     {
       "extension": [
@@ -172,10 +172,10 @@
       "key": "CMHAFFR2-PDS.3-11",
       "label": "PDS.3#11",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Provide information about accessibility characteristics in the app description and in contextual assistance sections of the app."
+      "requirement": "The app SHALL provide information about accessibility characteristics in the app description and in contextual assistance sections of the app."
     }
   ]
 }

@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Opt-in consent is required by the account holder before receiving notifications and alerts from an app."
+      "requirement": "The app SHALL require opt-in consent by the account holder before receiving notifications and alerts from the app."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "To consent to receiving a notification or alert from an app, the account holder is informed of both the content and channel (SMS, push notification, email, etc.) of the notification or alert."
+      "requirement": "The app SHALL inform the account holder of both the content and channel (SMS, push notification, email, etc.) of the notification or alert before obtaining consent to receive notifications or alerts."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "An account holder can change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded."
+      "requirement": "The app SHALL permit an account holder to change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded."
     },
     {
       "extension": [
@@ -70,7 +70,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action."
+      "requirement": "The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action."
     },
     {
       "extension": [
@@ -84,8 +84,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App alerts notify user of conditions such as â€œabnormalâ€ or â€œexceptionalâ€ or â€œout of rangeâ€] Document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based."
+      "conditionality": true,
+      "requirement": "IF app alerts notify the user of conditions such as \"abnormal\" or \"exceptional\" or \"out of range\" THEN the app SHALL document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-APU.8-103",
       "label": "APU.8#103",
       "conformance": [
-        "SHOULD"
+        "MAY"
       ],
-      "conditionality": false,
-      "requirement": "[Permitted by the account holder and agreed to by recipients] notifications and alerts may be sent to the account holder and/or to another person or entity."
+      "conditionality": true,
+      "requirement": "IF permitted by the account holder and agreed to by recipients THEN the app MAY send notifications and alerts to the account holder and/or to another person or entity."
     },
     {
       "extension": [
@@ -115,7 +115,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "Provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user, e.g., low battery alerts."
+      "requirement": "The app SHOULD provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user (e.g., low battery alerts)."
     },
     {
       "extension": [
@@ -130,7 +130,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "Notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation)."
+      "requirement": "The app SHOULD notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation)."
     },
     {
       "extension": [
@@ -145,7 +145,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Notifications and alerts contain the least amount of information necessary for the recipient of the alert to take a focused action."
+      "requirement": "The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action."
     }
   ]
 }

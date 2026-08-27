@@ -5,7 +5,7 @@
 Convert current computable version of the FM (MAX file) to FHIR IG artifacts.
 ```
 > docker run --name=cmhaff-ig -it -v "$(pwd)":/app node:latest /bin/bash
-@> (once) dpkg -i jdk-23_linux-x64_bin.deb
+@> (once) dpkg -i jdk-25_linux-x64_bin.deb
 @> (once) apt update; apt -y upgrade; apt -y install graphviz jekyll
 @> cd script
 @> (once) npm install
@@ -18,3 +18,14 @@ Convert current computable version of the FM (MAX file) to FHIR IG artifacts.
 @> ./_updatePublisher.sh
 @> ./_genonce.sh
 ```
+
+# Antigravity
+
+```
+@> curl -fsSL https://antigravity.google/cli/install.sh | bash
+```
+cd _local (anders gaat hij allemaal IG files lezen...)
+> Make a plan to rewrite all lines in @criteria.txt in the format: "The app {optionality} {verb} ..."
+> Optionality is one of SHALL, SHOULD, MAY, SHALL NOT
+> The lines can be prefixed with a condition "IF ... THEN the app {optionality} {verb} ...".
+> Don't use git.

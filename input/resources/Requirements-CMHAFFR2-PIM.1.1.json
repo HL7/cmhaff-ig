@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The description of an app includes the main functionality, the intended use, the intended (target) audience, and potential use of the userâ€™s personal data by the app."
+      "requirement": "The app SHALL include in its description the main functionality, the intended use, the intended (target) audience, and potential use of the user's personal data by the app."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Screen shots of the app accurately depict the screens of the current version of the product."
+      "requirement": "The app SHALL provide screen shots that accurately depict the screens of the current version of the product."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Product information is provided before the app is used by the consumer, to help consumers decide whether the app is suitable."
+      "requirement": "The app SHALL provide product information before the app is used by the consumer to help consumers decide whether the app is suitable."
     },
     {
       "extension": [
@@ -67,10 +67,10 @@
       "key": "CMHAFFR2-PIM.1.1-04",
       "label": "PIM.1.1#04",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app description clearly states the human languages the app supports."
+      "requirement": "The app SHALL clearly state in the app description the human languages the app supports."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-PIM.1.1-05",
       "label": "PIM.1.1#05",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Provide information about the app publisher (persons/organizations) and provide mechanisms to communicate with the publishers."
+      "requirement": "The app SHALL provide information about the app publisher (persons/organizations) and provide mechanisms to communicate with the publishers."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-PIM.1.1-06",
       "label": "PIM.1.1#06",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Provide disclosure about sources of funding and possible conflicts of interest for the app (e.g., app use could incent user to buy products or services from app publisher)."
+      "requirement": "The app SHALL provide disclosure about sources of funding and possible conflicts of interest for the app (e.g., app use could incent user to buy products or services from app publisher)."
     }
   ]
 }

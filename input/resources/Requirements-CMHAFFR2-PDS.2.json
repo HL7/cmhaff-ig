@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The App SHALL conform to a product risk assessment and mitigation plan as outlined by the developer. This plan should explicitly determine what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app. The developer will need to maintain, review, and update organizational Risk Register to include risks associated with mobile application."
+      "requirement": "The app SHALL conform to a product risk assessment and mitigation plan as outlined by the developer, which explicitly determines what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app, with an organizational Risk Register maintained, reviewed, and updated to include risks associated with the mobile application."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "In development of the App, the developer SHALL follow secure coding and practices using an established risk assessment framework."
+      "requirement": "The app SHALL be developed following secure coding and practices using an established risk assessment framework."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF personally Identifiable Information is collected THEN in development the App SHALL be guided by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials)."
+      "requirement": "IF personally identifiable information is collected THEN the app SHALL be guided in development by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials)."
     },
     {
       "extension": [
@@ -70,7 +70,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the App transmits data to an EHR THEN the App SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types."
+      "requirement": "IF the app transmits data to an EHR THEN the app SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types."
     },
     {
       "extension": [
@@ -85,7 +85,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "Prior to product launch, the App SHOULD be approved in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team."
+      "requirement": "The app SHOULD be approved prior to product launch in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team."
     },
     {
       "extension": [
@@ -100,7 +100,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The App SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices."
+      "requirement": "The app SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices."
     },
     {
       "extension": [
@@ -115,7 +115,7 @@
         "SHOULD"
       ],
       "conditionality": true,
-      "requirement": "IF the App relies on external supporting infrastructure, (e.g., cloud-based servers) to operate, THEN the App SHOULD document measures to ensure the availability of that infrastructure."
+      "requirement": "IF the app relies on external supporting infrastructure (e.g., cloud-based servers) to operate THEN the app SHOULD document measures to ensure the availability of that infrastructure."
     },
     {
       "extension": [
@@ -130,7 +130,7 @@
         "MAY"
       ],
       "conditionality": false,
-      "requirement": "The App MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools)."
+      "requirement": "The app MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools)."
     }
   ]
 }

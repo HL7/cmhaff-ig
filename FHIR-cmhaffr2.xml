@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="" url="http://hl7.org/fhir/uv/cmhaffr2">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="Requirements/CMHAFFR2-APU.1" key="Requirements-CMHAFFR2-APU.1" name="APU.1 Authentication (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.10" key="Requirements-CMHAFFR2-APU.10" name="APU.10 Audit (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.2" key="Requirements-CMHAFFR2-APU.2" name="APU.2 User Authorizations (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.3" key="Requirements-CMHAFFR2-APU.3" name="APU.3 Pairing or Syncing User Accounts with Devices and Data Repositories (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.4" key="Requirements-CMHAFFR2-APU.4" name="APU.4 Security for Data at Rest and in Transport (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.5" key="Requirements-CMHAFFR2-APU.5" name="APU.5 Data Authenticity, Provenance, and Associated Metadata (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.7" key="Requirements-CMHAFFR2-APU.7" name="APU.7 Data Exchange and Interoperability (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.8" key="Requirements-CMHAFFR2-APU.8" name="APU.8 Notifications and Alerts (Header)"/>
+<artifact id="Requirements/CMHAFFR2-APU.9" key="Requirements-CMHAFFR2-APU.9" name="APU.9 Product Upgrades (Header)"/>
+<artifact id="Requirements/CMHAFFR2-AST.1" key="Requirements-CMHAFFR2-AST.1" name="AST.1 App and Data Removal (Header)"/>
+<artifact id="Requirements/CMHAFFR2-AST.2" key="Requirements-CMHAFFR2-AST.2" name="AST.2 Permitted Uses of Data Post Account Closure (Header)"/>
+<artifact id="Requirements/CMHAFFR2-AST" key="Requirements-CMHAFFR2-AST" name="App Service Termination"/>
+<artifact id="Requirements/CMHAFFR2-APU" key="Requirements-CMHAFFR2-APU" name="App Use"/>
+<artifact id="Requirements/CMHAFFR2" key="Requirements-CMHAFFR2" name="CMHAFF"/>
+<artifact id="Requirements/CMHAFFR2-CNA.1" key="Requirements-CMHAFFR2-CNA.1" name="CNA.1 Specifications for Conditions and Agreements (Header)"/>
+<artifact id="CodeSystem/change-info" key="CodeSystem-change-info" name="Change Info"/>
+<artifact id="Requirements/CMHAFFR2-CNA" key="Requirements-CMHAFFR2-CNA" name="Conditions and Agreements"/>
+<artifact id="StructureDefinition/FMFunction" key="StructureDefinition-FMFunction" name="FMFunction"/>
+<artifact id="StructureDefinition/FMHeader" key="StructureDefinition-FMHeader" name="FMHeader"/>
+<artifact id="StructureDefinition/FMSection" key="StructureDefinition-FMSection" name="FMSection"/>
+<artifact id="StructureDefinition/FunctionalModel" key="StructureDefinition-FunctionalModel" name="FunctionalModel"/>
+<artifact id="Requirements/CMHAFFR2-PDS.1" key="Requirements-CMHAFFR2-PDS.1" name="PDS.1 Regulatory Considerations (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PDS.2" key="Requirements-CMHAFFR2-PDS.2" name="PDS.2 Product Risk Assessment and Mitigation (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PDS.3" key="Requirements-CMHAFFR2-PDS.3" name="PDS.3 Usability and Accessibility Assessment (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PDS.4" key="Requirements-CMHAFFR2-PDS.4" name="PDS.4 Customer Technical Support (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1" key="Requirements-CMHAFFR2-PIM.1" name="PIM.1 Product Information (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1.1" key="Requirements-CMHAFFR2-PIM.1.1" name="PIM.1.1 General Information (Function)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1.2" key="Requirements-CMHAFFR2-PIM.1.2" name="PIM.1.2 Payment (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1.3" key="Requirements-CMHAFFR2-PIM.1.3" name="PIM.1.3 Evidence and Credentials (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1.4" key="Requirements-CMHAFFR2-PIM.1.4" name="PIM.1.4 Limitations and Warnings (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.1.5" key="Requirements-CMHAFFR2-PIM.1.5" name="PIM.1.5 Technical Details (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PIM.2" key="Requirements-CMHAFFR2-PIM.2" name="PIM.2 Launch App and Establish User Account (Header)"/>
+<artifact id="Requirements/CMHAFFR2-PDS" key="Requirements-CMHAFFR2-PDS" name="Product Development &amp; Support"/>
+<artifact id="Requirements/CMHAFFR2-PIM" key="Requirements-CMHAFFR2-PIM" name="Product Implementation"/>
+<artifact id="ValueSet/change-info" key="ValueSet-change-info" name="Requirement Change Indicators"/>
+<artifact id="StructureDefinition/requirements-actors" key="StructureDefinition-requirements-actors" name="requirements-actors"/>
+<artifact id="StructureDefinition/requirements-change-info" key="StructureDefinition-requirements-change-info" name="requirements-change-info"/>
+<artifact id="StructureDefinition/requirements-dependent" key="StructureDefinition-requirements-dependent" name="requirements-dependent"/>
+<artifact id="StructureDefinition/requirements-example" key="StructureDefinition-requirements-example" name="requirements-example"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="appendices" name="Appendices &amp; Reference Documentation"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="definitions" name="Definitions (Glossary)"/>
+<page key="examples" name="Exemplary Use Cases"/>
+<page key="index" name="Home Page"/>
+<page key="howtouse" name="How to Use this Guide"/>
+<page key="changes" name="IG Change History"/>
+<page key="introduction" name="Introduction &amp; Overview"/>
+<page key="toc" name="Table of Contents"/>
+</specification>

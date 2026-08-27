@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Apps conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata."
+      "requirement": "The app SHALL conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App itself originates data <see ISO 21089 definition of â€œoriginateâ€>] Customer has review option which includes the option to irreversibly destroy, reject or discard data."
+      "conditionality": true,
+      "requirement": "IF the app itself originates data (see ISO 21089 definition of \"originate\") THEN the app SHALL provide the customer a review option which includes the option to irreversibly destroy, reject, or discard data."
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App itself only receives data as a â€œpass throughâ€ and cannot store data] Customer has a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through."
+      "conditionality": true,
+      "requirement": "IF the app itself only receives data as a \"pass through\" and cannot store data THEN the app SHALL provide the customer a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through."
     },
     {
       "extension": [
@@ -67,10 +67,10 @@
       "key": "CMHAFFR2-APU.5-92",
       "label": "APU.5#92",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App itself receives data and stores it] Customer has a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance. User may comment that data are erroneous, but does not have the option to delete the original data."
+      "conditionality": true,
+      "requirement": "IF the app itself receives data and stores it THEN the app SHALL provide the customer a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance, and SHALL NOT allow deleting the original data."
     }
   ]
 }

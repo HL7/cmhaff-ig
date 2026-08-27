@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Information as to how to access customer support, and channels of support (e.g., voice, email, text, Twitter) is clearly stated within the appâ€™s Terms of Use and as a feature accessible from within the app."
+      "requirement": "The app SHALL clearly state information as to how to access customer support and channels of support (e.g., voice, email, text, Twitter) within the app's Terms of Use and as a feature accessible from within the app."
     },
     {
       "extension": [
@@ -37,10 +37,10 @@
       "key": "CMHAFFR2-PDS.4-02",
       "label": "PDS.4#02",
       "conformance": [
-        "SHALL"
+        "MAY"
       ],
       "conditionality": false,
-      "requirement": "Customer support may be accessed prior to establishing a user account (e.g., User can contact customer support with questions about the appâ€™s Privacy Policy or Terms of Use before making a decision to actively use the app)."
+      "requirement": "The app MAY permit customer support to be accessed prior to establishing a user account (e.g., User can contact customer support with questions about the app's Privacy Policy or Terms of Use before making a decision to actively use the app)."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Customer support is provided in the language(s) in which the app is published."
+      "requirement": "The app SHALL provide customer support in the language(s) in which the app is published."
     },
     {
       "extension": [
@@ -70,7 +70,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Within the appâ€™s Terms of Use, or in documentation available from within the app, any open source code library or code under copyright used to develop the app is given attribution."
+      "requirement": "The app SHALL give attribution within the app's Terms of Use or in documentation available from within the app to any open source code library or code under copyright used to develop the app."
     },
     {
       "extension": [
@@ -84,8 +84,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Support request involves accessing, disclosing, or changing customer data] The identity of the customer, and the customerâ€™s data access rights, must be verified before any disclosure or changing of customer data."
+      "conditionality": true,
+      "requirement": "IF a support request involves accessing, disclosing, or changing customer data THEN the app SHALL verify the identity of the customer and the customer's data access rights before any disclosure or changing of customer data."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-PDS.4-06",
       "label": "PDS.4#06",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Customer support queries will receive responses which directly address a stated problem or issue within two business days. A simple acknowledgement that a query has been received, without additional action, is insufficient."
+      "requirement": "The app SHALL provide responses to customer support queries that directly address a stated problem or issue within two business days, where a simple acknowledgement that a query has been received without additional action is insufficient."
     },
     {
       "extension": [
@@ -115,7 +115,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "Provide app consumers with aggregated satisfaction ratings relevant to customer support terms and conditions as appropriate."
+      "requirement": "The app SHOULD provide app consumers with aggregated satisfaction ratings relevant to customer support terms and conditions as appropriate."
     },
     {
       "extension": [
@@ -130,7 +130,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "Provide a FAQ resource where users can find answers to common questions.[1]"
+      "requirement": "The app SHOULD provide a FAQ resource where users can find answers to common questions.[1]"
     }
   ]
 }

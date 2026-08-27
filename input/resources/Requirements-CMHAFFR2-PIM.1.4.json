@@ -24,8 +24,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App provides health recommendations (e.g., general guidelines)] Disclose the potential risks to patient safety and their mitigations."
+      "conditionality": true,
+      "requirement": "IF the app provides health recommendations (e.g., general guidelines) THEN the app SHALL disclose the potential risks to patient safety and their mitigations."
     },
     {
       "extension": [
@@ -37,10 +37,10 @@
       "key": "CMHAFFR2-PIM.1.4-46",
       "label": "PIM.1.4#46",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App offers health advice (e.g., specific and personal health decision support)] State that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional."
+      "conditionality": true,
+      "requirement": "IF the app offers health advice (e.g., specific and personal health decision support) THEN the app SHALL state that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Document contraindications, potential risks and limitations of use. For example, environmental or patient conditions under which apps or connected devices may be unreliable (e.g., tattoos that impact optical sensors; avoid usage when pregnant; avoid usage outside a temperature range)."
+      "requirement": "The app SHALL document contraindications, potential risks, and limitations of use (e.g., environmental or patient conditions under which apps or connected devices may be unreliable, such as tattoos that impact optical sensors, avoiding usage when pregnant, or avoiding usage outside a temperature range)."
     },
     {
       "extension": [
@@ -67,10 +67,10 @@
       "key": "CMHAFFR2-PIM.1.4-48",
       "label": "PIM.1.4#48",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data."
+      "requirement": "The app SHALL warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-PIM.1.4-49",
       "label": "PIM.1.4#49",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[App has collected personal health information] guarantee continuity of data use across different versions of the app."
+      "conditionality": true,
+      "requirement": "IF the app has collected personal health information THEN the app SHALL guarantee continuity of data use across different versions of the app."
     }
   ]
 }

@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The payment amount for the app, if any, must be clearly noted according to app store rules."
+      "requirement": "The app SHALL clearly note the payment amount for the app, if any, according to app store rules."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "Apps which have required or optional payments after download must clearly state this in their app store description, along with the amount of payment required and the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app). The impact of not making payments must also be stated (e.g., limited functionality)."
+      "conditionality": true,
+      "requirement": "IF the app requires or offers optional payments after download THEN the app SHALL clearly state this in its app store description along with the amount of payment required, the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app), and the impact of not making payments (e.g., limited functionality)."
     }
   ]
 }

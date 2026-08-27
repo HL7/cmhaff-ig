@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/fhir/uv/cmhaffr2/ImplementationGuide/hl7.fhir.uv.cmhaffr2",
-  "version": "2.0.1",
+  "version": "2.0.1-ballot",
   "name": "CMHAFFR2",
   "title": "Consumer Mobile Health Application Functional Framework, Release 2",
   "status": "active",

@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL not be presented for general public use until regulatory approval is obtained."
+      "requirement": "IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL NOT be presented for general public use until regulatory approval is obtained."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The App SHOULD have measures to safeguard minors in accordance with applicable regulations."
+      "requirement": "The app SHOULD have measures to safeguard minors in accordance with applicable regulations."
     }
   ]
 }

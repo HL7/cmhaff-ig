@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Data associated with a closed app account is not released to any new persons or entities. This includes data which has been de-identified."
+      "requirement": "The app SHALL NOT release data associated with a closed app account to any new persons or entities, including data which has been de-identified."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "Offer the consumer the option to decide what to do with their data (keep, delete, etc.)."
+      "requirement": "The app SHALL offer the consumer the option to decide what to do with their data (keep, delete, etc.)."
     }
   ]
 }

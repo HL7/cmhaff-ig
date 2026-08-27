@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The identity of an app user is authenticated prior to any access of PHI or PII."
+      "requirement": "The app SHALL authenticate the identity of an app user prior to any access of PHI or PII."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app user is authorized to access a feature of the app before that feature or any associated PHI or PII is displayed. Authorization may be internal to the app or derived from an external source."
+      "requirement": "The app SHALL authorize the app user to access a feature of the app before that feature or any associated PHI or PII is displayed, where authorization may be internal to the app or derived from an external source."
     },
     {
       "extension": [
@@ -55,7 +55,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "At the request of an app user, the app terminates such that access to PHI or PII requires a new, successful authentication attempt."
+      "requirement": "The app SHALL terminate at the request of an app user such that access to PHI or PII requires a new, successful authentication attempt."
     },
     {
       "extension": [
@@ -69,8 +69,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Other external HIT system (e.g., EHR) is a system actor] Verify a subjectâ€™s association with their real-world identity, establishing that a subject is who they claim to be (identity proofing)."
+      "conditionality": true,
+      "requirement": "IF another external HIT system (e.g., EHR) is a system actor THEN the app SHALL verify a subject's association with their real-world identity, establishing that a subject is who they claim to be (identity proofing)."
     },
     {
       "extension": [
@@ -84,8 +84,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The EHR authorizes an app userâ€™s access to app features when these features are supported by data provided by or written to the EHR."
+      "conditionality": true,
+      "requirement": "IF app features are supported by data provided by or written to an EHR THEN the app SHALL ensure the EHR authorizes an app user's access to those app features."
     },
     {
       "extension": [
@@ -99,8 +99,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[PII or PHI are displayed] The app terminates the app or makes PHI or PII invisible after a period of time of user inactivity as described in the appâ€™s Terms of Use. This feature is sometimes called â€œinactivity timeoutâ€ â€œSession timeoutâ€ or â€œautomatic logoff.â€ The determination to include this feature within an app is made as part of the overall risk analysis regarding the sensitivity of data provided by or through the app."
+      "conditionality": true,
+      "requirement": "IF PII or PHI are displayed THEN the app SHALL terminate the app or make PHI or PII invisible after a period of time of user inactivity as described in the app's Terms of Use (e.g., inactivity timeout, session timeout, or automatic logoff, determined as part of overall risk analysis regarding data sensitivity)."
     },
     {
       "extension": [
@@ -114,8 +114,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Passwords are stored on the device] passwords are encrypted and never displayed as plaintext."
+      "conditionality": true,
+      "requirement": "IF passwords are stored on the device THEN the app SHALL encrypt passwords and SHALL NOT display passwords as plaintext."
     },
     {
       "extension": [
@@ -129,8 +129,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "[Access to account exposes Protected Health Information (PHI) or PII] The user is given an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords. Before selection of this option, the mechanism for authentication is clearly described and/or demonstrated to the user. This capability may apply to an app itself, and also to the pairing of the app with a device."
+      "conditionality": true,
+      "requirement": "IF access to an account exposes Protected Health Information (PHI) or PII THEN the app SHALL give the user an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords, clearly describing and/or demonstrating the authentication mechanism to the user before selection."
     }
   ]
 }
