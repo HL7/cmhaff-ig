@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-CNA.1",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "CNA_1_Specifications_for_Conditions_and_Agreements",
-  "title": "CNA.1 Specifications for Conditions and Agreements (Header)",
+  "title": "CNA.1 Specifications for Conditions and Agreements (Function)",
   "status": "active",
-  "description": "",
-  "purpose": "",
+  "description": "1. The App developer SHALL, before download, allow the potential user to easily access the CNA.1 C\n Apps Terms of Use. This may be accomplished through a link in the app description in the\n relevant app store.",
+  "purpose": "Related Regulations and Standards:\n• Federal Trade Commission: How to Make Disclosures in Digital Advertising, March 2013\n https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-staff-revises-online-\n advertising-disclosure-guidelines/130312dotcomdisclosures.pdf (USA). Explains how to make\n disclosures clear and conspicuous to avoid deception and takes into account the expanding use\n of smartphones.\n•",
   "statement": [
     {
       "extension": [
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-125",
-      "label": "CNA.1#125",
+      "key": "CMHAFFR2-CNA.1-01",
+      "label": "CNA.1#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL make the app's Terms of Use easily accessible to a user before download (e.g., through a link in the app description in the relevant app store)."
+      "requirement": "The system SHALL allow a potential user to easily access its Terms of Use before download. This may be accomplished through a link in the product description in the relevant app store."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-126",
-      "label": "CNA.1#126",
+      "key": "CMHAFFR2-CNA.1-02",
+      "label": "CNA.1#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL make the app's Privacy Policy easily accessible to a user before download (e.g., through a link in the app description in the app store)."
+      "requirement": "The system SHALL allow a potential user to easily access its Privacy Policy before download. This may be accomplished through a link in the product description in the app store."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-127",
-      "label": "CNA.1#127",
+      "key": "CMHAFFR2-CNA.1-03",
+      "label": "CNA.1#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF rewards are given for app participation THEN the app SHALL clearly disclose all conditions and time limitations governing rewards (including, but not limited to, how activity is tracked, how promptly rewards are fulfilled, whether rewards can expire or be withdrawn, whether and how rewards can be transferred to another person, whether rewards can be accumulated into larger rewards, etc.)."
+      "requirement": "IF the system uses AI functionality THEN the system SHALL describe in its Terms of Use the AI functionality used, the data processed by it, the role of automated decision-making, and the consumer's options regarding that processing."
     },
     {
       "extension": [
@@ -64,13 +64,43 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-128",
-      "label": "CNA.1#128",
+      "key": "CMHAFFR2-CNA.1-04",
+      "label": "CNA.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF consumer data may be used to train, fine-tune, evaluate, or improve an AI model THEN the system SHALL describe that purpose distinctly and SHALL NOT rely on a vague statement such as 'service improvement' as the sole disclosure of the AI data use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-05",
+      "label": "CNA.1#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF rewards are given for participation THEN the system SHALL clearly disclose all conditions and time limitations governing those rewards. These include, but are not limited to, how activity is tracked, how promptly rewards are fulfilled, whether rewards can expire or be withdrawn, whether and how rewards can be transferred to another person, and whether rewards can be accumulated into larger rewards."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-06",
+      "label": "CNA.1#06",
       "conformance": [
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHOULD require the consumer to indicate that they acknowledge and understand the app functionality."
+      "requirement": "The system SHOULD provide the ability for the consumer to indicate that they acknowledge and understand its functionality."
     },
     {
       "extension": [
@@ -79,13 +109,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-129",
-      "label": "CNA.1#129",
+      "key": "CMHAFFR2-CNA.1-07",
+      "label": "CNA.1#07",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app includes in-app payments THEN the app SHALL disclose in the app description what is included as base functionality without payment and what functionality would require additional payment."
+      "requirement": "IF the system includes in-app payments THEN the system SHALL disclose what is included as base functionality without payment and what functionality requires additional payment."
     },
     {
       "extension": [
@@ -94,13 +124,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-130",
-      "label": "CNA.1#130",
+      "key": "CMHAFFR2-CNA.1-08",
+      "label": "CNA.1#08",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app permits in-app payments THEN the app SHALL clearly state the benefits for paying for a service or feature in a manner that allows an account holder to make an informed decision about making or declining an in-app payment."
+      "requirement": "IF the system permits in-app payments THEN the system SHALL clearly state the benefits of paying for a service or feature in a manner that allows an account holder to make an informed decision about making or declining an in-app payment."
     },
     {
       "extension": [
@@ -109,13 +139,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-131",
-      "label": "CNA.1#131",
+      "key": "CMHAFFR2-CNA.1-09",
+      "label": "CNA.1#09",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF app access is by subscription THEN the app SHALL clearly state the requirements for cancelling a subscription in the CnA."
+      "requirement": "IF access to the system is by subscription THEN the system SHALL clearly state the requirements for cancelling a subscription in the Conditions and Agreements."
     },
     {
       "extension": [
@@ -124,13 +154,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-132",
-      "label": "CNA.1#132",
+      "key": "CMHAFFR2-CNA.1-10",
+      "label": "CNA.1#10",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app requires an additional charge to upgrade THEN the app SHALL clearly state the upgrade charges, the amount of advance warning for upgrades, and the length of support for the old version (if not upgraded) in the CnA."
+      "requirement": "IF the system requires an additional charge to upgrade THEN the system SHALL clearly state in the Conditions and Agreements the upgrade charges, the amount of advance warning for upgrades, and the length of support for the old version if it is not upgraded."
     },
     {
       "extension": [
@@ -139,13 +169,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-133",
-      "label": "CNA.1#133",
+      "key": "CMHAFFR2-CNA.1-11",
+      "label": "CNA.1#11",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL disclose the use of advertising mechanisms, distinguish advertisements from app content, and provide ways to deactivate or skip advertisements.[1]"
+      "requirement": "The system SHALL disclose the use of advertising mechanisms, distinguish advertisements from its content, and provide ways to deactivate or skip advertisements."
     },
     {
       "extension": [
@@ -154,13 +184,43 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-CNA.1-134",
-      "label": "CNA.1#134",
+      "key": "CMHAFFR2-CNA.1-12",
+      "label": "CNA.1#12",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL provide a means for a user to access the app's Privacy Policy at any time during the usage of the app."
+      "requirement": "The system SHOULD provide a means for a user to access its Privacy Policy at any time during use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-13",
+      "label": "CNA.1#13",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD provide a concise, consumer-friendly AI summary in addition to full legal terms, covering what the AI does, its limits, what data it uses, when a person reviews it, and how the user can turn optional features off."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-CNA.1-14",
+      "label": "CNA.1#14",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY provide just-in-time disclosures or short interactive explanations at the point where an AI feature is first used."
     }
   ]
 }

@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.8",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_8_AI_Supplier_and_Third_Party_Component_Management",
+  "title": "AIG.8 AI Supplier and Third-Party Component Management (Function)",
+  "status": "active",
+  "description": "This category applies where AI functionality depends on an external model, service, dataset, tool, or content source. Supplier-side changes can alter performance or data handling without any change to the application itself.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.8-01",
+      "label": "AIG.8#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system relies on an external AI model, service, dataset, tool, or content source THEN the system SHALL assess and document the supplier's role, applicable data flows, security and privacy controls, model or service versioning, change-notice practices, incident-notification obligations, and ability to support an audit or investigation."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.8-02",
+      "label": "AIG.8#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system relies on an external AI component THEN the system SHALL maintain the ability to identify the component version in use and to suspend or replace the component when a material safety, privacy, security, or performance issue is identified."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.8-03",
+      "label": "AIG.8#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system relies on an external AI component THEN the system SHOULD evaluate material supplier changes before enabling them for consumers and SHOULD retain evidence of the review."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.8-04",
+      "label": "AIG.8#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system relies on an external AI component THEN the system MAY maintain an exit, substitution, or data-portability plan for critical AI suppliers to reduce dependency and continuity risk."
+    }
+  ]
+}

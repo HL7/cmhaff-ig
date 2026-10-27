@@ -3,13 +3,13 @@
   "id": "CMHAFFR2-PIM.1.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PIM_1_2_Payment",
-  "title": "PIM.1.2 Payment (Header)",
+  "title": "PIM.1.2 Payment (Function)",
   "status": "active",
-  "description": "",
+  "description": "1. The payment amount for the app, if any, SHALL be clearly noted according to app store rules. PIM.1 NC",
   "purpose": "",
   "statement": [
     {
@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL clearly note the payment amount for the app, if any, according to app store rules."
+      "requirement": "The system SHALL clearly state the payment amount for the system, if any, in accordance with app store rules."
     },
     {
       "extension": [
@@ -40,7 +40,52 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app requires or offers optional payments after download THEN the app SHALL clearly state this in its app store description along with the amount of payment required, the actions which result from such in-app payments (for example, payment of a certain amount results in an ad-free experience when using the app), and the impact of not making payments (e.g., limited functionality)."
+      "requirement": "IF the system requires or offers optional payments after download THEN the system SHALL clearly state this in its app store description, together with the amount of payment required and the results of such in-app payments, for example that payment of a certain amount produces an advertisement-free experience. The system SHALL also state the impact of not making payments, such as limited functionality."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.2-03",
+      "label": "PIM.1.2#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the user is being signed up for a set period of recurring payments THEN the system SHALL notify the user."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.2-04",
+      "label": "PIM.1.2#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF access to an AI-enabled feature requires payment THEN the system SHALL disclose the price, subscription terms, feature limitations, and whether the paid AI feature changes the type, amount, or frequency of consumer data processing."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.2-05",
+      "label": "PIM.1.2#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides safety-related information through an AI-enabled feature THEN the system SHOULD NOT condition access to essential safety notices, risk disclosures, or the ability to report an unsafe AI output on purchase of a premium feature."
     }
   ]
 }

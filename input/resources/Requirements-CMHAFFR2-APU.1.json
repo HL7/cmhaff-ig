@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-APU.1",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "APU_1_Authentication",
-  "title": "APU.1 Authentication (Header)",
+  "title": "APU.1 Authentication (Function)",
   "status": "active",
   "description": "This category is about the system protecting against unauthorized access (e.g., by persons other than the consumer).",
-  "purpose": "The functionality of an app, its sponsorship, and linkages to external data sources all affect the security, privacy and data controls which are established to ensure safe and effective use. In this section, conformance criteria point to issues which can be addressed through a range of options, and as such implementers should consider not only the conformance criteria but the discussion regarding applicability to the exemplary use cases.",
+  "purpose": "The functionality of an app, its sponsorship, and linkages to external data sources all affect the security, privacy and data controls which are\nestablished to ensure safe and effective use. In this section, conformance criteria point to issues which can be addressed through a range of options, and\nas such implementers should consider not only the conformance criteria but the discussion regarding applicability to the exemplary use cases.",
   "statement": [
     {
       "extension": [
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-58",
-      "label": "APU.1#58",
+      "key": "CMHAFFR2-APU.1-01",
+      "label": "APU.1#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL authenticate the identity of an app user prior to any access of PHI or PII."
+      "requirement": "The system SHALL authenticate the identity of a user prior to any access to PHI or PII."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-59",
-      "label": "APU.1#59",
+      "key": "CMHAFFR2-APU.1-02",
+      "label": "APU.1#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL authorize the app user to access a feature of the app before that feature or any associated PHI or PII is displayed, where authorization may be internal to the app or derived from an external source."
+      "requirement": "The system SHALL communicate the method of authentication to the user when an account is established."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-60",
-      "label": "APU.1#60",
+      "key": "CMHAFFR2-APU.1-03",
+      "label": "APU.1#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL terminate at the request of an app user such that access to PHI or PII requires a new, successful authentication attempt."
+      "requirement": "The system SHALL authorize the user to access a feature before that feature or any associated PHI or PII is displayed. Authorization may be internal to the system or derived from an external source."
     },
     {
       "extension": [
@@ -64,13 +64,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-61",
-      "label": "APU.1#61",
+      "key": "CMHAFFR2-APU.1-04",
+      "label": "APU.1#04",
       "conformance": [
         "SHALL"
       ],
-      "conditionality": true,
-      "requirement": "IF another external HIT system (e.g., EHR) is a system actor THEN the app SHALL verify a subject's association with their real-world identity, establishing that a subject is who they claim to be (identity proofing)."
+      "conditionality": false,
+      "requirement": "The system SHALL terminate, at the request of a user, such that subsequent access to PHI or PII requires a new, successful authentication attempt."
     },
     {
       "extension": [
@@ -79,13 +79,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-62",
-      "label": "APU.1#62",
+      "key": "CMHAFFR2-APU.1-05",
+      "label": "APU.1#05",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF app features are supported by data provided by or written to an EHR THEN the app SHALL ensure the EHR authorizes an app user's access to those app features."
+      "requirement": "IF another external health IT system, such as an EHR, is a system actor THEN the system SHALL verify a subject's association with their real-world identity, establishing that the subject is who they claim to be (identity proofing)."
     },
     {
       "extension": [
@@ -94,13 +94,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-63",
-      "label": "APU.1#63",
+      "key": "CMHAFFR2-APU.1-06",
+      "label": "APU.1#06",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF PII or PHI are displayed THEN the app SHALL terminate the app or make PHI or PII invisible after a period of time of user inactivity as described in the app's Terms of Use (e.g., inactivity timeout, session timeout, or automatic logoff, determined as part of overall risk analysis regarding data sensitivity)."
+      "requirement": "IF an EHR is a system actor THEN the system SHALL ensure that the EHR authorizes the user's access to those system features that are supported by data provided by, or written to, the EHR."
     },
     {
       "extension": [
@@ -109,13 +109,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-64",
-      "label": "APU.1#64",
+      "key": "CMHAFFR2-APU.1-07",
+      "label": "APU.1#07",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF passwords are stored on the device THEN the app SHALL encrypt passwords and SHALL NOT display passwords as plaintext."
+      "requirement": "IF PII or PHI are displayed THEN the system SHALL terminate, or make PHI and PII invisible, after a period of user inactivity as described in its Terms of Use. This feature is sometimes called inactivity timeout, session timeout, or automatic logoff. The decision to include this feature is made as part of the overall risk analysis regarding the sensitivity of the data provided by or through the system."
     },
     {
       "extension": [
@@ -124,13 +124,58 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.1-65",
-      "label": "APU.1#65",
+      "key": "CMHAFFR2-APU.1-08",
+      "label": "APU.1#08",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF access to an account exposes Protected Health Information (PHI) or PII THEN the app SHALL give the user an option to utilize strong authentication methods (e.g., multi-factor authentication and/or biometrics) in addition to passwords, clearly describing and/or demonstrating the authentication mechanism to the user before selection."
+      "requirement": "IF passwords are stored on the device THEN the system SHALL encrypt those passwords and SHALL NOT display them as plaintext."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-09",
+      "label": "APU.1#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF access to an account exposes Protected Health Information (PHI) or PII THEN the system SHALL give the user the option to use strong authentication methods, such as multi-factor authentication or biometrics, in addition to passwords. Before the user selects this option, the system clearly describes or demonstrates the authentication mechanism. This capability may apply to the system itself and to the pairing of the system with a device."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-10",
+      "label": "APU.1#10",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF an AI component can access PHI, PII, credentials, or an external system on behalf of a user THEN the system SHALL ensure that the AI component receives only the least-privileged, time-limited access necessary for the authorized task and SHALL prevent the AI component from exposing authentication secrets, tokens, or credentials in consumer-visible output or logs."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.1-11",
+      "label": "APU.1#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF an AI-enabled function can execute an external action or disclose new data THEN the system SHOULD require re-authentication or another strong confirmation before the action is completed when the risk assessment identifies a meaningful risk of harm, disclosure, or irreversible change."
     }
   ]
 }

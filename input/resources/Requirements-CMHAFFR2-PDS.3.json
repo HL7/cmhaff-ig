@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-PDS.3",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
-  "name": "PDS_3_Usability_and_Accessibility_Assessment",
-  "title": "PDS.3 Usability and Accessibility Assessment (Header)",
+  "name": "PDS_3_Usability_Accessibility_Assessment",
+  "title": "PDS.3 Usability/Accessibility Assessment (Function)",
   "status": "active",
-  "description": "",
-  "purpose": "",
+  "description": "This category is about the assessment of usability during the product development cycle, for the intended use by a target audience.",
+  "purpose": "Certain accessibility requirements (usability for users with specific disabilities) are recommended, but the list is not exhaustive. Other\ndisabilities not mentioned (e.g., cognitive/learning disabilities) should be considered under the umbrella of conformance criterion #1.\nExample:\nThe timing of implementation of usability findings can be indicated in functional profiles based on the severity of findings. At a minimum a usability\nassessment plan includes information about the timeframe under which remediation will occur.\n\nThese conformance statements apply to any type of app addressed in this standard. However, specific usability measures and remediation plans will differ\nbased on app functionality, intended users, and app platform, and as such this standard does not discuss specific controls; instead, it speaks to a\ndevelopment process which encourages inclusion and end user satisfaction.\n\nSee Appendix: Reference Documents",
   "statement": [
     {
       "extension": [
@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL be assessed against an industry-validated usability assessment tool, using subjects who are demographically-similar to intended users (target audience), such as user types including those with motor disabilities, visual impairment, auditory disabilities, etc. [1]"
+      "requirement": "The system SHALL be assessed against an industry-validated usability assessment tool using subjects who are demographically similar to the intended users (target audience). User types may include, for example, those with motor disabilities, visual impairment, or auditory disabilities."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF intended users include those with motor disabilities THEN the app SHALL be assessed for usability by people with motor disabilities.[1]"
+      "requirement": "IF the system displays AI output to consumers THEN the system SHALL assess, with representative intended users, whether consumers can understand that an output is AI-assisted, the output's intended purpose, its material limitations, and the appropriate next step."
     },
     {
       "extension": [
@@ -52,10 +52,10 @@
       "key": "CMHAFFR2-PDS.3-03",
       "label": "PDS.3#03",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
-      "conditionality": true,
-      "requirement": "IF intended users include those with visual disabilities THEN the app SHALL be assessed for usability by visually-impaired and/or color-blind people using a standard mobile screen reader."
+      "conditionality": false,
+      "requirement": "The system SHOULD undergo non-functional usability testing that assesses its user-friendliness, performance reliability, and adherence to end-user expectations for the targeted consumer group."
     },
     {
       "extension": [
@@ -67,10 +67,10 @@
       "key": "CMHAFFR2-PDS.3-04",
       "label": "PDS.3#04",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
-      "conditionality": true,
-      "requirement": "IF intended users include those with auditory disabilities THEN the app SHALL be assessed for usability by people with auditory disabilities."
+      "conditionality": false,
+      "requirement": "The system SHOULD have a written usability assessment plan that includes known product usability problems and a mitigation plan."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-PDS.3-05",
       "label": "PDS.3#05",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL be assessed for usability by a sample of intended users, drawing usability testing subjects from relevant populations if geared towards a certain age segment, people with a specific chronic health condition, or persons with disabilities other than those specified."
+      "requirement": "The system SHOULD follow the design and style guide standards established by the platform provider(s) on which it runs, such as Android or iOS."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-PDS.3-06",
       "label": "PDS.3#06",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL have a written usability assessment plan, including known problems with product usability and mitigation plan (where for U.S. Realm when an app is sponsored by a HIPAA entity, the force of this criteria is elevated to SHALL with the plan specifically addressing usability issues for people with visual and motor disabilities)."
+      "requirement": "The system SHOULD avoid excessive data use, minimize data use as far as practicable, and warn the user when high data usage occurs, such as during downloads and updates."
     },
     {
       "extension": [
@@ -112,10 +112,10 @@
       "key": "CMHAFFR2-PDS.3-07",
       "label": "PDS.3#07",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL follow design/style guide standards established by the platform provider(s) for the app (e.g., Android, iOS)."
+      "requirement": "The system SHOULD be supported by a requirements analysis that describes the use cases (business scenarios) and intended users for its main functions."
     },
     {
       "extension": [
@@ -127,10 +127,10 @@
       "key": "CMHAFFR2-PDS.3-08",
       "label": "PDS.3#08",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL avoid excessive data use, minimizing it as much as possible and warning users when high data usage occurs (e.g., downloads and updates).[2]"
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD assess cognitive burden, health literacy, language accessibility, disability access, and the likelihood that interface design could cause users to over-trust or misunderstand AI output."
     },
     {
       "extension": [
@@ -142,10 +142,10 @@
       "key": "CMHAFFR2-PDS.3-09",
       "label": "PDS.3#09",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL describe the use cases (business scenarios) and intended users for the app's main functions.[3]"
+      "requirement": "The system SHOULD permit adaptation to the user's specific abilities, needs, or requirements."
     },
     {
       "extension": [
@@ -157,10 +157,10 @@
       "key": "CMHAFFR2-PDS.3-10",
       "label": "PDS.3#10",
       "conformance": [
-        "SHALL"
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL permit flexibility (adaptation) to the user's specific abilities, needs, or requirements."
+      "requirement": "The system SHOULD provide information about its accessibility characteristics in the product description and in the contextual assistance sections of the system."
     },
     {
       "extension": [
@@ -172,10 +172,10 @@
       "key": "CMHAFFR2-PDS.3-11",
       "label": "PDS.3#11",
       "conformance": [
-        "SHALL"
+        "MAY"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL provide information about accessibility characteristics in the app description and in contextual assistance sections of the app."
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY provide an accessible explanation mode that uses plain language, translated text, visual aids, or other adaptive presentation methods."
     }
   ]
 }

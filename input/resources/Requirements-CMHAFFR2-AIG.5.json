@@ -1,0 +1,76 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_5_Human_Factors__Explainability__and_Human_Oversight",
+  "title": "AIG.5 Human Factors, Explainability, and Human Oversight (Function)",
+  "status": "active",
+  "description": "This category is about what the consumer can see, correct, question, and override. It covers review and escalation pathways before high-impact or irreversible actions, correction of faulty input data, and explanation at a level appropriate to the consumer and the risk of the intended use.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.5-01",
+      "label": "AIG.5#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF an AI function can influence a high-impact health, safety, access, or financial decision THEN the system SHALL provide a risk-appropriate human or consumer review, correction, override, or escalation pathway before an irreversible or high-impact action is taken, unless a documented exception is required for immediate safety and is permitted by applicable rules."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.5-02",
+      "label": "AIG.5#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL enable a consumer to view or correct material input data that the consumer provided or that the system attributes to the consumer when incorrect input could materially affect the AI output."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.5-03",
+      "label": "AIG.5#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system displays AI output THEN the system SHOULD provide a meaningful explanation of the primary factors, data limitations, or evidence sources relevant to the output, at a level appropriate to the consumer and the risk of the intended use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.5-04",
+      "label": "AIG.5#04",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY offer alternative explanation formats, such as plain-language summaries, detailed technical explanations, visual context, or translated content."
+    }
+  ]
+}

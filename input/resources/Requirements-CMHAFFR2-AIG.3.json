@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_3_AI_Data_Governance_and_Data_Rights",
+  "title": "AIG.3 AI Data Governance and Data Rights (Function)",
+  "status": "active",
+  "description": "This category is about the data used to develop, evaluate, retrieve for, and operate AI functionality: its source, the rights held over it, the purposes it may serve, how long it is retained, and what controls apply when a third party processes it.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.3-01",
+      "label": "AIG.3#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL document the source, rights, quality controls, intended use, retention, and permitted processing of data used to develop, test, evaluate, retrieve for, or operate the AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.3-02",
+      "label": "AIG.3#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses consumer data for AI processing THEN the system SHALL use consumer data for AI purposes only within the disclosed and authorized purpose, and SHALL apply data minimization, access control, and retention limits appropriate to the data sensitivity."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.3-03",
+      "label": "AIG.3#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF a third-party AI provider processes PHI, PII, or sensitive consumer content THEN the system SHALL establish and document controls for data isolation, subprocessor use, data retention, training prohibition or authorization, security incidents, and deletion or return of data when the service relationship ends."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.3-04",
+      "label": "AIG.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD assess the risk that de-identified, aggregated, embedded, or derived data could be re-identified, inferred, or exposed through the AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.3-05",
+      "label": "AIG.3#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY use privacy-preserving techniques, such as de-identification, minimization, secure enclaves, or federated approaches, when they are appropriate to the intended use and risk assessment."
+    }
+  ]
+}

@@ -3,13 +3,13 @@
   "id": "CMHAFFR2-APU.8",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
-  "name": "APU_8_Notifications_and_Alerts",
-  "title": "APU.8 Notifications and Alerts (Header)",
+  "name": "APU_8_Product_Upgrades",
+  "title": "APU.8 Product Upgrades (Function)",
   "status": "active",
-  "description": "This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable\nstandards for data format, vocabulary, and transport, to increase interoperability and ease of connection.",
+  "description": "1. The App SHALL respect operating system level permissions concerning automatic product APU.8 NC\n updates.",
   "purpose": "",
   "statement": [
     {
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.8-98",
-      "label": "APU.8#98",
+      "key": "CMHAFFR2-APU.8-01",
+      "label": "APU.8#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL require opt-in consent by the account holder before receiving notifications and alerts from the app."
+      "requirement": "The system SHALL respect operating system level permissions concerning automatic product updates."
     },
     {
       "extension": [
@@ -34,58 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.8-99",
-      "label": "APU.8#99",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHALL inform the account holder of both the content and channel (SMS, push notification, email, etc.) of the notification or alert before obtaining consent to receive notifications or alerts."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-100",
-      "label": "APU.8#100",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHALL permit an account holder to change consent decisions about notifications and alerts through settings available on the device on which the app was downloaded."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-101",
-      "label": "APU.8#101",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-102",
-      "label": "APU.8#102",
+      "key": "CMHAFFR2-APU.8-02",
+      "label": "APU.8#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF app alerts notify the user of conditions such as \"abnormal\" or \"exceptional\" or \"out of range\" THEN the app SHALL document or reference the sources (evidence base) of the formulas/algorithms upon which such alerts and notifications are based."
+      "requirement": "IF an updated version of the system includes updated Terms of Use THEN the system SHALL present the updated Terms of Use to the account holder for acceptance before the updated version may be used. Significant changes to the terms and conditions are highlighted, and a link to the full set of updated Terms of Use is available."
     },
     {
       "extension": [
@@ -94,58 +49,88 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.8-103",
-      "label": "APU.8#103",
-      "conformance": [
-        "MAY"
-      ],
-      "conditionality": true,
-      "requirement": "IF permitted by the account holder and agreed to by recipients THEN the app MAY send notifications and alerts to the account holder and/or to another person or entity."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-104",
-      "label": "APU.8#104",
-      "conformance": [
-        "SHOULD"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHOULD provide alerts to notify the user of potential faults that could cause inconvenience or harm to the user (e.g., low battery alerts)."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-105",
-      "label": "APU.8#105",
-      "conformance": [
-        "SHOULD"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHOULD notify the user in case of external interruptions or delays (e.g., loss of network connection, database problem, lengthy operation)."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-APU.8-135",
-      "label": "APU.8#135",
+      "key": "CMHAFFR2-APU.8-03",
+      "label": "APU.8#03",
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL format notifications and alerts to contain the least amount of information necessary for the recipient of the alert to take a focused action."
+      "conditionality": true,
+      "requirement": "IF automatic updates are not enabled THEN the system SHALL prompt the user when a new version is available."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-04",
+      "label": "APU.8#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF an account holder elects not to install a new version THEN the system SHALL inform the user of the consequences of not installing it, including information about support limitations for the older version."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-05",
+      "label": "APU.8#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF a new version increases what information is exposed by alerts THEN the system SHALL require the user to consent to the information being exposed, and SHALL clearly highlight the changes to the exposed information when that consent is given."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-06",
+      "label": "APU.8#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL treat a material change to an AI model, prompt, retrieval source, training data, inference service, or decision threshold as a controlled product change and SHALL document the change, risk assessment, validation, approval, and rollback plan before deployment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-07",
+      "label": "APU.8#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF an AI change materially affects data use, intended use, performance, or consumer-facing risk THEN the system SHALL notify affected users before or at deployment, explain the material change in understandable terms, and obtain updated permission when the change expands personal-data use or another consent-relevant practice."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.8-08",
+      "label": "APU.8#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD maintain the ability to suspend or roll back an AI component without requiring removal of unrelated App functionality when a material safety, privacy, or performance issue is detected."
     }
   ]
 }

@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_6_Generative_AI_and_AI_Agent_Safety",
+  "title": "AIG.6 Generative AI and AI Agent Safety (Function)",
+  "status": "active",
+  "description": "This category applies only where the application generates content or acts on a user's behalf. Generative and agentic functions introduce content, prompt-injection, and action risks that deterministic application logic does not.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.6-01",
+      "label": "AIG.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses generative AI THEN the system SHALL implement controls proportionate to the intended use to reduce generation of unsafe, misleading, fabricated, discriminatory, or privacy-violating content and SHALL define the actions taken when such content is detected."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.6-02",
+      "label": "AIG.6#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF generative AI is used to provide health-related factual content or recommendations THEN the system SHALL ground the output in curated, version-controlled, and appropriately sourced content or another documented evidence process suitable to the intended use, and SHALL identify when the system cannot verify the requested information."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.6-03",
+      "label": "AIG.6#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF an AI agent can execute external actions, write to a record, transmit data, purchase a service, or otherwise act on behalf of a user THEN the system SHALL limit the agent's authorized actions, present the action and material consequences to the user before execution when appropriate, and maintain an auditable record of the action request, authorization, execution, and result."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.6-04",
+      "label": "AIG.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses generative AI or an AI agent THEN the system SHOULD conduct scenario-based testing for prompt injection, jailbreaks, unsafe advice, disallowed actions, privacy leakage, and escalation to safe human or non-AI resources."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.6-05",
+      "label": "AIG.6#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses generative AI THEN the system MAY use retrieval-augmented generation or other grounding methods when they improve evidence traceability, provided the system validates source quality, freshness, and access controls."
+    }
+  ]
+}

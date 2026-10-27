@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-APU.5",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "APU_5_Data_Authenticity__Provenance__and_Associated_Metadata",
-  "title": "APU.5 Data Authenticity, Provenance, and Associated Metadata (Header)",
+  "title": "APU.5 Data Authenticity, Provenance, and Associated Metadata (Function)",
   "status": "active",
-  "description": "This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other\nlocations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.",
-  "purpose": "",
+  "description": "This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other\n locations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.",
+  "purpose": "Related Regulations and Standards:\nThe following are examples of standards for data provenance. Even though they are specific to the FHIR and CDA standards respectively, the principles\n and data elements -- for recording entities and processes involved in producing or delivering a resource (data) – may be applicable.\n • FHIR Provenance Resource http://www.hl7.org/FHIR/provenance.html\n • HL7 CDA® R2 Implementation Guide: Data Provenance, Release 1 - US Realm\n http://www.hl7.org/implement/standards/product_brief.cfm?product_id=420\n • ISO 21089 Health Informatics – Trusted End-to-End Information Flows. https://www.iso.org/standard/35645.html Offers a guide to trusted\n end-to-end information flow for health(care) records and to the key trace points and audit events in the electronic entity/act record lifecycle\n (from point of record origination to each ultimate point of record access/use).",
   "statement": [
     {
       "extension": [
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.5-89",
-      "label": "APU.5#89",
+      "key": "CMHAFFR2-APU.5-01",
+      "label": "APU.5#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL conform to Best Practices for Data Authenticity, Provenance, and Associated Metadata."
+      "requirement": "The system SHALL conform to best practices for data authenticity, provenance, and associated metadata."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.5-90",
-      "label": "APU.5#90",
+      "key": "CMHAFFR2-APU.5-02",
+      "label": "APU.5#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app itself originates data (see ISO 21089 definition of \"originate\") THEN the app SHALL provide the customer a review option which includes the option to irreversibly destroy, reject, or discard data."
+      "requirement": "IF the system creates an AI-derived output that is stored, displayed, exported, or exchanged THEN the system SHALL label the output as AI-derived and retain provenance sufficient to identify the source data references, model or service identifier and version, time of generation, and whether a human reviewed or modified the output."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.5-91",
-      "label": "APU.5#91",
+      "key": "CMHAFFR2-APU.5-03",
+      "label": "APU.5#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app itself only receives data as a \"pass through\" and cannot store data THEN the app SHALL provide the customer a review option to display the data prior to executing the pass-through which includes the option to irreversibly stop and block the pass-through."
+      "requirement": "IF the system itself originates data, as defined in ISO 21089, THEN the system SHALL provide the customer with the option to review, irreversibly destroy, reject, or discard that data."
     },
     {
       "extension": [
@@ -64,13 +64,58 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.5-92",
-      "label": "APU.5#92",
+      "key": "CMHAFFR2-APU.5-04",
+      "label": "APU.5#04",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app itself receives data and stores it THEN the app SHALL provide the customer a review option that permits only appending data and/or free text comments to received data as author while preserving the original received data intact with original provenance, and SHALL NOT allow deleting the original data."
+      "requirement": "IF the system only receives data as a pass-through and cannot store data THEN the system SHALL provide the customer with a review option that displays the data prior to executing the pass-through, including the option to irreversibly stop and block the pass-through."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-05",
+      "label": "APU.5#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system receives data and stores it THEN the system SHOULD provide the customer with a review option that permits only appending data or free-text comments to the received data as author, while preserving the original received data intact with its original provenance. The user may comment that data are erroneous but does not have the option to delete the original data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-06",
+      "label": "APU.5#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system displays AI output derived from consumer or device data THEN the system SHALL preserve or reference the original source data without overwriting it and SHALL distinguish AI interpretation, summarization, prediction, or generated content from the original data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.5-07",
+      "label": "APU.5#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the AI function produces a meaningful confidence, uncertainty, or quality signal THEN the system SHOULD preserve and present the signal in a manner appropriate to the intended user and SHALL NOT present a confidence value as a guarantee of correctness."
     }
   ]
 }

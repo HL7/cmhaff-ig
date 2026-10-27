@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-PIM.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PIM_2_Launch_App_and_Establish_User_Account",
-  "title": "PIM.2 Launch App and Establish User Account (Header)",
+  "title": "PIM.2 Launch App and Establish User Account (Function)",
   "status": "active",
-  "description": "",
-  "purpose": "",
+  "description": "1. A user SHALL be able to review the app's Terms of Use before personal data about the user PIM.2 NC\n is collected and used.",
+  "purpose": "\nExample:\n• Use Case A: Knowing who the user is, in an absolute sense, is not needed as data is not being sent to any external data set. Primarily, account\n controls are in place to ensure the same person is using the app each time. For this walking app, possession of a smartphone may be sufficient to\n allow someone to use it without any additional need for authentication or need to set up a unique user ID and password to access the app.\n • Use Case B: Knowing the user’s absolute identity is not needed but minimal account controls (e.g., user ID and password) should be established\n as the app will allow information to be sent to an existing data set, and these data sets will need some ability to be linked, in part showing evidence\n an individual has control over both the app data and a right to access the existing data set.\n • Use Case C: requires more rigorous identity proofing as data will be both sent to an EHR and interactions initiated by a physician result in information\n being pushed to the app. Identity proofing can occur within the app itself, or in the use of pre-existing identity credentials (e.g., patient portal\n credentials for the entity controlling the EHR) to establish identity.\n\n 3. App Use\n Statement Overview: This section addresses functionalities and considerations to be addressed while the user is operating\n the app.",
   "statement": [
     {
       "extension": [
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.2-54",
-      "label": "PIM.2#54",
+      "key": "CMHAFFR2-PIM.2-01",
+      "label": "PIM.2#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL permit a user to review the app's Terms of Use before personal data about the user is collected and used."
+      "requirement": "The system SHALL permit a user to review its Terms of Use before personal data about the user is collected and used."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.2-55",
-      "label": "PIM.2#55",
+      "key": "CMHAFFR2-PIM.2-02",
+      "label": "PIM.2#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app creates user accounts THEN the app SHALL log user acceptance of the app's Terms of Use before a user account is authorized (See section 3.4.10 for information about audit log record creation)."
+      "requirement": "IF account data, content, or device data will be transmitted to an AI component THEN the system SHALL inform the user, before the first such transmission, what categories of data will be processed by the AI component, whether a third party receives the data, and the purposes, retention, and applicable data-use choices."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.2-56",
-      "label": "PIM.2#56",
+      "key": "CMHAFFR2-PIM.2-03",
+      "label": "PIM.2#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF a user is allowed to use pre-existing account credentials from an Identity Provider (IDP) to access the app THEN the app SHALL inform the user before they choose to use pre-existing account credentials about: (a) what attribute information will be used by the app associated with the pre-existing credentials; and (b) what data is communicated back to the IDP at the time of account creation and at each subsequent user authentication."
+      "requirement": "IF the system creates user accounts THEN the system SHALL log the user's acceptance of its Terms of Use before a user account is authorized. See APU.9 for audit log record creation."
     },
     {
       "extension": [
@@ -64,13 +64,58 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.2-57",
-      "label": "PIM.2#57",
+      "key": "CMHAFFR2-PIM.2-04",
+      "label": "PIM.2#04",
       "conformance": [
         "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the user is allowed to use pre-existing account credentials from an Identity Provider (IdP) to access the system THEN the system SHALL inform the user, before the user chooses to use those credentials, (a) what attribute information associated with the pre-existing credentials will be used by the system, and (b) what data is communicated back to the IdP at the time of account creation and at each subsequent user authentication."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-05",
+      "label": "PIM.2#05",
+      "conformance": [
+        "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL collect the minimum necessary amount of a user's personally identifiable information (PII) for purposes of establishing an account (e.g., information necessary to authenticate the user, provide customer support, or affect the app logic)."
+      "requirement": "The system SHOULD collect no more than the minimum necessary amount of a user's personally identifiable information (PII) for the purpose of establishing an account, that is, information necessary to authenticate the user, provide customer support, or affect the system's logic."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-06",
+      "label": "PIM.2#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF user data will be used to train, fine-tune, evaluate, or otherwise improve an AI model THEN the system SHALL obtain the user's permission before the first transmission of account data, user content, or device data to an AI component, and SHALL identify the recipient, the purpose, and whether the data may be retained."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.2-07",
+      "label": "PIM.2#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system offers optional AI features THEN the system SHOULD allow a user to enable or disable optional AI features separately from unrelated App functions when technically feasible and consistent with the intended use."
     }
   ]
 }

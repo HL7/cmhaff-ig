@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.7",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_7_Monitoring__Change_Control__and_Incident_Management",
+  "title": "AIG.7 Monitoring, Change Control, and Incident Management (Function)",
+  "status": "active",
+  "description": "This category is about what happens after deployment: monitoring for performance degradation, drift and misuse; pre-defined thresholds and decision authorities for responding; and handling incidents that affect consumer safety, privacy, or performance. AI behavior can change without a conventional application release.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.7-01",
+      "label": "AIG.7#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL monitor the AI function after deployment for material performance degradation, data drift, misuse, unexpected outputs, safety events, privacy events, and differences from the validated intended use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.7-02",
+      "label": "AIG.7#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL define and document thresholds and decision authorities for investigation, consumer communication, limitation, suspension, rollback, corrective action, and retirement of an AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.7-03",
+      "label": "AIG.7#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF a material AI incident affects consumer safety, privacy, or performance THEN the system SHALL investigate the incident, preserve evidence, assess affected consumers and data, implement corrective action, and make notifications required by applicable laws, contracts, or safety protocols."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.7-04",
+      "label": "AIG.7#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD periodically review real-world performance across relevant populations and use cases to identify emerging performance or equity concerns."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.7-05",
+      "label": "AIG.7#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY publish de-identified, aggregate post-deployment monitoring summaries when doing so does not create security, privacy, or proprietary risk."
+    }
+  ]
+}

@@ -3,11 +3,11 @@
   "id": "CMHAFFR2-AST.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "AST_2_Permitted_Uses_of_Data_Post_Account_Closure",
-  "title": "AST.2 Permitted Uses of Data Post Account Closure (Header)",
+  "title": "AST.2 Permitted Uses of Data Post Account Closure (Function)",
   "status": "active",
   "description": "This category is about what is done with consumers’ data if they close their account (terminate use of the app).",
   "purpose": "",
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.2-123",
-      "label": "AST.2#123",
+      "key": "CMHAFFR2-AST.2-01",
+      "label": "AST.2#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL NOT release data associated with a closed app account to any new persons or entities, including data which has been de-identified."
+      "requirement": "The system SHALL NOT disclose data associated with a closed account to any new persons or entities, including data that has been de-identified."
     },
     {
       "extension": [
@@ -34,13 +34,43 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.2-124",
-      "label": "AST.2#124",
+      "key": "CMHAFFR2-AST.2-02",
+      "label": "AST.2#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL offer the consumer the option to decide what to do with their data (keep, delete, etc.)."
+      "requirement": "The system SHALL offer the consumer the option to decide what to do with their data, such as keeping it or deleting it."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.2-03",
+      "label": "AST.2#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has closed an account THEN the system SHALL NOT use data associated with the closed account for future AI training, fine-tuning, evaluation, or model improvement unless the consumer previously gave specific permission or another applicable legal basis is documented."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.2-04",
+      "label": "AST.2#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF consumer data has already been used to train or fine-tune an AI model THEN the system SHOULD explain whether and how the account-closure choice affects already-trained models, derived artifacts, backups, and future model releases, including any technical limits on removing an individual's contribution from a deployed model."
     }
   ]
 }

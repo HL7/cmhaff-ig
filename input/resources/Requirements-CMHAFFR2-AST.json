@@ -9,5 +9,5 @@
   "name": "App_Service_Termination",
   "title": "App Service Termination",
   "status": "active",
-  "description": "Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app.Disuse may happen when a health condition improves, a new health habit is established, when motivation to use the app wanes, or when\nthe user determines a different app better meets their needs. Procedures for how data continues to be retained and used after account closure must be\nclear and understandable and give the app user options for relocation of their data to a new data repository."
+  "description": "Health apps may be used indefinitely or for a finite period of time and will consequently require the ability to terminate services with the app.Disuse may happen when a health condition improves, a new health habit is established, when motivation to use the app wanes, or when\n the user determines a different app better meets their needs. Procedures for how data continues to be retained and used after account closure must be\n clear and understandable and give the app user options for relocation of their data to a new data repository."
 }

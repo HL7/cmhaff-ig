@@ -1,0 +1,61 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_1_AI_Applicability__Intended_Use__and_Inventory",
+  "title": "AIG.1 AI Applicability, Intended Use, and Inventory (Function)",
+  "status": "active",
+  "description": "This category establishes whether AI functionality is present, what each AI function is intended to do, for whom, with what autonomy, and what inventory the developer maintains about it. It is the entry point for the remaining criteria in this section.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.1-01",
+      "label": "AIG.1#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL determine whether each AI function is consumer-facing, clinician-facing, background-only, or agentic; whether it can affect health, safety, privacy, access, cost, or care; and which cMHAFF AI criteria apply to that function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.1-02",
+      "label": "AIG.1#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL define the intended use, intended user, target population, expected inputs, expected outputs, prohibited uses, and foreseeable misuse for each AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.1-03",
+      "label": "AIG.1#03",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD classify AI functions using a documented risk tier that considers the sensitivity of data, level of autonomy, likelihood of harm, severity of harm, and the presence of human review."
+    }
+  ]
+}

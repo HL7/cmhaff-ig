@@ -1,0 +1,91 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_4_AI_Validation__Performance__and_Equity",
+  "title": "AIG.4 AI Validation, Performance, and Equity (Function)",
+  "status": "active",
+  "description": "This category is about evaluating an AI function against its documented context of use before deployment, documenting what was and was not evaluated, and establishing whether performance differs materially across the populations the application serves.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.4-01",
+      "label": "AIG.4#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL evaluate the AI function, before deployment, for performance, safety, reliability, and usability in the documented context of use and against pre-specified acceptance criteria."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.4-02",
+      "label": "AIG.4#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality that can affect health, safety, access, or material wellbeing THEN the system SHALL evaluate whether performance differs materially across relevant subgroups, including populations defined by age, sex, language, disability, geography, device type, health condition, or other factors relevant to the intended use, and SHALL address identified unacceptable disparities."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.4-03",
+      "label": "AIG.4#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL document the performance measures used, their limitations, the evaluation dataset characteristics, and the conditions under which the AI function was not evaluated or did not meet acceptance criteria."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.4-04",
+      "label": "AIG.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD obtain external or independent validation when the risk assessment identifies elevated potential for health, safety, equity, or consumer-protection harm."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.4-05",
+      "label": "AIG.4#05",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY publish a performance dashboard or public validation summary that identifies the intended use, relevant performance metrics, and limitations."
+    }
+  ]
+}

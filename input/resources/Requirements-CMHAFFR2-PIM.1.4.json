@@ -3,13 +3,13 @@
   "id": "CMHAFFR2-PIM.1.4",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PIM_1_4_Limitations_and_Warnings",
-  "title": "PIM.1.4 Limitations and Warnings (Header)",
+  "title": "PIM.1.4 Limitations and Warnings (Function)",
   "status": "active",
-  "description": "",
+  "description": "1. Contraindications, potential risks and limitations of use SHALL be documented. For example, PIM.1 NC\n environmental or patient conditions under which apps or connected devices may be unreliable\n (e.g., tattoos that impact optical sensors; avoid usage when pregnant; avoid usage outside a\n temperature range).",
   "purpose": "",
   "statement": [
     {
@@ -19,43 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.4-45",
-      "label": "PIM.1.4#45",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": true,
-      "requirement": "IF the app provides health recommendations (e.g., general guidelines) THEN the app SHALL disclose the potential risks to patient safety and their mitigations."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-PIM.1.4-46",
-      "label": "PIM.1.4#46",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": true,
-      "requirement": "IF the app offers health advice (e.g., specific and personal health decision support) THEN the app SHALL state that the use of the app does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-PIM.1.4-47",
-      "label": "PIM.1.4#47",
+      "key": "CMHAFFR2-PIM.1.4-01",
+      "label": "PIM.1.4#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL document contraindications, potential risks, and limitations of use (e.g., environmental or patient conditions under which apps or connected devices may be unreliable, such as tattoos that impact optical sensors, avoiding usage when pregnant, or avoiding usage outside a temperature range)."
+      "requirement": "The system SHALL document contraindications, potential risks, and limitations of use, for example environmental or patient conditions under which the system or connected devices may be unreliable, such as tattoos that affect optical sensors, use during pregnancy, or use outside a specified temperature range."
     },
     {
       "extension": [
@@ -64,28 +34,133 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.4-48",
-      "label": "PIM.1.4#48",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHALL warn users of updates caused by possible errors in functionality, in health-related information, or in any other sensitive data."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-PIM.1.4-49",
-      "label": "PIM.1.4#49",
+      "key": "CMHAFFR2-PIM.1.4-02",
+      "label": "PIM.1.4#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app has collected personal health information THEN the app SHALL guarantee continuity of data use across different versions of the app."
+      "requirement": "IF the system provides health recommendations, such as general guidelines, THEN the system SHALL disclose the potential risks to patient safety and their mitigations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-03",
+      "label": "PIM.1.4#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF AI output can reasonably lead a consumer to take an urgent health or safety action THEN the system SHALL provide a safe, context-appropriate next-step instruction and a clear statement of any emergency or clinician-contact limitations of the AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-04",
+      "label": "PIM.1.4#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system collects de-identified data THEN the system SHOULD provide documentation of how the data is de-identified and of its current and planned secondary uses."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-05",
+      "label": "PIM.1.4#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system offers health advice, such as specific and personal health decision support, THEN the system SHOULD state that use of the system does not replace the provider-patient relationship or the recommendation, opinion, or diagnosis of a health professional."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-06",
+      "label": "PIM.1.4#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD warn users of updates that are caused by possible errors in functionality, in health-related information, or in any other sensitive data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-07",
+      "label": "PIM.1.4#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system has collected personal health information THEN the system SHALL guarantee the integrity of data stored across its different versions."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-08",
+      "label": "PIM.1.4#08",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL disclose material AI limitations, including known unvalidated populations or contexts, input-quality assumptions, situations in which the output may be unreliable, and the possibility that the output may be incorrect, incomplete, or unsuitable for the individual user."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-09",
+      "label": "PIM.1.4#09",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system presents AI-generated health content, advice, or a recommendation THEN the system SHALL clearly distinguish AI-generated content from human-authored or clinician-reviewed content and SHALL NOT represent AI output as a diagnosis, treatment order, or professional judgment unless the system is authorized and validated for that use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.4-10",
+      "label": "PIM.1.4#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD display a just-in-time warning when the user's context, available data, or request appears to be outside the validated or intended use of the AI function."
     }
   ]
 }

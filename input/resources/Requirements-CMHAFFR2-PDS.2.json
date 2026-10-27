@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-PDS.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PDS_2_Product_Risk_Assessment_and_Mitigation",
-  "title": "PDS.2 Product Risk Assessment and Mitigation (Header)",
+  "title": "PDS.2 Product Risk Assessment and Mitigation (Function)",
   "status": "active",
-  "description": "This category deals with process steps for risk assessment and mitigation for those\nwho are developing a new app, or an upgrade to an app, prior to its being deployed to\nConsumers.",
-  "purpose": "Degrees of risk should be assessed and mitigated according to the intended use\nof the app. In general, risk management should manage security, privacy, safety, and other\ntypes of risks such as potential app failure scenarios, events that could lead to undesirable\noutcomes, probability and severity of risk, and mitigations or resolutions. One size does not fit\nall. For example, if apps handle sensitive personal information or give health interpretation or\nadvice, higher degrees of risk are involved than for apps that do not collect personal information or do not interpret or advise. If some information identified during this step should be disclosed\nto consumers, that is stated in the “Informing Consumers/Users” section",
+  "description": "This category deals with process steps for risk assessment and mitigation for those\n who are developing a new app, or an upgrade to an app, prior to its being deployed to\n consumers.",
+  "purpose": "Degrees of risk should be assessed and mitigated according to the intended use\n of the app. In general, risk management should manage security, privacy, safety, and other\n types of risks such as potential app failure scenarios, events that could lead to undesirable\n outcomes, probability and severity of risk, and mitigations or resolutions. One size does not fit\n all. For example, if apps handle sensitive personal information or give health interpretation or\n advice, higher degrees of risk are involved than for apps that do not collect personal information\n or do not interpret or advise. If some information identified during this step should be disclosed\n to consumers, that is stated in the “Informing Consumers/Users” section.\n\nRelated Regulations and Standards:\nWhile mobile computing environments may introduce some specific threats not present in non-mobilecomputing, the principles of risk management\n are the same across environments, so some standards and regulations are cited, even though they are not mobile-centric. Documents (listed\n alphabetically below) were sources of some cMHAFF criteria for risk assessment. Other useful references on risk assessment are listed in the\n Appendix. While some are realm-specific, they have much material that is applicable beyond their countries. Realms are listed in parentheses, if not\n explicit in the title.\n Andalusian Complete list of recommendations on design, use and assessment of health apps:\n http://www.calidadappsalud.com/en/listado-completo-recomendaciones-app-salud/\n • British Standards Institution Publicly Available Specification (PAS) 277:2015 Health and wellness apps – Quality criteria across\n the life cycle – Code of practice: Recommendations andguidance throughout the app’s product development life cycle\n • French Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth). https://www.has-\n sante.fr/portail/upload/docs/application/pdf/2017-\n 03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mh ealth.pdf\n • National Institute of Standards and Technology NISTIR 8144 Assessing Threats to MobileDevices & Infrastructure, The\n Mobile Threat Catalogue (USA) https://nccoe.nist.gov/sites/default/files/library/mtc-nistir-8144-draft.pdf (context and background\n information)\n https://pages.nist.gov/mobile-threat-catalogue/application.html#vulnerable-applications (actual catalog of threats, specifically the “Vulnerable\n Application” category, which is the part ofthe threat catalog closest to cMHAFF)\n • Open Web Application Security Project (OWASP) Top 10 Mobile Security Risks:\n https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10 This is focused on appdevelopers, so most of it is pertinent to\n cMHAFF, and for each risk, there are suggested mitigations.\n • OWASP Secure Coding Practices Quick Reference Guide: https://owasp.org/www-project-secure-coding-practices-quick-\n reference-guide/ - This provides resources for developers that can assist in implementing secure coding practices. It is\n recommended that developers adopt secure coding practices so that applications are developed with an emphasis on security vs\n having to apply security measures to protect the application.\nExample:\nWhile later sections in this standard include specific security and privacy controls to be applied to consumer mobile health apps, all products addressing\nhealth issues, regardless of their type, must be subjected to an overall risk analysis. This risk analysis may uncover the need for additional security controls\nover-and-above the conformance statements included in this document. As such, a risk analysis provides an additional layer of considerations such that\nconformance statements are not misused as a simple checklist in which it is assumed all security risks have been addressed if an app is in compliance\nwith the conformance statements in this standard. For an app/product, the risk analysis should be conducted for the target environment(s) where the app\nwill actually be used by consumers. Because of the diversity of consumers, such a risk analysis is wider ranging and more challenging than a risk analysis\nfor the development organization’s own environment.",
   "statement": [
     {
       "extension": [
@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL conform to a product risk assessment and mitigation plan as outlined by the developer, which explicitly determines what risk must be addressed through software coding, hardware adaptions, policy, and what residual risk will be accepted by the entity responsible for the app, with an organizational Risk Register maintained, reviewed, and updated to include risks associated with the mobile application."
+      "requirement": "The system SHALL conform to a product risk assessment and mitigation plan defined by the developer. The plan explicitly determines which risks are addressed through software coding, hardware adaptation, or policy, and which residual risks are accepted by the entity responsible for the system. The developer maintains, reviews, and updates an organizational risk register that includes risks associated with the mobile application."
     },
     {
       "extension": [
@@ -39,8 +39,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL be developed following secure coding and practices using an established risk assessment framework."
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL extend its product risk assessment and mitigation plan to address AI-specific hazards, including incorrect or fabricated output, unsafe recommendations, biased performance, data drift, privacy leakage, adversarial or malicious inputs, prompt injection, automation bias, over-reliance, and inappropriate use outside the intended context."
     },
     {
       "extension": [
@@ -54,8 +54,8 @@
       "conformance": [
         "SHALL"
       ],
-      "conditionality": true,
-      "requirement": "IF personally identifiable information is collected THEN the app SHALL be guided in development by risk assessment findings in terms of their potential effect on adequately securing an individual's personally identifiable information (PII) including any protected health information (PHI), and also information used to access an EHR/PHR (e.g., logon credentials)."
+      "conditionality": false,
+      "requirement": "The system SHALL be developed following secure coding practices using an established risk assessment framework."
     },
     {
       "extension": [
@@ -70,7 +70,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app transmits data to an EHR THEN the app SHALL document failure rates, measurement error rates, software bugs, and hardware risks of all types."
+      "requirement": "IF the system collects personally identifiable information THEN the system SHALL be developed in accordance with risk assessment findings regarding the adequate protection of an individual's personally identifiable information (PII), any protected health information (PHI), and information used to access an EHR or PHR, such as logon credentials."
     },
     {
       "extension": [
@@ -82,10 +82,10 @@
       "key": "CMHAFFR2-PDS.2-05",
       "label": "PDS.2#05",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The app SHOULD be approved prior to product launch in accordance with User Acceptance Testing (UAT) by testers who are not part of the formal development team."
+      "conditionality": true,
+      "requirement": "IF the system transmits data to an EHR THEN the system SHALL document failure rates, measurement error rates, software defects, and hardware risks of all types."
     },
     {
       "extension": [
@@ -97,10 +97,10 @@
       "key": "CMHAFFR2-PDS.2-06",
       "label": "PDS.2#06",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The app SHOULD be monitored and include documentation of conflicts or compatibility issues of the app with other apps, device features (e.g., camera), or connected devices."
+      "conditionality": true,
+      "requirement": "IF AI output can influence a high-impact health, safety, or access decision THEN the system SHALL define and test risk controls, escalation paths, user-facing limitations, and a safe fallback behavior for AI unavailability, low confidence, conflicting inputs, or detected unsafe output."
     },
     {
       "extension": [
@@ -112,10 +112,10 @@
       "key": "CMHAFFR2-PDS.2-07",
       "label": "PDS.2#07",
       "conformance": [
-        "SHOULD"
+        "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app relies on external supporting infrastructure (e.g., cloud-based servers) to operate THEN the app SHOULD document measures to ensure the availability of that infrastructure."
+      "requirement": "IF the system includes generative AI or an AI agent THEN the system SHALL perform pre-deployment testing for unsafe content, unsupported medical claims, prompt injection, data exfiltration, harmful instructions, and unintended actions appropriate to the system's intended use and consumer population."
     },
     {
       "extension": [
@@ -127,10 +127,85 @@
       "key": "CMHAFFR2-PDS.2-08",
       "label": "PDS.2#08",
       "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD be approved through User Acceptance Testing (UAT) conducted by testers who are not part of the formal development team, prior to product launch."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-09",
+      "label": "PDS.2#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD predefine performance, safety, fairness, and usability acceptance thresholds that are proportionate to the intended use and identify the actions taken when a threshold is not met."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-10",
+      "label": "PDS.2#10",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD be monitored for, and SHOULD document, conflicts or compatibility issues with other applications, device features such as the camera, or connected devices."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-11",
+      "label": "PDS.2#11",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system relies on external supporting infrastructure, such as cloud-based servers, to operate THEN the system SHOULD document measures that ensure the availability of that infrastructure."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-12",
+      "label": "PDS.2#12",
+      "conformance": [
         "MAY"
       ],
       "conditionality": false,
-      "requirement": "The app MAY provide documentation to show that the app publisher has adequate resources to continue to develop, maintain, and support the product (e.g., human resources, finances, IP rights, facilities, equipment, tools)."
+      "requirement": "The system MAY provide documentation showing that the publisher has adequate resources to continue to develop, maintain, and support the product, such as human resources, finances, intellectual property rights, facilities, equipment, and tools."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.2-13",
+      "label": "PDS.2#13",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY use independent evaluators, red-team testing, or external subject-matter experts to challenge assumptions and identify unanticipated AI risks before or after release."
     }
   ]
 }

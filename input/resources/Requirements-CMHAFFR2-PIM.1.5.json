@@ -3,13 +3,13 @@
   "id": "CMHAFFR2-PIM.1.5",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PIM_1_5_Technical_Details",
-  "title": "PIM.1.5 Technical Details (Header)",
+  "title": "PIM.1.5 Technical Details (Function)",
   "status": "active",
-  "description": "",
+  "description": "1. IF the user can enter personal health information into the app, it SHALL clearly disclose PIM.1 NC\n whether or not data validity checking is done, and document or reference the evidence for such\n validity checking.",
   "purpose": "",
   "statement": [
     {
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.5-50",
-      "label": "PIM.1.5#50",
+      "key": "CMHAFFR2-PIM.1.5-01",
+      "label": "PIM.1.5#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the user can enter personal health information into the app THEN the app SHALL clearly disclose whether or not data validity checking is done, and document or reference the evidence for such validity checking."
+      "requirement": "IF the user can enter personal health information into the system THEN the system SHALL clearly disclose whether data validity checking is performed, and SHALL document or reference the evidence for that validity checking."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.5-51",
-      "label": "PIM.1.5#51",
+      "key": "CMHAFFR2-PIM.1.5-02",
+      "label": "PIM.1.5#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app collects or receives quantitative data THEN the app SHALL document and justify the precision (accuracy, granularity) of measurements (e.g., physical activity, physiological data from connected devices) as appropriate for the intended use of the app."
+      "requirement": "IF the system collects or receives quantitative data THEN the system SHALL document and justify the precision, that is the accuracy and granularity, of measurements such as physical activity or physiological data from connected devices, as appropriate for its intended use."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.5-52",
-      "label": "PIM.1.5#52",
+      "key": "CMHAFFR2-PIM.1.5-03",
+      "label": "PIM.1.5#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF personal health information is hosted THEN the app SHALL document backup and recovery procedures that comply with applicable regulatory requirements."
+      "requirement": "IF the system uses AI functionality THEN the system SHALL maintain technical documentation sufficient for an assessor to determine the AI function's model or service type, version, intended use, input data categories, output types, data transformations, dependency services, and known operational constraints."
     },
     {
       "extension": [
@@ -64,13 +64,58 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.5-53",
-      "label": "PIM.1.5#53",
+      "key": "CMHAFFR2-PIM.1.5-04",
+      "label": "PIM.1.5#04",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF personal health data are imported or exported THEN the app SHALL document functions for data import or export, including the ability to convert to standard formats."
+      "requirement": "IF AI output is derived from health data THEN the system SHALL document the data-quality checks, missing-data behavior, input validity constraints, and known measurement or transcription limitations that can affect the AI output."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.5-05",
+      "label": "PIM.1.5#05",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system hosts personal health information THEN the system SHALL document backup and recovery procedures that comply with applicable regulatory requirements."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.5-06",
+      "label": "PIM.1.5#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF personal health data are imported into or exported from the system THEN the system SHALL document its data import and export functions, including the ability to convert to standard formats."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.5-07",
+      "label": "PIM.1.5#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD make a consumer-accessible technical summary or model card available without requiring disclosure of proprietary source code or trade secrets."
     }
   ]
 }

@@ -23,10 +23,10 @@ TODO: https://build.fhir.org/ig/HL7/ehrsfm-ig/annexa.html
 
 ### Mobile Health WG CoChairs and Publishing Facilitators
 
-| Role  | Name | Organization | Contact |
-| --- | --- | --- | --- |
-| **Co-Chair** | Nathan Botts, PhD, MSIS | Westat |  |
-| **Co-Chair** | Frank Ploeg | UMCG |  |
-| **Co-Chair** | Gora Datta | Cal2Cal |  |
-| **Co-Chair** | Matthew Graham | Mayo Clinic |  |
-| **Publishing Facilitator** | Michael van der Zel BSc | UMCG | m.van.der.zel@umcg.nl |
+| Role  | Name | Organization |
+| --- | --- | --- |
+| **Co-Chair** | Nathan Botts, PhD, MSIS | Westat |
+| **Co-Chair** | Frank Ploeg | UMCG |
+| **Co-Chair** | Gora Datta | Cal2Cal |
+| **Co-Chair** | Matthew Graham | Mayo Clinic |
+| **Publishing Facilitator** | Michael van der Zel BSc | UMCG |

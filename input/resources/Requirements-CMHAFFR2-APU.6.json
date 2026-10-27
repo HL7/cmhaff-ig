@@ -1,0 +1,136 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-APU.6",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "APU_6_Data_Exchange_and_Interoperability",
+  "title": "APU.6 Data Exchange and Interoperability (Function)",
+  "status": "active",
+  "description": "This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable\n standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.",
+  "purpose": "Related Regulations and Standards:\n• Direct Project Applicability Statement for Secure Health Transport\n https://www.healthit.gov/policy-researchers-implementers/direct-project\n • HL7 Consolidated CDA\n • HL7 FHIR STU. http://www.hl7.org/FHIR/index.html\n • SMART ON FHIR. https://smarthealthit.org/\n • http://www.hl7.org/implement/standards/product_brief.cfm?product_id=379\n • IEEE 10073 Personal Health Data Standards https://standards.ieee.org/develop/wg/PHD.html\n • “MedMij” information Exchange standards for Personal Health Environment https://www.medmij.nl (Netherlands) Includes HL7 Health\n Clinical Information models (HCIM), which provide context for discrete clinical data (e.g., systolic blood pressure); the standard is being used\n in the Netherlands.",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-01",
+      "label": "APU.6#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges discrete clinical data THEN the system SHALL use standard terminologies, such as SNOMED CT or LOINC."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-02",
+      "label": "APU.6#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges discrete clinical data THEN the system SHALL use standard format and content, such as HL7 FHIR, SMART on FHIR, HL7 Consolidated CDA, or Detailed Clinical Models (HL7 CIMI)."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-03",
+      "label": "APU.6#03",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges AI-derived data with another device, app, repository, or HIT system THEN the system SHALL identify AI-derived information as such in the exchanged content and SHALL include available provenance, source-data, model-version, and human-review metadata so recipients can distinguish it from verified clinical observations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-04",
+      "label": "APU.6#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges discrete clinical data with devices THEN the system SHOULD use standard format and content, such as IEEE 11073."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-05",
+      "label": "APU.6#05",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges unstructured data THEN the system SHOULD use standard or commonly accepted formats, such as HL7 CDA or PDF."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-06",
+      "label": "APU.6#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges AI-generated narrative or summary content THEN the system SHALL distinguish AI-generated narrative from source records and SHALL avoid transmitting the narrative as a verified clinical fact unless it has been reviewed and authenticated according to the receiving system's policy."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-07",
+      "label": "APU.6#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system collects personal health information THEN the system SHOULD allow that data to be imported into or exported from the system."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.6-08",
+      "label": "APU.6#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system exchanges AI-derived data THEN the system SHOULD use applicable interoperable provenance and annotation mechanisms, such as HL7 FHIR Provenance or a realm-appropriate equivalent, when those mechanisms are available to the receiving system."
+    }
+  ]
+}

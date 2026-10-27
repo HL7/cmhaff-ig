@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-PDS.1",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "PDS_1_Regulatory_Considerations",
-  "title": "PDS.1 Regulatory Considerations (Header)",
+  "title": "PDS.1 Regulatory Considerations (Function)",
   "status": "active",
-  "description": "This section is about the compliance of apps to applicable regulations for the domains (realms, locales,\nenvironments) in which they are intended to be used. CMHAFF is designed as a framework that can be\nfurther constrained (profiled) for these domains and does not require conformance to any specific\nlocale’s regulations.",
-  "purpose": "",
+  "description": "This section is about the compliance of apps to applicable regulations for the domains (realms, locales, NC\n environments) in which they are intended to be used. CMHAFF is designed as a framework that can be\n further constrained (profiled) for these domains and does not require conformance to any specific locale’s\n regulations.",
+  "purpose": "Related Regulations and Standards:\nThe documents listed below are overviews of the regulatory landscape, rather than specific regulations governing mobile health apps. Specific\n references are listed either following the conformance tables, or in the Appendix.\n • USA Federal Trade Commission Mobile Health Apps Interactive Tool for guidance as to which federal laws apply. ( https://www.ftc.gov/tips-\n advice/business-center/guidance/mobile-health- apps-interactive-tool ) All USA mobile app developers should consult this tool, which includes\n determining if the app is a regulated “medical device” according to the U.S. Food and Drug Administration (FDA), and if so, obtaining necessary\n pre-market approval.\n Commission Staff Working Document on the existing EU legal framework applicable to lifestyle and wellbeing apps. ( https://ec.europa.eu/digital-single-\n market/en/news/commission-staff-working-document- existing-eu-legal-framework-applicable-lifestyle-and )This broad guidance for the European Union,\n analogous to the USA FTC document. It is complemented by country-specific guidelines. In the EU, some mHealth apps may fall under the definition of a\n medical device and therefore may have to comply with the safety and performance requirements of Council Directive 93/42/EEC concerning medical\n devices ( https://ec.europa.eu/growth/single-market/european- standards/harmonised-standards/medical-devices_en ).\nExample:\nImplementation\nGuidance\n\nImplementation Guidance:\n\n • Use Case A: In the US Realm, a walking app which encourages general wellness is not considered a mobile medical app by the FDA. As such the\n FDA does not intend to regulate this type of app.\n • Use Case B: In the US Realm, a weight management app is not considered a mobile medical application by the FDA as long as it makes no claims\n to improve/cure a disease. How the app is described is important, and FDA guidance defining wellness vs. apps which aim to improve specific\n disease conditions should be referenced and reviewed before making a definitive decision as to its FDA classification.\n • Use Case C: There are two distinctions regarding compliance issues for this app. For the data collection devices in this use case, a glucometer\n would be FDA regulated, while a general activity monitor, would not. Apps which collect and display disease information would not typically be\n regulated until the information is compiled or transformed and clinical decisions are made on the data. In this case, the app is capable of receiving\n alerts, but the logic behind the alerts are based on individualized settings through a rules engine which is integrated into an EHR. In this case, the\n locus of regulation is not clear, and as such counsel should be engaged in forming a definitive case as to what regulatory approvals might be\n needed.\n\n For the European Union, the figure below summarizes relevant guidance and regulations for Mobile Health. There are three principal EU\n regulatory areas impacting mHealth apps:\n • Medical devices, applying to higher medical risk apps only, including Regulation (EU) 2017/745 for medical devices in general and\n Regulation (EU) 2017/746 for in vitro diagnostic devices.\n • Information protection, applying to all apps that store or transmit personal data – currently a group of three directives, that will largely be\n replaced by the General Data Protection Regulation on 25th May 2018, together with an expected mHealth-specific voluntary code.\n •Consumer protection, including the right to fair treatment, products which meet acceptable standards, and right of redress if something goes\n wrong.\n Shades of blue indicate directives and regulations. Red indicates voluntary codes/guidelines. Yellow indicates possible other actions with uncertain timing.\n\n Sectio Header/Function Name Reference Chg Ind Row#\n n/Id#: Conformance Criteria",
   "statement": [
     {
       "extension": [
@@ -25,7 +25,7 @@
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL be analyzed to determine if regulatory approval (following Realm-specific regulatory rules) is needed before the app is used by the general public."
+      "requirement": "The system SHALL be analyzed to determine whether regulatory approval, following realm-specific regulatory rules, is required before the system is made available for general public use."
     },
     {
       "extension": [
@@ -40,7 +40,7 @@
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF it is determined that realm-specific regulatory rule approval is required THEN the app SHALL NOT be presented for general public use until regulatory approval is obtained."
+      "requirement": "IF realm-specific regulatory approval is determined to be required THEN the system SHALL NOT be presented for general public use until that approval is obtained."
     },
     {
       "extension": [
@@ -52,10 +52,55 @@
       "key": "CMHAFFR2-PDS.1-03",
       "label": "PDS.1#03",
       "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality that predicts, recommends, ranks, classifies, generates content, or initiates actions related to health or wellbeing THEN the system SHALL document the AI functionality's intended purpose, target users, context of use, level of autonomy, and whether the output can influence a health, wellbeing, financial, access, or safety decision; the system SHALL determine whether applicable realm-specific regulatory, privacy, consumer-protection, and medical-device requirements apply."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-04",
+      "label": "PDS.1#04",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL maintain an inventory of each AI component, including the component owner, supplier, model or service name, version, intended purpose, deployment location, data categories processed, and whether the component is capable of learning or changing after deployment."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-05",
+      "label": "PDS.1#05",
+      "conformance": [
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHOULD have measures to safeguard minors in accordance with applicable regulations."
+      "requirement": "The system SHOULD provide measures to safeguard minors in accordance with applicable regulations."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PDS.1-06",
+      "label": "PDS.1#06",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality with a potentially high-impact health or safety use THEN the system SHOULD obtain review by appropriately qualified clinical, safety, privacy, and regulatory personnel before initial deployment and before a material change in intended use."
     }
   ]
 }

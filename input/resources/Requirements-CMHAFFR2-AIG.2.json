@@ -1,0 +1,61 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG.2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+    ]
+  },
+  "name": "AIG_2_AI_Governance_and_Accountability",
+  "title": "AIG.2 AI Governance and Accountability (Function)",
+  "status": "active",
+  "description": "This category is about named, documented responsibility for each AI function across its lifecycle, and about the approval gates that make that responsibility operational rather than aspirational.",
+  "purpose": "",
+  "statement": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.2-01",
+      "label": "AIG.2#01",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL designate an accountable organization and accountable role for the governance, safety, privacy, performance monitoring, and retirement of each AI function."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.2-02",
+      "label": "AIG.2#02",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL establish documented approval criteria for AI design, validation, deployment, material change, suspension, and retirement, including the circumstances requiring review by safety, clinical, privacy, security, or legal personnel."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AIG.2-03",
+      "label": "AIG.2#03",
+      "conformance": [
+        "MAY"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY establish an independent advisory group or external review mechanism for AI functions with elevated safety, equity, or consumer-protection risk."
+    }
+  ]
+}

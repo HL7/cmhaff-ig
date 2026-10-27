@@ -3,13 +3,13 @@
   "id": "CMHAFFR2-PIM.1.3",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
-  "name": "PIM_1_3_Evidence_and_Credentials",
-  "title": "PIM.1.3 Evidence and Credentials (Header)",
+  "name": "PIM_1_3_Evidence_Credentials",
+  "title": "PIM.1.3 Evidence/Credentials (Function)",
   "status": "active",
-  "description": "",
+  "description": "1. IF the app provides health recommendations, the scientific degree of evidence and the types PIM.1 NC\n and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed\n articles, professionals and organizations with their credentials) that guided the app content\n SHALL be disclosed.",
   "purpose": "",
   "statement": [
     {
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-39",
-      "label": "PIM.1.3#39",
+      "key": "CMHAFFR2-PIM.1.3-01",
+      "label": "PIM.1.3#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the app provides health recommendations THEN the app SHALL disclose the scientific degree of evidence and the types and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed articles, professionals and organizations with their credentials) that guided the app content."
+      "requirement": "IF the system provides health recommendations THEN the system SHALL disclose the scientific degree of evidence and the types and dates of the sources that guided its content, such as clinical practice guidelines and protocols, peer-reviewed articles, and professionals and organizations with their credentials."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-40",
-      "label": "PIM.1.3#40",
+      "key": "CMHAFFR2-PIM.1.3-02",
+      "label": "PIM.1.3#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF there is human[1] and/or automated interpretation of health-related content THEN the app SHALL disclose the credentials of qualified health professionals and/or document the algorithms and testing plans and reports.[2]"
+      "requirement": "IF the system uses AI for health-related recommendations, interpretation, or decision support THEN the system SHALL disclose the evidence basis, evaluation method, intended population, validation setting, material performance measures, and known limitations of the AI function in a level of detail appropriate to the system's intended use."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-41",
-      "label": "PIM.1.3#41",
+      "key": "CMHAFFR2-PIM.1.3-03",
+      "label": "PIM.1.3#03",
       "conformance": [
         "SHOULD"
       ],
       "conditionality": false,
-      "requirement": "The app SHOULD identify in the app description the health professionals and credentials of those who worked on the app and/or at least the professional organization that made, reviewed, endorsed, or sponsored the app."
+      "requirement": "The system SHOULD reference or provide sufficient information for consumers to easily access the supporting evidence for review, which may include clinical, social, technical, and other domains of potential relevance."
     },
     {
       "extension": [
@@ -64,13 +64,28 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-42",
-      "label": "PIM.1.3#42",
+      "key": "CMHAFFR2-PIM.1.3-04",
+      "label": "PIM.1.3#04",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHOULD provide a plain-language summary of what evidence supports the AI function, what is not known, and how the function should and should not be used."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-05",
+      "label": "PIM.1.3#05",
       "conformance": [
         "SHALL"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL show the date of the last update to the app and describe the changes from the previous release (e.g., revisions due to new scientific evidence)."
+      "conditionality": true,
+      "requirement": "IF the system provides human or automated interpretation of health-related content THEN the system SHALL disclose the credentials of the qualified health professionals involved, and/or SHALL document the algorithms and the associated testing plans and reports."
     },
     {
       "extension": [
@@ -79,13 +94,73 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-43",
-      "label": "PIM.1.3#43",
+      "key": "CMHAFFR2-PIM.1.3-06",
+      "label": "PIM.1.3#06",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system SHALL identify the date and version of the AI model or service used for the consumer-facing function, or provide another stable mechanism by which an evaluator can determine the version in use."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-07",
+      "label": "PIM.1.3#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD identify in its product description the health professionals and credentials of those who worked on the system, or at minimum the professional organization that made, reviewed, endorsed, or sponsored it."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-08",
+      "label": "PIM.1.3#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD show the date of its last update and describe the changes from the previous release, such as revisions due to new scientific evidence."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-09",
+      "label": "PIM.1.3#09",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD declare the degree of admission of liability, that is the publisher's acceptance or disclaimer of responsibility, regarding the selection and use of its content."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-PIM.1.3-10",
+      "label": "PIM.1.3#10",
       "conformance": [
         "MAY"
       ],
       "conditionality": false,
-      "requirement": "The app MAY include data related to app reliability and validity tests or population research results in the app description."
+      "requirement": "The system MAY include in its product description data related to reliability and validity testing or population research results."
     },
     {
       "extension": [
@@ -94,13 +169,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-PIM.1.3-44",
-      "label": "PIM.1.3#44",
+      "key": "CMHAFFR2-PIM.1.3-11",
+      "label": "PIM.1.3#11",
       "conformance": [
-        "SHALL"
+        "MAY"
       ],
-      "conditionality": false,
-      "requirement": "The app SHALL declare the degree of admission of liability (publisher's acceptance or disclaimer of responsibility) regarding the selection and use of the app's content.[3]"
+      "conditionality": true,
+      "requirement": "IF the system uses AI functionality THEN the system MAY publish independent evaluation results, peer-reviewed studies, or an assessment report that describes performance and limitations."
     }
   ]
 }

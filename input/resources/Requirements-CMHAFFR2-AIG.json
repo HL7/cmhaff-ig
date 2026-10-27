@@ -1,0 +1,13 @@
+{
+  "resourceType": "Requirements",
+  "id": "CMHAFFR2-AIG",
+  "meta": {
+    "profile": [
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMSection"
+    ]
+  },
+  "name": "AI_Functionality_and_Governance",
+  "title": "AI Functionality and Governance",
+  "status": "active",
+  "description": "This section addresses artificial intelligence functionality in consumer mobile health applications: governance, transparency, privacy, security, data provenance, user control, safety, monitoring, and accountability.\n\nConsistent with cMHAFF's design as a horizontal, realm-agnostic framework, this section specifies cross-cutting consumer safeguards that apply wherever AI functionality is present. Disease-specific clinical validity, diagnosis and treatment claims, performance targets, threshold logic, and realm-specific regulatory obligations remain the province of implementation guides and realm or domain profiles.\n\nEvery criterion in this section is conditional on the presence of AI functionality. An application that uses no AI functionality has no obligations under this section. AIG.1 establishes that applicability determination and is the entry point for the rest.Applicability is determined by the AI questions proposed for the cMHAFF decision table: whether the app uses AI to predict, classify, recommend, rank, summarize, generate content, or act on a consumer's behalf; whether AI output can influence a health, safety, access, or financial decision; whether generative AI, retrieval-augmented generation, or an AI agent is used; whether PII, PHI, device data, or user content is sent to a third-party AI service; whether the AI function can change after deployment; and whether AI-derived data is exchanged with an EHR, PHR, device, payer, or other system.\n\nDesign inputs: NIST AI Risk Management Framework (AI RMF 1.0); NIST AI 600-1 Generative AI Profile; FDA Good Machine Learning Practice Guiding Principles; FDA Transparency for Machine Learning-Enabled Medical Devices; FDA AI-Enabled Device Software Functions lifecycle guidance; FDA Predetermined Change Control Plan guidance; FDA Digital Health and AI Glossary. These are design inputs, not asserted legal requirements; realm-specific law and regulation take precedence."
+}

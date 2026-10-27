@@ -3,11 +3,11 @@
   "id": "CMHAFFR2-APU.3",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "APU_3_Pairing_or_Syncing_User_Accounts_with_Devices_and_Data_Repositories",
-  "title": "APU.3 Pairing or Syncing User Accounts with Devices and Data Repositories (Header)",
+  "title": "APU.3 Pairing or Syncing User Accounts with Devices and Data Repositories (Function)",
   "status": "active",
   "description": "This category is about consumer verification of all devices to which they wish to pair or sync data.",
   "purpose": "",
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-77",
-      "label": "APU.3#77",
+      "key": "CMHAFFR2-APU.3-01",
+      "label": "APU.3#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL require the user to have authenticated identity to the app and have an active session before pairing an external device to an app account."
+      "requirement": "The system SHALL ensure that the user has successfully authenticated and has an active session before an external device is paired to an account."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-78",
-      "label": "APU.3#78",
+      "key": "CMHAFFR2-APU.3-02",
+      "label": "APU.3#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL display a screen asking the user to confirm that the device will collect information about a specific, named person (account holder or proxy subject) before a device is paired with the app to collect information about that individual."
+      "requirement": "The system SHALL display a screen that asks the user to confirm that the device will collect information about a specific, named person, before a device is paired with the system to collect information about that individual. The person may be the account holder or a proxy subject of the account holder."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-79",
-      "label": "APU.3#79",
+      "key": "CMHAFFR2-APU.3-03",
+      "label": "APU.3#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL provide a utility function permitting the person who pairs a device with an individual to un-pair the device and individual."
+      "requirement": "The system SHALL provide a utility function that permits the person who paired a device with an individual to un-pair the device and the individual."
     },
     {
       "extension": [
@@ -64,13 +64,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-80",
-      "label": "APU.3#80",
+      "key": "CMHAFFR2-APU.3-04",
+      "label": "APU.3#04",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL state what data will be collected by the device and how the device data is used before a device is paired with the app to collect information about a specific individual, optionally including a link to an informational page."
+      "requirement": "The system SHALL state what data will be collected by the device and how that data is used, before a device is paired with the system to collect information about a specific individual. This statement may include a link to an informational page giving details about data collection and use."
     },
     {
       "extension": [
@@ -79,13 +79,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-81",
-      "label": "APU.3#81",
+      "key": "CMHAFFR2-APU.3-05",
+      "label": "APU.3#05",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF data for more than one person can be collected by the app/device pair THEN the app SHALL ask the account holder to confirm the person for whom data will be collected by the device before data is collected and transmitted."
+      "requirement": "IF the system uses device or repository data as input to AI functionality THEN the system SHALL state, before a device or repository is paired or synced, whether data from that device or repository will be used as input to AI functionality and for what purpose."
     },
     {
       "extension": [
@@ -94,13 +94,43 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-APU.3-82",
-      "label": "APU.3#82",
+      "key": "CMHAFFR2-APU.3-06",
+      "label": "APU.3#06",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF a syncing option is included within the app (e.g., same app data synchronized across smartphone and tablet devices) THEN the app SHALL provide the user with an option to consent to the syncing process.[1]"
+      "requirement": "IF data for more than one person can be collected by the system and device pair THEN the system SHALL ask the account holder to confirm the person for whom the device will collect data, before data is collected and transmitted."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-07",
+      "label": "APU.3#07",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system includes a syncing option, such as the same data synchronized across smartphone and tablet devices, THEN the system SHALL provide the user with the option to consent to the syncing process."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-APU.3-08",
+      "label": "APU.3#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF AI output depends on data from a paired device or repository THEN the system SHOULD detect or flag material missing, stale, implausible, or mis-associated inputs before presenting an AI output that relies on those inputs."
     }
   ]
 }

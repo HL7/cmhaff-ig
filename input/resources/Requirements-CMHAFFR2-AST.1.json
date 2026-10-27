@@ -3,14 +3,14 @@
   "id": "CMHAFFR2-AST.1",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMHeader"
+      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
     ]
   },
   "name": "AST_1_App_and_Data_Removal",
-  "title": "AST.1 App and Data Removal (Header)",
+  "title": "AST.1 App and Data Removal (Function)",
   "status": "active",
   "description": "",
-  "purpose": "",
+  "purpose": "Related Regulations and Standards:\n• European Union Privacy Code of Conduct on Mobile Health apps\nhttps://ec.europa.eu/digital-single-market/en/privacy-code-conduct-mobile-health-apps\nExample:\nData download should be in a standard or at least nonproprietary format (e.g., CSV, XML, JSON) that\ncan be manipulated by off-the-shelf tooling. The format should be selected appropriate to the data being\ndownloaded.",
   "statement": [
     {
       "extension": [
@@ -19,13 +19,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-115",
-      "label": "AST.1#115",
+      "key": "CMHAFFR2-AST.1-01",
+      "label": "AST.1#01",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL permit an app Account Holder to remove the app from a mobile device at any time."
+      "requirement": "The system SHALL provide the account holder with the ability to remove the system from a mobile device at any time."
     },
     {
       "extension": [
@@ -34,13 +34,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-116",
-      "label": "AST.1#116",
+      "key": "CMHAFFR2-AST.1-02",
+      "label": "AST.1#02",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL inform an app Account Holder of the consequences of removing the app (e.g., loss of locally-stored data) from a smartphone and SHALL give an opportunity to confirm removal before the app is removed."
+      "requirement": "The system SHALL inform the account holder of the consequences of removing it from a smartphone, such as loss of locally stored data, and SHALL give the account holder an opportunity to confirm the removal before it occurs."
     },
     {
       "extension": [
@@ -49,13 +49,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-117",
-      "label": "AST.1#117",
+      "key": "CMHAFFR2-AST.1-03",
+      "label": "AST.1#03",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL permit an app Account Holder to close an associated account or data store associated with the app."
+      "requirement": "The system SHALL provide the account holder with the ability to close an associated account or data store."
     },
     {
       "extension": [
@@ -64,13 +64,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-118",
-      "label": "AST.1#118",
+      "key": "CMHAFFR2-AST.1-04",
+      "label": "AST.1#04",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL inform an app Account Holder of the consequences of deleting the account and SHALL give an opportunity to confirm closing the account before it is closed."
+      "requirement": "The system SHALL inform the account holder of the consequences of deleting the account and SHALL give an opportunity to confirm closing the account before it is closed."
     },
     {
       "extension": [
@@ -79,13 +79,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-119",
-      "label": "AST.1#119",
+      "key": "CMHAFFR2-AST.1-05",
+      "label": "AST.1#05",
       "conformance": [
         "SHALL"
       ],
       "conditionality": false,
-      "requirement": "The app SHALL inform the user that data that was part of the account may have been transmitted to other systems outside of the account itself and may persist (e.g., if the user collects device data in an app and transmits that data to an EHR which stores it as PGHD, deleting the account may not delete data in the EHR)."
+      "requirement": "The system SHALL inform the account holder that data that was part of the account may have been transmitted to other systems outside the account itself and may persist. For example, where the user collects device data in the system and transmits that data to an EHR which stores it as patient-generated health data, the user is informed that deleting the account may not delete the data now held in the EHR."
     },
     {
       "extension": [
@@ -94,28 +94,13 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-120",
-      "label": "AST.1#120",
-      "conformance": [
-        "SHALL"
-      ],
-      "conditionality": false,
-      "requirement": "The app SHALL permit the account holder to download data generated by the account holder or a proxy subject of the account holder to a data set under full control of the account holder (data portability) before closing an app account."
-    },
-    {
-      "extension": [
-        {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
-          "valueBoolean": false
-        }
-      ],
-      "key": "CMHAFFR2-AST.1-121",
-      "label": "AST.1#121",
+      "key": "CMHAFFR2-AST.1-06",
+      "label": "AST.1#06",
       "conformance": [
         "SHALL"
       ],
       "conditionality": true,
-      "requirement": "IF the device permits remote or external access to device data THEN the app SHALL allow any PHI or PII stored on a device to be wiped remotely by the account holder without deleting the account related to the wiped data."
+      "requirement": "IF the system uses consumer data in AI processing THEN the system SHALL stop future AI processing and future model-improvement use of that account's data when the account is closed, unless another documented legal basis applies, and SHALL describe any retained data required for legal, safety, or security reasons."
     },
     {
       "extension": [
@@ -124,13 +109,73 @@
           "valueBoolean": false
         }
       ],
-      "key": "CMHAFFR2-AST.1-122",
-      "label": "AST.1#122",
+      "key": "CMHAFFR2-AST.1-07",
+      "label": "AST.1#07",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": false,
+      "requirement": "The system SHOULD provide the account holder with the ability to download data generated by the account holder, or by a proxy subject of the account holder, to a data set under the full control of the account holder (data portability), before an account is closed."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.1-08",
+      "label": "AST.1#08",
+      "conformance": [
+        "SHOULD"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system provides consumer data portability THEN the system SHOULD include AI-generated or AI-derived data in the export and preserve available provenance, source-data references, model version, and human-review status."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.1-09",
+      "label": "AST.1#09",
       "conformance": [
         "SHALL"
       ],
+      "conditionality": true,
+      "requirement": "IF the device on which the system is installed permits remote or external access to device data THEN the system SHALL provide the ability for any PHI or PII stored on the device to be wiped remotely by the account holder, without deleting the account related to the wiped data."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.1-10",
+      "label": "AST.1#10",
+      "conformance": [
+        "SHOULD"
+      ],
       "conditionality": false,
-      "requirement": "The app SHALL set and communicate clear criteria to the user regarding the deletion of data, including automatic deletion if the user has not used the app for a specified period."
+      "requirement": "The system SHOULD set and communicate to the user clear criteria regarding the deletion of data, including automatic deletion if the user has not used the system for a specified period."
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "valueBoolean": false
+        }
+      ],
+      "key": "CMHAFFR2-AST.1-11",
+      "label": "AST.1#11",
+      "conformance": [
+        "SHALL"
+      ],
+      "conditionality": true,
+      "requirement": "IF the system stores prompts, retrieval caches, embeddings, AI outputs, or AI audit data linked to an account THEN the system SHALL delete, de-identify, or otherwise render unusable the prompts, retrieval caches, embeddings, AI outputs, and AI audit data linked to the account, or SHALL state which categories are retained, for what purpose, and for how long, when an account is closed."
     }
   ]
 }
