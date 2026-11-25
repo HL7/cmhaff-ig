@@ -20,6 +20,10 @@ developer is not a HIPAA-covered 3 entity (CE) such as a healthcare provider, no
 (such as a hospital or physician). This type of app might be generally available in a mobile app store (e.g., Apple, Android)
 and downloaded by a consumer/patient for personal use.
 
+<div>
+{% include img.html img="HL7-CMHAFF-Use-Case-A-2026.png" width="70%" %}
+</div>
+
 ### Use Case B: Device-Connected Wellness App
 
 In this health app use case a weight management app is used to help consumers to systematically collect weight
