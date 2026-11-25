@@ -25,3 +25,6 @@ Most code systems defined in HL7 IGs will need to move to THO later during the p
 %FMFLC12%
 %FMHC007%
 %FMHC005%
+
+# The consumer mobile health application functional framework, being representative of a functional framework versus a functional model, has its own formal grammar.
+Constraint failed: GENGRAM:%

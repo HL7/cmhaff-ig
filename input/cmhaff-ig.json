@@ -404,12 +404,26 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "copyrightyear"
         },
-        "value": "2025"
+        "value": "2027"
       },
       {
         "code": {
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "shownav"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "excludexml"
+        },
+        "value": "true"
+      },
+      {
+        "code": {
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+          "code": "excludettl"
         },
         "value": "true"
       }
