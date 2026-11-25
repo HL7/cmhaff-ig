@@ -67,4 +67,8 @@ decision support aids, which are exclusively not consumer-focused.
 
 Conformance Criteria in the following sections follow a lifecycle model in relation to a consumer’s use of a mobile health
 application, from first finding an app in an App Store to disuse and de-installation.
+
+<div>
+{% include img.html img="HL7-CMHAFF-Workflow-2026.png" width="70%" %}
+</div>
 Figure 1. CMHAFF Sections and Mobile App Life Cycle
