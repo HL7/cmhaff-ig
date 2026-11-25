@@ -40,6 +40,10 @@ published API. In the US Realm, the App developer is not a HIPAA entity, but an 
 business associate agreement with a covered entity and be offered to patients through an approved app store or EHR-
 based integration.
 
+<div>
+{% include img.html img="HL7-CMHAFF-Use-Case-B-2026.png" width="70%" %}
+</div>
+
 ### Use Case C: EHR-Integrated Disease Management App
 
 In this use case we provide the example of a diabetes management app that allows a consumer to collect blood sugar
@@ -56,3 +60,7 @@ Electronic Health Record (EHR), where it is accepted as Patient Generated Health
 preferences of the patient and the policies of the provider. From the EHR, a physician can define logic to assess blood
 sugar readings such that the consumer is alerted through the app when a measurement is out of range or when a set
 number of high or low readings are noted within a prescribed period of time.
+
+<div>
+{% include img.html img="HL7-CMHAFF-Use-Case-C-2026.png" width="70%" %}
+</div>
