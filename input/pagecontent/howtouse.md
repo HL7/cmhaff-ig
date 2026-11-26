@@ -5,7 +5,13 @@ To assist developers in understanding which subsections of cMHAFF are relevant t
 presented. The left column is a yes/no question, and the right column represents decisions whether or not to apply sections
 of cMHAFF, depending on the answer to that question.
 
-... questions table
+| Questions | Decisions Based on Answers |
+| --- | --- |
+| Which sections are mandatory for all mobile app developers, regardless of how basic the application is? | Sections covering product development, product upgrades, and downloading/installing the app are always required. |
+| Does the application process information that can identify a patient? | **If yes:** Sections regarding authentication, authorization, auditing, app/data removal, and post-closure permitted uses apply.<br>**If no:** Those specific sections are not applicable. |
+| Does the application save or send data externally (such as to cloud storage or another health IT system)? | **If yes:** Sections addressing data security at rest, security in transit, data authenticity/provenance, and data exchange/interoperability apply. |
+| Does the application interface with external sensors or devices that collect patient health measurements? | **If yes:** Sections related to device pairing and synchronization also apply. |
+| Does the application deliver notifications or alerts to the user? | **If yes:** The section governing notifications and alerts applies. |
 
 The intent of the Mobile Health Work Group is to use this feedback to improve the quality and relevance of the Framework
 so that it can be approved as a Standard for Trial Use 2 (STU) in 2023.

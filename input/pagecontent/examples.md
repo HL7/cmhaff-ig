@@ -24,6 +24,16 @@ and downloaded by a consumer/patient for personal use.
 {% include img.html img="HL7-CMHAFF-Use-Case-A-2026.png" width="70%" %}
 </div>
 
+|  | Simple |
+| --- | --- |
+| **Medical Device App Categorization** | Wellness |
+| **Data Device Categorization** | None |
+| **PHI Data Storage** | Smartphone |
+| **Data transmission by App** | None |
+| **Importance of Data Integrity** | Low |
+| **(USA) HIPAA covered?** | No |
+{: .grid .table-striped}
+
 ### Use Case B: Device-Connected Wellness App
 
 In this health app use case a weight management app is used to help consumers to systematically collect weight
@@ -43,6 +53,16 @@ based integration.
 <div>
 {% include img.html img="HL7-CMHAFF-Use-Case-B-2026.png" width="70%" %}
 </div>
+
+|  | Device-Integrated Application |
+| --- | --- |
+| **App Category (Medical Device)** | Wellness |
+| **Connected Device Category** | Either regulated or unregulated hardware |
+| **Location of PHI Storage** | Mobile device or personal health record (PHR) |
+| **App Data Transfer Path** | Flows from device to app to PHR |
+| **Data Integrity Priority** | Moderate to high |
+| **Subject to US HIPAA Regulations?** | Varies; contingent on whether a covered entity owns the PHR |
+{: .grid .table-striped}
 
 ### Use Case C: EHR-Integrated Disease Management App
 
@@ -64,3 +84,24 @@ number of high or low readings are noted within a prescribed period of time.
 <div>
 {% include img.html img="HL7-CMHAFF-Use-Case-C-2026.png" width="70%" %}
 </div>
+
+|  | EHR-Integrated Application |
+| --- | --- |
+| **App Category (Medical Device)** | Medical |
+| **Connected Device Category** | Regulated hardware |
+| **Location of PHI Storage** | Cloud or electronic health record (EHR) |
+| **App Data Transfer Path** | Flows from device to app to cloud to EHR |
+| **Data Integrity Priority** | High |
+| **Subject to US HIPAA Regulations?** | Yes |
+{: .grid .table-striped}
+
+### Risk Factors
+
+For apps, especially those like Use Case C, there are several potential threats and vulnerabilities which should be
+assessed and mitigated, where necessary, by mHealth developers (see Product Risk Assessment and Mitigation). While
+cMHAFF does not attempt to “do” the risk assessment for any particular mobile app, the following are examples of
+specific risk scenarios that may be applicable and point to cMHAFF criteria (potential mitigations are listed in
+parentheses). Some of these potential risks are motivators for the conformance criteria in cMHAFF. Where risks have
+both high likelihood and high impact, SHALL criteria are indicated.
+
+...
