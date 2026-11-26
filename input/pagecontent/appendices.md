@@ -34,7 +34,10 @@ required by governmental agencies. For cMHAFF, each “topic” (the sections of
 To be understandable, the Label should present cMHAFF categories in consumer-friendly language, notthe developer-centric terms used for the
 cMHAFF categories.
 
-!! Label IMAGE !!
+<table>
+<tr><td>{% include img.html img="nutrition-facts.png" width="70%" %}</td>
+<td>{% include img.html img="drug-facts.png" width="70%" %}</td></tr>
+</table>
 
 **Proposed cMHAFF Information Label for an App**
 
@@ -98,7 +101,9 @@ The “Ind” column is an indicator (score) for the category, summarized by a c
         </tbody>
     </table>
 
-Other icons, as alternatives to up/down arrows, include !! IMAGE !! or !! IMAGE !! 
+Other icons, as alternatives to up/down arrows, include:
+<img src="icons1.png" alt="icon" height="32" style="vertical-align: middle;"> <img src="icons2.png" alt="icon" height="32" style="vertical-align: middle;">.
+
 The goal is to be internationally recognizable unlike letters, the meaning of which may be locale-specific.
 Notes on Categories and Potential Assessment Methods The category name is listed first (followed by the corresponding cMHAFF section names in parentheses). Then there is a consumer-friendly explanation of what that section includes, and finally a recommended means of assessment.
 Principles of assessment:

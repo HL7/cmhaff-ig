@@ -12,6 +12,7 @@ of cMHAFF, depending on the answer to that question.
 | Does the application save or send data externally (such as to cloud storage or another health IT system)? | **If yes:** Sections addressing data security at rest, security in transit, data authenticity/provenance, and data exchange/interoperability apply. |
 | Does the application interface with external sensors or devices that collect patient health measurements? | **If yes:** Sections related to device pairing and synchronization also apply. |
 | Does the application deliver notifications or alerts to the user? | **If yes:** The section governing notifications and alerts applies. |
+{: .grid .table-striped}
 
 The intent of the Mobile Health Work Group is to use this feedback to improve the quality and relevance of the Framework
 so that it can be approved as a Standard for Trial Use 2 (STU) in 2023.
@@ -78,3 +79,19 @@ application, from first finding an app in an App Store to disuse and de-installa
 {% include img.html img="HL7-CMHAFF-Workflow-2026.png" width="70%" %}
 </div>
 Figure 1. CMHAFF Sections and Mobile App Life Cycle
+
+### General Considerations
+
+Each section is a category of criteria that follows a common format. First, there is a brief non- normative description of the category. Then there is a subsection containing a normative table of conformance criteria. Some criteria are applicable to all consumer health apps and other criteria are to be applied conditionally based on the functionality and scope of an app. For example, some apps do not transmit personal data to a source outside of the smartphone, while some integrate with external data sources; some apps integrate with medical and wellness devices, while others do not. Criteria are separated from “force”. That is, each criterion stated in a neutral way, and the optionality of addressing the criteria while claiming conformance to the standard, is in a separate column. The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED”, “MAY", and "OPTIONAL" in this document are to be interpreted as described in Internet Engineering Task Force (IETF) RFC 2119. Force follows this convention:
+
+* **SHALL** - The definition is an absolute requirement of the specification
+* **SHOULD** - This word, or the adjective "RECOMMENDED", mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.
+* **MAY** - This word, or the adjective "OPTIONAL", mean that an item is truly optional. One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)
+* **[IF]** - The stated force applies only when the clause in brackets is applicable to the product. When the
+clause does not apply, no conformance is expected.
+
+Following the table of conformance criteria, there are two non-normative subsections that provide optional
+guidance:
+
+* _**Related regulations and standards:**_ References to documents which can help an app developer or vendor are included. Regulations, standards and guidelines are cited here only if they are the direct source of a conformance criterion: otherwise, then they are listed in the Appendices (section 6.1, Reference Documents). To avoid redundant listings, any referenced document (with its URL) is only listed in the first relevant subsection: subsequent references are abbreviated and placed in footnotes. No regulations are cited as normative in cMHAFF, because they are realm-specific. NOTE: Legislation and regulations will vary between realms (locations) internationally and even within a country (e.g., states or provinces). Applicable regulations take precedence over cMHAFF when overlap or discrepancies exist. CMHAFF does not replace or override regulations of a realm.
+* _**Implementation guidance:**_ Guidance for app developers is included. As applicable, the differential application of conformance criteria by type of app is discussed, referencing the exemplary use cases described previously.

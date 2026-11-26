@@ -25,4 +25,6 @@ wrong.
 
 Shades of blue indicate directives and regulations. Red indicates voluntary codes/guidelines. Yellow indicates possible other actions with uncertain timing.
 
-!! IMAGE !!
+<div>
+{% include img.html img="eu-regulatory-landscape.png" width="70%" %}
+</div>

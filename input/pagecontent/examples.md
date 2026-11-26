@@ -104,4 +104,25 @@ specific risk scenarios that may be applicable and point to cMHAFF criteria (pot
 parentheses). Some of these potential risks are motivators for the conformance criteria in cMHAFF. Where risks have
 both high likelihood and high impact, SHALL criteria are indicated.
 
-...
+| Risk Factor | Conformance Section |
+| --- | --- |
+| Losing a device that stores confidential app data exposes sensitive information (mitigated via data encryption and automatic timeout/logoff). | App and Data Removal |
+| Losing or damaging a device prevents app access and disrupts care, even when privacy remains intact (addressed via data backup information and restoration to a replacement device). | Product Information |
+| Enabling convenience features like "automatic login" or "remember me" allows access without re-authentication (avoid offering this option if the app processes Protected Health Information). | Authentication |
+| Leaving an unlocked device unattended with the app open allows unauthorized viewing (mitigated by automatic timeout/logoff). | Authentication |
+| Inaccurately recorded or transmitted health measurements can lead consumers to make harmful decisions (mitigated through quality management and evidence disclosure). | Product Risk Assessment |
+| Pairing a measurement device with a smartphone that belongs to a different user risks associating data with the wrong person (addressed via pairing user accounts). | Authentication |
+| Relying on third-party cloud platforms with weak, undisclosed security exposes stored data (mitigated by disclosing infrastructure safeguards), while transfers between the app and cloud may lack adequate protection (mitigated by encrypting data in transit). | Security for Data at Rest |
+| Replacing or discontinuing use of a mobile device without wiping local and externally transmitted data leaves information exposed (covered by app/data removal and post-closure permitted data uses). | App and Data Removal |
+| Receiving healthcare providers lack control over consumer device specs, environments, and usage habits compared to managed enterprise hardware (out of developer scope, though it should be noted in the product risk assessment). | Product Risk Assessment |
+{: .grid .table-striped}
+
+### Environmental Scan
+
+The documents mentioned below are not standards, but explain the state of the mobile health industry in the USA and
+Europe, and assist developers to understand which legislation is applicable to their apps.
+
+* Journal of Medical Internet Research: mHealth and Mobile Medical Apps: A Framework to Assess Risk and Promote Safer Use https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4180335/
+* HIMSS Interoperability Environmental Scan: https://www.himss.org/environmental-scan
+* ONC Patient-Generated Health Data resources and references. This addresses opportunities and challenges for patient-generated health data (PGHD) and their use by clinicians. Much PGHD could come from mobile devices. https://www.healthit.gov/topic/scientific-initiatives/patient-generated-health-data.
+* Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth). While this is written for France, and influenced many of the criteria in cMHAFF, it also contains an extensive literature search and references that serve as an environmental scan. https://www.has-sante.fr/portail/upload/docs/application/pdf/2017-03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mh ealth.pdf

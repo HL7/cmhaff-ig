@@ -80,11 +80,6 @@
           "name": "appendices.html",
           "generation": "markdown",
           "title": "Appendices & Reference Documentation"
-        },
-        {
-          "name": "changes.html",
-          "generation": "markdown",
-          "title": "IG Change History"
         }
       ]
     },
