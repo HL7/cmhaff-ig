@@ -122,7 +122,7 @@ both high likelihood and high impact, SHALL criteria are indicated.
 The documents mentioned below are not standards, but explain the state of the mobile health industry in the USA and
 Europe, and assist developers to understand which legislation is applicable to their apps.
 
-* Journal of Medical Internet Research: mHealth and Mobile Medical Apps: A Framework to Assess Risk and Promote Safer Use https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4180335/
-* HIMSS Interoperability Environmental Scan: https://www.himss.org/environmental-scan
-* ONC Patient-Generated Health Data resources and references. This addresses opportunities and challenges for patient-generated health data (PGHD) and their use by clinicians. Much PGHD could come from mobile devices. https://www.healthit.gov/topic/scientific-initiatives/patient-generated-health-data.
-* Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth). While this is written for France, and influenced many of the criteria in cMHAFF, it also contains an extensive literature search and references that serve as an environmental scan. https://www.has-sante.fr/portail/upload/docs/application/pdf/2017-03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mh ealth.pdf
+* [Journal of Medical Internet Research: mHealth and Mobile Medical Apps: A Framework to Assess Risk and Promote Safer Use](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4180335/)
+* [HIMSS Interoperability Environmental Scan](https://www.himss.org/environmental-scan)
+* [ONC Patient-Generated Health Data resources and references](https://www.healthit.gov/topic/scientific-initiatives/patient-generated-health-data). This addresses opportunities and challenges for patient-generated health data (PGHD) and their use by clinicians. Much PGHD could come from mobile devices.
+* [Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth)](https://www.has-sante.fr/portail/upload/docs/application/pdf/2017-03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mhealth.pdf). While this is written for France, and influenced many of the criteria in cMHAFF, it also contains an extensive literature search and references that serve as an environmental scan.
