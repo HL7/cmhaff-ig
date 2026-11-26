@@ -10,7 +10,7 @@
   "title": "APU.5 Data Authenticity, Provenance, and Associated Metadata (Function)",
   "status": "active",
   "description": "This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other\n locations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.",
-  "purpose": "Related Regulations and Standards:\nThe following are examples of standards for data provenance. Even though they are specific to the FHIR and CDA standards respectively, the principles\n and data elements -- for recording entities and processes involved in producing or delivering a resource (data) – may be applicable.\n • FHIR Provenance Resource http://www.hl7.org/FHIR/provenance.html\n • HL7 CDA® R2 Implementation Guide: Data Provenance, Release 1 - US Realm\n http://www.hl7.org/implement/standards/product_brief.cfm?product_id=420\n • ISO 21089 Health Informatics – Trusted End-to-End Information Flows. https://www.iso.org/standard/35645.html Offers a guide to trusted\n end-to-end information flow for health(care) records and to the key trace points and audit events in the electronic entity/act record lifecycle\n (from point of record origination to each ultimate point of record access/use).",
+  "purpose": "",
   "statement": [
     {
       "extension": [

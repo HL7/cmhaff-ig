@@ -10,7 +10,7 @@
   "title": "AST.1 App and Data Removal (Function)",
   "status": "active",
   "description": "",
-  "purpose": "Related Regulations and Standards:\n• European Union Privacy Code of Conduct on Mobile Health apps\nhttps://ec.europa.eu/digital-single-market/en/privacy-code-conduct-mobile-health-apps\nExample:\nData download should be in a standard or at least nonproprietary format (e.g., CSV, XML, JSON) that\ncan be manipulated by off-the-shelf tooling. The format should be selected appropriate to the data being\ndownloaded.",
+  "purpose": "",
   "statement": [
     {
       "extension": [

@@ -10,6 +10,7 @@ Although cMHAFF does not have guidelines for all aspects of the software product
 that the product development life cycle, for new apps and for upgrades to apps, ensure that requirements for functionality,
 reliability, performance, scalability, safety, compatibility, portability, and maintainability have been addressed, as well as any
 requirements that relate to aspects that include these items previously described above:
+
 * Product Information for consumers (e.g., App Store descriptions, product disclosures)
 * Security
 * Privacy
@@ -19,6 +20,7 @@ requirements that relate to aspects that include these items previously describe
 * Terms of Use, Conditions
 * Product Development, including risk management, user-centered design, compliance with applicable regulations,
 functions (product description), reliability, performance, scalability, safety, compatibility, and portability.
+
 The security and privacy of information used by the app needs to be considered throughout the development
 phases of the app. Functionality must support the intended use of the app for the target users and stakeholders.
 Thorough and iterative risk assessment and requirement analysis, testing, evidence collection, documentation, and
@@ -40,46 +42,7 @@ effectively resolved and the developer to continually deliver the intended use o
       <notes>$ST$This section is about the compliance of apps to applicable regulations for the domains (realms, locales, NC
  environments) in which they are intended to be used. CMHAFF is designed as a framework that can be
  further constrained (profiled) for these domains and does not require conformance to any specific locale’s
- regulations.$DE$Related Regulations and Standards:
-The documents listed below are overviews of the regulatory landscape, rather than specific regulations governing mobile health apps. Specific
- references are listed either following the conformance tables, or in the Appendix.
- • USA Federal Trade Commission Mobile Health Apps Interactive Tool for guidance as to which federal laws apply. ( https://www.ftc.gov/tips-
- advice/business-center/guidance/mobile-health- apps-interactive-tool ) All USA mobile app developers should consult this tool, which includes
- determining if the app is a regulated “medical device” according to the U.S. Food and Drug Administration (FDA), and if so, obtaining necessary
- pre-market approval.
- Commission Staff Working Document on the existing EU legal framework applicable to lifestyle and wellbeing apps. ( https://ec.europa.eu/digital-single-
- market/en/news/commission-staff-working-document- existing-eu-legal-framework-applicable-lifestyle-and )This broad guidance for the European Union,
- analogous to the USA FTC document. It is complemented by country-specific guidelines. In the EU, some mHealth apps may fall under the definition of a
- medical device and therefore may have to comply with the safety and performance requirements of Council Directive 93/42/EEC concerning medical
- devices ( https://ec.europa.eu/growth/single-market/european- standards/harmonised-standards/medical-devices_en ).$EX$Implementation
-Guidance
-
-Implementation Guidance:
-
- • Use Case A: In the US Realm, a walking app which encourages general wellness is not considered a mobile medical app by the FDA. As such the
- FDA does not intend to regulate this type of app.
- • Use Case B: In the US Realm, a weight management app is not considered a mobile medical application by the FDA as long as it makes no claims
- to improve/cure a disease. How the app is described is important, and FDA guidance defining wellness vs. apps which aim to improve specific
- disease conditions should be referenced and reviewed before making a definitive decision as to its FDA classification.
- • Use Case C: There are two distinctions regarding compliance issues for this app. For the data collection devices in this use case, a glucometer
- would be FDA regulated, while a general activity monitor, would not. Apps which collect and display disease information would not typically be
- regulated until the information is compiled or transformed and clinical decisions are made on the data. In this case, the app is capable of receiving
- alerts, but the logic behind the alerts are based on individualized settings through a rules engine which is integrated into an EHR. In this case, the
- locus of regulation is not clear, and as such counsel should be engaged in forming a definitive case as to what regulatory approvals might be
- needed.
-
- For the European Union, the figure below summarizes relevant guidance and regulations for Mobile Health. There are three principal EU
- regulatory areas impacting mHealth apps:
- • Medical devices, applying to higher medical risk apps only, including Regulation (EU) 2017/745 for medical devices in general and
- Regulation (EU) 2017/746 for in vitro diagnostic devices.
- • Information protection, applying to all apps that store or transmit personal data – currently a group of three directives, that will largely be
- replaced by the General Data Protection Regulation on 25th May 2018, together with an expected mHealth-specific voluntary code.
- •Consumer protection, including the right to fair treatment, products which meet acceptable standards, and right of redress if something goes
- wrong.
- Shades of blue indicate directives and regulations. Red indicates voluntary codes/guidelines. Yellow indicates possible other actions with uncertain timing.
-
- Sectio Header/Function Name Reference Chg Ind Row#
- n/Id#: Conformance Criteria</notes>
+ regulations.$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF3</parentId>
@@ -177,39 +140,7 @@ Implementation Guidance:
  all. For example, if apps handle sensitive personal information or give health interpretation or
  advice, higher degrees of risk are involved than for apps that do not collect personal information
  or do not interpret or advise. If some information identified during this step should be disclosed
- to consumers, that is stated in the “Informing Consumers/Users” section.
-
-Related Regulations and Standards:
-While mobile computing environments may introduce some specific threats not present in non-mobilecomputing, the principles of risk management
- are the same across environments, so some standards and regulations are cited, even though they are not mobile-centric. Documents (listed
- alphabetically below) were sources of some cMHAFF criteria for risk assessment. Other useful references on risk assessment are listed in the
- Appendix. While some are realm-specific, they have much material that is applicable beyond their countries. Realms are listed in parentheses, if not
- explicit in the title.
- Andalusian Complete list of recommendations on design, use and assessment of health apps:
- http://www.calidadappsalud.com/en/listado-completo-recomendaciones-app-salud/
- • British Standards Institution Publicly Available Specification (PAS) 277:2015 Health and wellness apps – Quality criteria across
- the life cycle – Code of practice: Recommendations andguidance throughout the app’s product development life cycle
- • French Good Practice Guidelines on Health Apps and Smart Devices (Mobile Health or mHealth). https://www.has-
- sante.fr/portail/upload/docs/application/pdf/2017-
- 03/dir1/good_practice_guidelines_on_health_apps_and_smart_devices_mobile_health_or_mh ealth.pdf
- • National Institute of Standards and Technology NISTIR 8144 Assessing Threats to MobileDevices &amp; Infrastructure, The
- Mobile Threat Catalogue (USA) https://nccoe.nist.gov/sites/default/files/library/mtc-nistir-8144-draft.pdf (context and background
- information)
- https://pages.nist.gov/mobile-threat-catalogue/application.html#vulnerable-applications (actual catalog of threats, specifically the “Vulnerable
- Application” category, which is the part ofthe threat catalog closest to cMHAFF)
- • Open Web Application Security Project (OWASP) Top 10 Mobile Security Risks:
- https://www.owasp.org/index.php/Mobile_Top_10_2016-Top_10 This is focused on appdevelopers, so most of it is pertinent to
- cMHAFF, and for each risk, there are suggested mitigations.
- • OWASP Secure Coding Practices Quick Reference Guide: https://owasp.org/www-project-secure-coding-practices-quick-
- reference-guide/ - This provides resources for developers that can assist in implementing secure coding practices. It is
- recommended that developers adopt secure coding practices so that applications are developed with an emphasis on security vs
- having to apply security measures to protect the application.$EX$While later sections in this standard include specific security and privacy controls to be applied to consumer mobile health apps, all products addressing
-health issues, regardless of their type, must be subjected to an overall risk analysis. This risk analysis may uncover the need for additional security controls
-over-and-above the conformance statements included in this document. As such, a risk analysis provides an additional layer of considerations such that
-conformance statements are not misused as a simple checklist in which it is assumed all security risks have been addressed if an app is in compliance
-with the conformance statements in this standard. For an app/product, the risk analysis should be conducted for the target environment(s) where the app
-will actually be used by consumers. Because of the diversity of consumers, such a risk analysis is wider ranging and more challenging than a risk analysis
-for the development organization’s own environment.</notes>
+ to consumers, that is stated in the “Informing Consumers/Users” section.$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF3</parentId>
@@ -390,14 +321,7 @@ for the development organization’s own environment.</notes>
       <name>PDS.3 Usability/Accessibility Assessment</name>
       <alias>PDS.3</alias>
       <notes>$ST$This category is about the assessment of usability during the product development cycle, for the intended use by a target audience.$DE$Certain accessibility requirements (usability for users with specific disabilities) are recommended, but the list is not exhaustive. Other
-disabilities not mentioned (e.g., cognitive/learning disabilities) should be considered under the umbrella of conformance criterion #1.$EX$The timing of implementation of usability findings can be indicated in functional profiles based on the severity of findings. At a minimum a usability
-assessment plan includes information about the timeframe under which remediation will occur.
-
-These conformance statements apply to any type of app addressed in this standard. However, specific usability measures and remediation plans will differ
-based on app functionality, intended users, and app platform, and as such this standard does not discuss specific controls; instead, it speaks to a
-development process which encourages inclusion and end user satisfaction.
-
-See Appendix: Reference Documents</notes>
+disabilities not mentioned (e.g., cognitive/learning disabilities) should be considered under the umbrella of conformance criterion #1.$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF3</parentId>
@@ -551,9 +475,7 @@ See Appendix: Reference Documents</notes>
       <id>CMHAFF37</id>
       <name>PDS.4 Customer/Technical Support</name>
       <alias>PDS.4</alias>
-      <notes>$ST$1. Information as to how to access customer support, and channels of support (e.g., voice, email, PDS.4 NC
- text, Twitter) SHALL clearly be stated within the app's Terms of Use and as a feature accessible
- from within the app.$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF3</parentId>
@@ -847,7 +769,7 @@ e.g., app store, web site, online help.$DE$$EX$</notes>
       <id>CMHAFF60</id>
       <name>PIM.1.2 Payment</name>
       <alias>PIM.1.2</alias>
-      <notes>$ST$1. The payment amount for the app, if any, SHALL be clearly noted according to app store rules. PIM.1 NC$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF49</parentId>
@@ -923,10 +845,7 @@ e.g., app store, web site, online help.$DE$$EX$</notes>
       <id>CMHAFF66</id>
       <name>PIM.1.3 Evidence/Credentials</name>
       <alias>PIM.1.3</alias>
-      <notes>$ST$1. IF the app provides health recommendations, the scientific degree of evidence and the types PIM.1 NC
- and dates of sources used (e.g., clinical practice guidelines and protocols, peer-reviewed
- articles, professionals and organizations with their credentials) that guided the app content
- SHALL be disclosed.$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF49</parentId>
@@ -1080,10 +999,7 @@ e.g., app store, web site, online help.$DE$$EX$</notes>
       <id>CMHAFF78</id>
       <name>PIM.1.4 Limitations and Warnings</name>
       <alias>PIM.1.4</alias>
-      <notes>$ST$1. Contraindications, potential risks and limitations of use SHALL be documented. For example, PIM.1 NC
- environmental or patient conditions under which apps or connected devices may be unreliable
- (e.g., tattoos that impact optical sensors; avoid usage when pregnant; avoid usage outside a
- temperature range).$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF49</parentId>
@@ -1224,9 +1140,7 @@ e.g., app store, web site, online help.$DE$$EX$</notes>
       <id>CMHAFF89</id>
       <name>PIM.1.5 Technical Details</name>
       <alias>PIM.1.5</alias>
-      <notes>$ST$1. IF the user can enter personal health information into the app, it SHALL clearly disclose PIM.1 NC
- whether or not data validity checking is done, and document or reference the evidence for such
- validity checking.$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF49</parentId>
@@ -1328,20 +1242,7 @@ e.g., app store, web site, online help.$DE$$EX$</notes>
       <id>CMHAFF97</id>
       <name>PIM.2 Launch App and Establish User Account</name>
       <alias>PIM.2</alias>
-      <notes>$ST$1. A user SHALL be able to review the app's Terms of Use before personal data about the user PIM.2 NC
- is collected and used.$DE$$EX$• Use Case A: Knowing who the user is, in an absolute sense, is not needed as data is not being sent to any external data set. Primarily, account
- controls are in place to ensure the same person is using the app each time. For this walking app, possession of a smartphone may be sufficient to
- allow someone to use it without any additional need for authentication or need to set up a unique user ID and password to access the app.
- • Use Case B: Knowing the user’s absolute identity is not needed but minimal account controls (e.g., user ID and password) should be established
- as the app will allow information to be sent to an existing data set, and these data sets will need some ability to be linked, in part showing evidence
- an individual has control over both the app data and a right to access the existing data set.
- • Use Case C: requires more rigorous identity proofing as data will be both sent to an EHR and interactions initiated by a physician result in information
- being pushed to the app. Identity proofing can occur within the app itself, or in the use of pre-existing identity credentials (e.g., patient portal
- credentials for the entity controlling the EHR) to establish identity.
-
- 3. App Use
- Statement Overview: This section addresses functionalities and considerations to be addressed while the user is operating
- the app.</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF48</parentId>
@@ -2037,15 +1938,7 @@ as such implementers should consider not only the conformance criteria but the d
       <name>APU.5 Data Authenticity, Provenance, and Associated Metadata</name>
       <alias>APU.5</alias>
       <notes>$ST$This category is about providing assurance that consumer data is secure when it is moved between the consumer’s device(s) and other
- locations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.$DE$Related Regulations and Standards:
-The following are examples of standards for data provenance. Even though they are specific to the FHIR and CDA standards respectively, the principles
- and data elements -- for recording entities and processes involved in producing or delivering a resource (data) – may be applicable.
- • FHIR Provenance Resource http://www.hl7.org/FHIR/provenance.html
- • HL7 CDA® R2 Implementation Guide: Data Provenance, Release 1 - US Realm
- http://www.hl7.org/implement/standards/product_brief.cfm?product_id=420
- • ISO 21089 Health Informatics – Trusted End-to-End Information Flows. https://www.iso.org/standard/35645.html Offers a guide to trusted
- end-to-end information flow for health(care) records and to the key trace points and audit events in the electronic entity/act record lifecycle
- (from point of record origination to each ultimate point of record access/use).$EX$</notes>
+ locations. This category is about the attribution of sources of data (provenance) and assurance of data authenticity.$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF105</parentId>
@@ -2148,17 +2041,7 @@ The following are examples of standards for data provenance. Even though they ar
       <name>APU.6 Data Exchange and Interoperability</name>
       <alias>APU.6</alias>
       <notes>$ST$This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable
- standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$Related Regulations and Standards:
-• Direct Project Applicability Statement for Secure Health Transport
- https://www.healthit.gov/policy-researchers-implementers/direct-project
- • HL7 Consolidated CDA
- • HL7 FHIR STU. http://www.hl7.org/FHIR/index.html
- • SMART ON FHIR. https://smarthealthit.org/
- • http://www.hl7.org/implement/standards/product_brief.cfm?product_id=379
- • IEEE 10073 Personal Health Data Standards https://standards.ieee.org/develop/wg/PHD.html
- • “MedMij” information Exchange standards for Personal Health Environment https://www.medmij.nl (Netherlands) Includes HL7 Health
- Clinical Information models (HCIM), which provide context for discrete clinical data (e.g., systolic blood pressure); the standard is being used
- in the Netherlands.$EX$</notes>
+ standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF105</parentId>
@@ -2274,86 +2157,7 @@ The following are examples of standards for data provenance. Even though they ar
       <name>APU.7 Notifications and Alerts</name>
       <alias>APU.7</alias>
       <notes>$ST$This category applies only if an app exchanges data with other devices, health apps, and/or HIT systems. If so, there are applicable
- standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$$EX$In the realm of alerts and notifications, the following table proposed suggested standardized (generic)terms in the left column, with mappings to the
- leading two platforms in the middle columns, and comments in the right column. The platform-specific definitions have been derived from web
- sources,with preference given to information from the creators of the platforms (Apple, Google). Note: the mapping cannot be made an exact 1:1. In
- some cases, the platform-specific term may be more precise(e.g., subtypes) than the generic term, but we do not require a generic equivalent for
- every platform- specific term. In other cases, there may be substantial similarity of concepts across platforms, but not identical behavior, and
- certainly not identical appearance.
-
- Despite the proposed granularity of these terms, that does not mean that there need to be separatecMHAFF conformance requirements for each
- type, but at least the opportunity is there if the need arises. In particular, there may be different conformance requirements for “alerts” vs other
- types ofnotifications.
-
- Suggested “standardized” Apple (iOS) equivalent Google (Android OS) Comments
- (generic) term for cMHAFF equivalent
- Message Generally refers to Generally used to refer to Message, or Messaging, can
- Any computer to computer or messages within specific messages from one describe cMHAFF’s overarching term
- computer-to-human interface, types of apps, like email, device (or server) to for the data packages that are sent
- whether via visual, aural, haptic, text, IM, Facebook… another. by apps. While we consider
- olfactory, taste, or neural notifications and alerts as special
- mediums. However, when types of messages, the specific term
- discussing interoperability, the “message” is used a lot for messages
- focus is on computer-to- within apps, but not generally used
- computer 3 messaging. Note that when describing alerts and
- the messages can be transmitted notifications. We in HL7 also have
- within the same physical the HIT-specific legacy of structured
- computer, but between different “messaging” formats that include
- software (e.g., APIs). healthcare content and sometimes
- PHI (e.g., HL7 v2 message).
- Notification Notification – generic Notification – generic Generic term that has subtypes.
- A device-specific message term to cover many term to cover many types
- communicated to a user to inform types of notifications. of notifications. While HIT also has “notifications” that
-
-them of device or app activities may be delivered to an app, not just
-that are deemed important to the to a human user, cMHAFF uses a
-user. Some types of notifications common consumer-based definition
-require a response from the user,
-while others do not.
-Alert Alert Alert Dialog, aka These messages will always be seen
-A type of Notification that is Dialog Notification by the user, except if the device is
-communicated to a user and turned off or the user does not look at
-requires a response before the the device at all (nothing is
-user can proceed with activity on guaranteed). In general, these are
-the device. For example, it may considered more “serious” than other
-take the form of a “modal” pop-up types of notifications. Local or other
-dialog that must be dismissed by policy make have more stringent
-clicking OK or taking some other rules for anything deemed an “alert”
-action. vs a “notification.”
-Persistent Notification Notifications (in Status Notification Android has more than one type of
-A device-specific message Notification Center) notification.
-communicated to a user to inform Status Notifications can
-them of device or app activities Badge (on individual app appear outside the app
-and remain displayed on the icons) window and can be used
-device. These remain persistent to attract the user back to
-until the user deletes them or the app.
-takes an action that changes their
-status (e.g., checks text
-messages, checks email)
-Temporary Notification Banner Toast Since these messages fade after a
-A subtype of Notification that short time, it is very possible that
-does not remain displayed on the “Lock screen Toasts appear within the they will not be seen at all. In
-screen more than a short time notifications” look like app window, not outside Android, Toasts appear within the
-period. banners but appear on of it app window (not outside the app). In
- the lock screen. iOS, they can appear outside the
- app.
-Emergency Notification iPhone provides options Four types: presidential These are outside the scope of an
-A notification from an external for two types of notifications, imminent app, are not written by MH app
-source, such as the government, Government Alerts, extreme notifications, developers, but can be configured to
-communicating important “AMBER Alerts” and imminent severe alert and display on the device. They are
-information about your area (e.g., “Emergency Alerts.” AMBER alert. You can mentioned so that we don’t use the
-emergency, disaster, weather…) turn off every alert except same terms for something else.
- for the presidential alert.
-
- Hierarchy
-
- • Message (overarching term)
- o Content Message (e.g., HL7 v2, C-CDA payload, FHIR resource) – out of the scope for this set of definitions.
- o Notification (overarching term)
-  Alert (requires user action, whereas all other types of notifications do not require it,though they may allow it)
-  Persistent notification
-  Temporary notification
-  Emergency Notification (government, outside app control)</notes>
+ standards for data format, vocabulary, and transport, to increase interoperability and ease of connection.$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF105</parentId>
@@ -2520,8 +2324,7 @@ emergency, disaster, weather…) turn off every alert except same terms for some
       <id>CMHAFF181</id>
       <name>APU.8 Product Upgrades</name>
       <alias>APU.8</alias>
-      <notes>$ST$1. The App SHALL respect operating system level permissions concerning automatic product APU.8 NC
- updates.$DE$$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF105</parentId>
@@ -2641,18 +2444,7 @@ emergency, disaster, weather…) turn off every alert except same terms for some
  creation, access, modification, and deletion of personal health information. Any information technology including consumer health apps should follow
  best practices in managing an audit trail. The audit trail should maintain a record of users who have accessed what data, from where, and when. Audit
  logs should also record any attempts to access the system from an unauthorized terminal; expired usernames or passwords that try to access the
- system, unusual numbers of authentication attempts, and violations of an organizations security policy.$DE$Related Regulations and Standards:
-• Integrating the Healthcare Enterprise (IHE) Audit Trail and Node Authentication (ATNA)
- Integration Profile. https://www.ihe.net/Technical_Frameworks/#IT This IHE profile references
- the Internet Engineering Task Force (IETF) RFC 3881 Audit Record standard
- https://datatracker.ietf.org/doc/rfc3881/
- • HL7 EHR Records Management and Evidentiary Support Functional Profile, Release 1
- (RMES) ( http://www.hl7.org/implement/standards/product_brief.cfm?product_id=86 ) Provides
- functions in an EHR system that can help an organization maintain a legal record for business
- and disclosure purposes.$EX$Every consumer mobile health app needs an audit strategy, which includes what data will be generated for audit, who will be able to access audit records,
- the location where audit data is stored, the length of time audit information will be stored, and any ability to delete audit data. Audit for security events is
- highly dependent on the nature of the app itself; audit requirements will differ significantly based on app sponsorship (e.g., sponsor is a HIPAA entity or a
- commercial non-covered entity), the need for user authentication, and if data generated through an app is accessible by consumers, clinicians, or both.</notes>
+ system, unusual numbers of authentication attempts, and violations of an organizations security policy.$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF105</parentId>
@@ -2766,11 +2558,7 @@ emergency, disaster, weather…) turn off every alert except same terms for some
       <id>CMHAFF199</id>
       <name>AST.1 App and Data Removal</name>
       <alias>AST.1</alias>
-      <notes>$ST$$DE$Related Regulations and Standards:
-• European Union Privacy Code of Conduct on Mobile Health apps
-https://ec.europa.eu/digital-single-market/en/privacy-code-conduct-mobile-health-apps$EX$Data download should be in a standard or at least nonproprietary format (e.g., CSV, XML, JSON) that
-can be manipulated by off-the-shelf tooling. The format should be selected appropriate to the data being
-downloaded.</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF198</parentId>
@@ -3007,15 +2795,7 @@ downloaded.</notes>
       <id>CMHAFF217</id>
       <name>CNA.1 Specifications for Conditions and Agreements</name>
       <alias>CNA.1</alias>
-      <notes>$ST$1. The App developer SHALL, before download, allow the potential user to easily access the CNA.1 C
- Apps Terms of Use. This may be accomplished through a link in the app description in the
- relevant app store.$DE$Related Regulations and Standards:
-• Federal Trade Commission: How to Make Disclosures in Digital Advertising, March 2013
- https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-staff-revises-online-
- advertising-disclosure-guidelines/130312dotcomdisclosures.pdf (USA). Explains how to make
- disclosures clear and conspicuous to avoid deception and takes into account the expanding use
- of smartphones.
-•$EX$</notes>
+      <notes>$ST$$DE$$EX$</notes>
       <stereotype>Function</stereotype>
       <type>Feature</type>
       <parentId>CMHAFF216</parentId>

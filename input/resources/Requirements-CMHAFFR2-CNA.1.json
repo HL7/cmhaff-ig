@@ -9,8 +9,8 @@
   "name": "CNA_1_Specifications_for_Conditions_and_Agreements",
   "title": "CNA.1 Specifications for Conditions and Agreements (Function)",
   "status": "active",
-  "description": "1. The App developer SHALL, before download, allow the potential user to easily access the CNA.1 C\n Apps Terms of Use. This may be accomplished through a link in the app description in the\n relevant app store.",
-  "purpose": "Related Regulations and Standards:\n• Federal Trade Commission: How to Make Disclosures in Digital Advertising, March 2013\n https://www.ftc.gov/sites/default/files/attachments/press-releases/ftc-staff-revises-online-\n advertising-disclosure-guidelines/130312dotcomdisclosures.pdf (USA). Explains how to make\n disclosures clear and conspicuous to avoid deception and takes into account the expanding use\n of smartphones.\n•",
+  "description": "",
+  "purpose": "",
   "statement": [
     {
       "extension": [

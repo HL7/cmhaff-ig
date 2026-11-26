@@ -9,8 +9,8 @@
   "name": "PIM_2_Launch_App_and_Establish_User_Account",
   "title": "PIM.2 Launch App and Establish User Account (Function)",
   "status": "active",
-  "description": "1. A user SHALL be able to review the app's Terms of Use before personal data about the user PIM.2 NC\n is collected and used.",
-  "purpose": "\nExample:\n• Use Case A: Knowing who the user is, in an absolute sense, is not needed as data is not being sent to any external data set. Primarily, account\n controls are in place to ensure the same person is using the app each time. For this walking app, possession of a smartphone may be sufficient to\n allow someone to use it without any additional need for authentication or need to set up a unique user ID and password to access the app.\n • Use Case B: Knowing the user’s absolute identity is not needed but minimal account controls (e.g., user ID and password) should be established\n as the app will allow information to be sent to an existing data set, and these data sets will need some ability to be linked, in part showing evidence\n an individual has control over both the app data and a right to access the existing data set.\n • Use Case C: requires more rigorous identity proofing as data will be both sent to an EHR and interactions initiated by a physician result in information\n being pushed to the app. Identity proofing can occur within the app itself, or in the use of pre-existing identity credentials (e.g., patient portal\n credentials for the entity controlling the EHR) to establish identity.\n\n 3. App Use\n Statement Overview: This section addresses functionalities and considerations to be addressed while the user is operating\n the app.",
+  "description": "",
+  "purpose": "",
   "statement": [
     {
       "extension": [

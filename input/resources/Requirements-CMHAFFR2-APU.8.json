@@ -9,7 +9,7 @@
   "name": "APU_8_Product_Upgrades",
   "title": "APU.8 Product Upgrades (Function)",
   "status": "active",
-  "description": "1. The App SHALL respect operating system level permissions concerning automatic product APU.8 NC\n updates.",
+  "description": "",
   "purpose": "",
   "statement": [
     {

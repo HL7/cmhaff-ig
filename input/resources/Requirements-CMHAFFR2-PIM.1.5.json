@@ -9,7 +9,7 @@
   "name": "PIM_1_5_Technical_Details",
   "title": "PIM.1.5 Technical Details (Function)",
   "status": "active",
-  "description": "1. IF the user can enter personal health information into the app, it SHALL clearly disclose PIM.1 NC\n whether or not data validity checking is done, and document or reference the evidence for such\n validity checking.",
+  "description": "",
   "purpose": "",
   "statement": [
     {

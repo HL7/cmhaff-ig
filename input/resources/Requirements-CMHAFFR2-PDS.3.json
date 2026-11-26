@@ -10,7 +10,7 @@
   "title": "PDS.3 Usability/Accessibility Assessment (Function)",
   "status": "active",
   "description": "This category is about the assessment of usability during the product development cycle, for the intended use by a target audience.",
-  "purpose": "Certain accessibility requirements (usability for users with specific disabilities) are recommended, but the list is not exhaustive. Other\ndisabilities not mentioned (e.g., cognitive/learning disabilities) should be considered under the umbrella of conformance criterion #1.\nExample:\nThe timing of implementation of usability findings can be indicated in functional profiles based on the severity of findings. At a minimum a usability\nassessment plan includes information about the timeframe under which remediation will occur.\n\nThese conformance statements apply to any type of app addressed in this standard. However, specific usability measures and remediation plans will differ\nbased on app functionality, intended users, and app platform, and as such this standard does not discuss specific controls; instead, it speaks to a\ndevelopment process which encourages inclusion and end user satisfaction.\n\nSee Appendix: Reference Documents",
+  "purpose": "Certain accessibility requirements (usability for users with specific disabilities) are recommended, but the list is not exhaustive. Other\ndisabilities not mentioned (e.g., cognitive/learning disabilities) should be considered under the umbrella of conformance criterion #1.",
   "statement": [
     {
       "extension": [
