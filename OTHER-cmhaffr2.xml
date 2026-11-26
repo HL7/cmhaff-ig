@@ -29,12 +29,7 @@
 <artifact id="Requirements/CMHAFFR2-APU" key="Requirements-CMHAFFR2-APU" name="App Use"/>
 <artifact id="Requirements/CMHAFFR2" key="Requirements-CMHAFFR2" name="CMHAFF"/>
 <artifact id="Requirements/CMHAFFR2-CNA.1" key="Requirements-CMHAFFR2-CNA.1" name="CNA.1 Specifications for Conditions and Agreements (Function)"/>
-<artifact id="CodeSystem/change-info" key="CodeSystem-change-info" name="Change Info"/>
 <artifact id="Requirements/CMHAFFR2-CNA" key="Requirements-CMHAFFR2-CNA" name="Conditions and Agreements"/>
-<artifact id="StructureDefinition/FMFunction" key="StructureDefinition-FMFunction" name="FMFunction"/>
-<artifact id="StructureDefinition/FMHeader" key="StructureDefinition-FMHeader" name="FMHeader"/>
-<artifact id="StructureDefinition/FMSection" key="StructureDefinition-FMSection" name="FMSection"/>
-<artifact id="StructureDefinition/FunctionalModel" key="StructureDefinition-FunctionalModel" name="FunctionalModel"/>
 <artifact id="Requirements/CMHAFFR2-PDS.1" key="Requirements-CMHAFFR2-PDS.1" name="PDS.1 Regulatory Considerations (Function)"/>
 <artifact id="Requirements/CMHAFFR2-PDS.2" key="Requirements-CMHAFFR2-PDS.2" name="PDS.2 Product Risk Assessment and Mitigation (Function)"/>
 <artifact id="Requirements/CMHAFFR2-PDS.3" key="Requirements-CMHAFFR2-PDS.3" name="PDS.3 Usability/Accessibility Assessment (Function)"/>
@@ -48,11 +43,6 @@
 <artifact id="Requirements/CMHAFFR2-PIM.2" key="Requirements-CMHAFFR2-PIM.2" name="PIM.2 Launch App and Establish User Account (Function)"/>
 <artifact id="Requirements/CMHAFFR2-PDS" key="Requirements-CMHAFFR2-PDS" name="Product Development and Support"/>
 <artifact id="Requirements/CMHAFFR2-PIM" key="Requirements-CMHAFFR2-PIM" name="Product Implementation"/>
-<artifact id="ValueSet/change-info" key="ValueSet-change-info" name="Requirement Change Indicators"/>
-<artifact id="StructureDefinition/requirements-actors" key="StructureDefinition-requirements-actors" name="requirements-actors"/>
-<artifact id="StructureDefinition/requirements-change-info" key="StructureDefinition-requirements-change-info" name="requirements-change-info"/>
-<artifact id="StructureDefinition/requirements-dependent" key="StructureDefinition-requirements-dependent" name="requirements-dependent"/>
-<artifact id="StructureDefinition/requirements-example" key="StructureDefinition-requirements-example" name="requirements-example"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="appendices" name="Appendices &amp; Reference Documentation"/>

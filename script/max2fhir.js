@@ -1,14 +1,24 @@
 const fs = require('fs'),
     xml2js = require('xml2js');
-const { option } = require('yargs');
 const xml = new xml2js.Parser();
 //
-// If you change the CANONICAL remember to manually change the CANONICAL in the input/profiles files!
+// BASE_CANONICAL is the canonical of the base model from the IG.dependsOn!
+// Also update ig.ini when PACKAGE_ID changes
 //
+const MAX_FILE = "cmhaff.max";
+const BASE_CANONICAL = "http://hl7.org/ehrs/uv/ehrsfmr2";
+const BASE_CANONICAL_PREFIX = BASE_CANONICAL + "/Requirements/EHRSFMR2-"
 const CANONICAL = "http://hl7.org/ehrs/uv/cmhaffr2";
+const PACKAGE_ID = "hl7.ehrs.uv.cmhaffr2";
+const STANDARDS_STATUS = "informative";
+const FMID_PREFIX = "CMHAFFR2";
 
 var maxroot;
-xml.parseString(fs.readFileSync('cmhaff.max'), function (err, data) {
+var raw = fs.readFileSync(MAX_FILE, "utf8");
+// raw = raw.replace(/[‘’]/g,"'").replace(/[“”]/g,'"'); // replace special quote
+// raw = raw.replace(/[–]/g,'-'); // replace special dash
+raw = raw.replaceAll('',''); // Jekyll illegal char (tab) in TI.1.8.1
+xml.parseString(raw, function (err, data) {
     maxroot = data;
 });
 // The order in the base model is wrong in some places e.g. RI.1.1.25 criteria come before the function.
@@ -26,7 +36,6 @@ if (fs.existsSync("satisfiedBy.txt")) {
     });    
 }
 
-const FMID_PREFIX = "CMHAFFR2";
 var groupings = [ ];
 var resources = [ ];
 var reqs = { };
@@ -42,6 +51,10 @@ maxroot.model.objects.forEach(_temp => {
 
         var fhir_req;
         switch (object.stereotype[0]) {
+            // TODO: profiles not yet handled differently
+            // - should accomodate for (statement.)derivedFrom relationship with base
+            // - and somehow make really visible what was changed in this profile!
+            case "HL7-FM-Profile":
             case "HL7-FM":
                 fhir_req = handleFM(object, parentObject);
                 break;
@@ -80,32 +93,42 @@ var grouping = {
 groupings.push(grouping);
 
 // create ehrsfm-ig.json from template
-var template_filename = "cmhaff-ig-template.json";
+var template_filename = "ig-template.json";
 var ig_json = fs.readFileSync(template_filename, 'utf8');
 ig_json = ig_json.replace("$GROUPINGS$", JSON.stringify(groupings, null, 2));
 ig_json = ig_json.replace("$RESOURCES$", JSON.stringify(resources, null, 2));
-ig_json = ig_json.replace("$CANONICAL$", CANONICAL);
+ig_json = ig_json.replaceAll("$CANONICAL$", CANONICAL);
+ig_json = ig_json.replaceAll("$PACKAGE_ID$", PACKAGE_ID);
+ig_json = ig_json.replaceAll("$FMID_PREFIX$", FMID_PREFIX);
+ig_json = ig_json.replaceAll("$STANDARDS_STATUS$", STANDARDS_STATUS);
 
-var filename = "../input/cmhaff-ig.json";
+var filename = `../input/ImplementationGuide-${PACKAGE_ID}.json`;
 fs.writeFileSync(filename, ig_json);
 
 function handleFM(fm) {
     var title = fm.name[0];
     var name = title.replace(/[^A-Za-z0-9_]/g, '_');
-    var notes = fm.notes && fm.notes[0];
+    // var notes = fm.notes[0];
 
     var fhir_req = {
         "resourceType": "Requirements",
         "id": FMID_PREFIX,
         "meta": {
             "profile": [
-                `${CANONICAL}/StructureDefinition/FunctionalModel`
+                `${BASE_CANONICAL}/StructureDefinition/FunctionalModel`
             ]
         },
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+                "valueCode": STANDARDS_STATUS
+            }
+        ],
         // "url": `${BASE}/Requirements/` + fmid,
         "name": name,
-        "title": name,
-        "status": "active"
+        "title": title,
+        "status": "active",
+        "description": "*intentionally left blank*"
     };
 
     var resource = {
@@ -130,19 +153,23 @@ function handleSection(section, parentObject) {
     var overview = notes.substring(4, exidx).trim();
     var example = notes.substring(exidx+4, acidx).trim();
     var actors = notes.substring(acidx+4).trim();
-    var _description = overview + (example!=""?`\nExample:\n${example}`:"");
+    var _description = overview + (example!=""?`\n\nExample(s):\n${example}`:"");
 
     var fhir_section = {
         "resourceType": "Requirements",
         "id": `${FMID_PREFIX}-${alias}`,
         "meta": {
             "profile": [
-                `${CANONICAL}/StructureDefinition/FMSection`
+                `${BASE_CANONICAL}/StructureDefinition/FMSection`
             ]
         },
         "extension": [
             {
-                "url": `${CANONICAL}/StructureDefinition/requirements-actors`,
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+                "valueCode": STANDARDS_STATUS
+            },
+            {
+                "url": `${BASE_CANONICAL}/StructureDefinition/requirements-actors`,
                 "valueString": actors
             }
         ],
@@ -152,7 +179,7 @@ function handleSection(section, parentObject) {
         "status": "active",
         "description": _description
     }
-    // remove extension if there is no example
+    // remove extension if there is no actors
     if (actors == "") {
         delete fhir_section.extension;
     }
@@ -194,22 +221,41 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     var description = notes.substring(deidx+4, exidx).trim();
     var example = notes.substring(exidx+4).trim();
     var type = headerOrFunction.stereotype[0];
-    var _description = description + (example!=""?`\nExample:\n${example}`:"");
+    description = description + (example!=""?`\n\nExample(s):\n${example}`:"");
+    // replace special link notation '[[{id}]]' with markdown link
+    description = description.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
+    const refAlias = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.Alias');
+    const refFunctionID = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
+    const refChangeInd = headerOrFunction.tag.find(tag => tag['$'].name === 'Reference.ChangeIndicator');
 
-    var fhir_headerorfunction = {
+    var fhir_headerOrFunction = {
         "resourceType": "Requirements",
         "id": `${FMID_PREFIX}-${alias}`,
         "meta": {
             "profile": [
-                `${CANONICAL}/StructureDefinition/FM${type}`
+                `${BASE_CANONICAL}/StructureDefinition/FM${type}`
             ]
         },
+        "extension": [
+            {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+                "valueCode": STANDARDS_STATUS
+            }
+        ],
         // "url": `http://hl7.org/fhir/Requirements/${fmid}-${alias}`,
         "name": name,
         "title": `${title} (${type})`,
         "status": "active",
         "description": statement,
-        "purpose": _description
+        "purpose": description
+    }
+    if (refAlias && refAlias['$'].value != "" && refFunctionID && refFunctionID['$'].value != "") {
+        fhir_headerOrFunction["derivedFrom"] = [ BASE_CANONICAL_PREFIX + refFunctionID['$'].value ];
+    }
+    if (refChangeInd && refChangeInd['$'].value) {
+        fhir_headerOrFunction["extension"].push({
+            "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+            "valueCode": refChangeInd['$'].value });
     }
     var resource = {
         "reference": { "reference": `Requirements/${FMID_PREFIX}-${alias}` },
@@ -218,22 +264,23 @@ function handleHeaderOrFunction(headerOrFunction, parentObject) {
     }
     resources.push(resource);
 
-    return fhir_headerorfunction;
+    return fhir_headerOrFunction;
 }
 
 function handleCriteria(criteria, fhir_parent_req) {
-    var id = criteria.name[0];
-    var name = criteria.name[0];
+    const id = criteria.name[0];
+    const name = criteria.name[0];
     var notes = criteria.notes[0];
-    var optionality = criteria.tag.find(tag => tag['$'].name === 'Optionality');
-    var conditional = criteria.tag.find(tag => tag['$'].name === 'Conditional');
-    var dependent = criteria.tag.find(tag => tag['$'].name === 'Dependent');
-    var refAlias = criteria.tag.find(tag => tag['$'].name === 'Reference.Alias');
-    var refFunctionID = criteria.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
-    var refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriteriaID');
+    const optionality = criteria.tag.find(tag => tag['$'].name === 'Optionality');
+    const conditional = criteria.tag.find(tag => tag['$'].name === 'Conditional');
+    const dependent = criteria.tag.find(tag => tag['$'].name === 'Dependent');
+    const refAlias = criteria.tag.find(tag => tag['$'].name === 'Reference.Alias');
+    const refFunctionID = criteria.tag.find(tag => tag['$'].name === 'Reference.FunctionID');
+    const refCriteriaID = criteria.tag.find(tag => tag['$'].name === 'Reference.CriterionID');
+    const refChangeInd = criteria.tag.find(tag => tag['$'].name === 'Reference.ChangeIndicator');
 
     // replace special link notation '[[{id}]]' with markdown link
-    notes = notes.replace(/\[\[([^\]]+)\]\]/g, '[\$1](Requirements-EHRSFMR2-\$1.html)');
+    notes = notes.replace(/\[\[([^\]]+)\]\]/g, `[\$1](Requirements-${FMID_PREFIX}-\$1.html)`);
 
     if (!fhir_parent_req) {
         console.log("parent not yet created? " + name);
@@ -242,7 +289,7 @@ function handleCriteria(criteria, fhir_parent_req) {
     var fhir_statement = {
         "extension": [
             {
-                "url": `${CANONICAL}/StructureDefinition/requirements-dependent`,
+                "url": `${BASE_CANONICAL}/StructureDefinition/requirements-dependent`,
                 "valueBoolean": (dependent['$'].value=="Y")
             }
         ],
@@ -256,7 +303,12 @@ function handleCriteria(criteria, fhir_parent_req) {
     };
     if (!fhir_parent_req.statement) { fhir_parent_req.statement = [] }
     if (refAlias && refAlias['$'].value != "" && refFunctionID && refFunctionID['$'].value != "") {
-        fhir_statement["derivedFrom"] = refAlias['$'].value + " " + refFunctionID['$'].value + (refCriteriaID?"#" + refCriteriaID['$'].value:"");
+        fhir_statement["derivedFrom"] = refFunctionID['$'].value + (refCriteriaID?"#" + refCriteriaID['$'].value:"");
+    }
+    if (refChangeInd && refChangeInd['$'].value) {
+        fhir_statement["extension"].push({
+            "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-change-info",
+            "valueCode": refChangeInd['$'].value });
     }
     if (id in satisfiedBy) { fhir_statement["satisfiedBy"] = [ satisfiedBy[id]] }
     fhir_parent_req.statement.push(fhir_statement);

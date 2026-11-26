@@ -3,9 +3,15 @@
   "id": "CMHAFFR2-AIG.3",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
   "name": "AIG_3_AI_Data_Governance_and_Data_Rights",
   "title": "AIG.3 AI Data Governance and Data Rights (Function)",
   "status": "active",
@@ -15,7 +21,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -30,7 +36,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -45,7 +51,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -60,7 +66,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -75,7 +81,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],

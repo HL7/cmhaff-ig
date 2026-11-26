@@ -3,9 +3,15 @@
   "id": "CMHAFFR2-AIG.6",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
   "name": "AIG_6_Generative_AI_and_AI_Agent_Safety",
   "title": "AIG.6 Generative AI and AI Agent Safety (Function)",
   "status": "active",
@@ -15,7 +21,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -30,7 +36,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -45,7 +51,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -60,7 +66,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -75,7 +81,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],

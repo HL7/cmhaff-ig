@@ -3,9 +3,15 @@
   "id": "CMHAFFR2-PIM.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
   "name": "PIM_2_Launch_App_and_Establish_User_Account",
   "title": "PIM.2 Launch App and Establish User Account (Function)",
   "status": "active",
@@ -15,7 +21,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -30,7 +36,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -45,7 +51,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -60,7 +66,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -75,7 +81,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -90,7 +96,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -105,7 +111,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],

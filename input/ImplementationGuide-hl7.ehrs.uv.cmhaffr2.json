@@ -48,6 +48,14 @@
   "fhirVersion": [
     "5.0.0"
   ],
+  "dependsOn": [
+    {
+      "id": "ehrsfmr2",
+      "uri": "https://hl7.org/ehrs/uv/ehrsfmr2/ImplementationGuide/hl7.ehrs.uv.ehrsfmr2",
+      "packageId": "hl7.ehrs.uv.ehrsfmr2",
+      "version": "2.1.1"
+    }
+  ],
   "definition": {
     "grouping": [
   {

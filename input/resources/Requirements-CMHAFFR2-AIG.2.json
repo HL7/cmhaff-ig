@@ -3,9 +3,15 @@
   "id": "CMHAFFR2-AIG.2",
   "meta": {
     "profile": [
-      "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/FMFunction"
+      "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/FMFunction"
     ]
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "informative"
+    }
+  ],
   "name": "AIG_2_AI_Governance_and_Accountability",
   "title": "AIG.2 AI Governance and Accountability (Function)",
   "status": "active",
@@ -15,7 +21,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -30,7 +36,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
@@ -45,7 +51,7 @@
     {
       "extension": [
         {
-          "url": "http://hl7.org/ehrs/uv/cmhaffr2/StructureDefinition/requirements-dependent",
+          "url": "http://hl7.org/ehrs/uv/ehrsfmr2/StructureDefinition/requirements-dependent",
           "valueBoolean": false
         }
       ],
