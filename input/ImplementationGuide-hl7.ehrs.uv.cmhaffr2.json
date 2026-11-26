@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.org/ehrs/uv/cmhaffr2/ImplementationGuide/hl7.ehrs.uv.cmhaffr2",
-  "version": "2.0.1",
+  "version": "2.0.1-ballot",
   "name": "CMHAFFR2",
   "title": "Consumer Mobile Health Application Functional Framework, Release 2",
   "status": "active",
@@ -391,6 +391,11 @@
           "name": "appendices.html",
           "generation": "markdown",
           "title": "Appendices & Reference Documentation"
+        },
+        {
+          "name": "hidden.html",
+          "generation": "markdown",
+          "title": "Only here because IG QA requires"
         }
       ]
     },
@@ -400,7 +405,7 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "releaselabel"
         },
-        "value": "CI build"
+        "value": "Normative 1 Ballot"
       },
       {
         "code": {

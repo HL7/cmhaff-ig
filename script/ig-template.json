@@ -16,7 +16,7 @@
     }
   ],
   "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
-  "version": "2.0.1",
+  "version": "2.0.1-ballot",
   "name": "$FMID_PREFIX$",
   "title": "Consumer Mobile Health Application Functional Framework, Release 2",
   "status": "active",
@@ -88,7 +88,13 @@
           "name": "appendices.html",
           "generation": "markdown",
           "title": "Appendices & Reference Documentation"
+        },
+        {
+          "name": "hidden.html",
+          "generation": "markdown",
+          "title": "Only here because IG QA requires"
         }
+
       ]
     },
     "parameter": [
@@ -97,7 +103,7 @@
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
           "code": "releaselabel"
         },
-        "value": "CI build"
+        "value": "Normative 1 Ballot"
       },
       {
         "code": {

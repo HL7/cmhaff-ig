@@ -1,10 +1,10 @@
 {
     "package-id": "hl7.ehrs.uv.cmhaffr2",
     "version": "2.0.1-ballot",
-    "path": "http://hl7.org/ehrs/uv/cmhaffr2/2.0.1-202701-ballot",
+    "path": "http://hl7.org/ehrs/uv/cmhaffr2/2.0.1-ballot",
     "mode": "working",
     "status": "ballot",
-    "sequence": "Informative",
+    "sequence": "Normative 1",
     "title": "Consumer Mobile Health Application Functional Framework, Release 2",
     "ci-build": "https://build.fhir.org/ig/HL7/cmhaffr2-ig",
     "category": "EHR-S Family",
