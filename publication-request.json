@@ -1,7 +1,7 @@
 {
     "package-id": "hl7.ehrs.uv.cmhaffr2",
-    "version": "2.0.1-ballot",
-    "path": "http://hl7.org/ehrs/uv/cmhaffr2/2.0.1-ballot",
+    "version": "2.0.0-ballot",
+    "path": "http://hl7.org/ehrs/uv/cmhaffr2/2.0.0-ballot-202701",
     "mode": "working",
     "status": "ballot",
     "sequence": "Normative 1",

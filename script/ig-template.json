@@ -16,7 +16,7 @@
     }
   ],
   "url": "$CANONICAL$/ImplementationGuide/$PACKAGE_ID$",
-  "version": "2.0.1-ballot",
+  "version": "2.0.0-ballot",
   "name": "$FMID_PREFIX$",
   "title": "Consumer Mobile Health Application Functional Framework, Release 2",
   "status": "active",
